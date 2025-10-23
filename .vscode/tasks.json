@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Format nordicus index",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/scripts/repair_index.py",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Fix nordicus index (prettify)",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/scripts/fix_index.py",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
