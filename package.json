@@ -5,5 +5,8 @@
     "format:index": "python3 ./scripts/repair_index.py",
     "fix:index": "python3 ./scripts/fix_index.py",
     "dev": "python3 -m http.server 8000 --directory nordicus"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1"
   }
 }
