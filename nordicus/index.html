@@ -8,8 +8,23 @@
         <meta name='robots' content='noindex, nofollow'/>
         <style>
             img:is([sizes="auto" i], [sizes^="auto," i]) {
-                contain-intrinsic-size: 3000px 1500px
-            }
+                    contain-intrinsic-size: 3000px 1500px;
+                }
+                @keyframes slideUpHero {
+                    from {
+                        opacity: 0;
+                        transform: translateY(40px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .slide-up-hero {
+                    opacity: 0;
+                    transform: translateY(40px);
+                    animation: slideUpHero 1s cubic-bezier(.77,0,.175,1) 0.2s forwards;
+                }
         </style>
         <link rel="alternate" type="application/rss+xml" title="LINKE, Soluções para Ecommerce &raquo; Feed" href="https://www.linke.pt/feed/"/>
         <link rel="alternate" type="application/rss+xml" title="LINKE, Soluções para Ecommerce &raquo; Comments Feed" href="https://www.linke.pt/comments/feed/"/>
@@ -566,41 +581,33 @@
                 line-height: 1.6;
             }  
         </style>
-    <link rel='stylesheet' id='hello-elementor-css' href='/workspaces/template/nordicus/wp-content/themes:hello-elementor:assets/css/reset.css?ver=3.4.4' media='all'/>
-    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='/workspaces/template/nordicus/wp-content/themes:hello-elementor:assets/css/header-footer.css?ver=3.4.4' media='all'/>
-    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='/workspaces/template/nordicus/wp-content/themes:hello-elementor:assets/css/header-footer.css?ver=3.4.4' media='all'/>
+    <link rel='stylesheet' id='hello-elementor-css' href='wp-content/themes:hello-elementor:assets/css/reset.css?ver=3.4.4' media='all'/>
+    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='wp-content/themes:hello-elementor:assets/css/header-footer.css?ver=3.4.4' media='all'/>
+    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='wp-content/themes:hello-elementor:assets/css/header-footer.css?ver=3.4.4' media='all'/>
     <link rel='stylesheet' id='elementor-frontend-css' href='./wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1759300127' media='all'/>
-    <link rel='stylesheet' id='elementor-post-6-css' href='/workspaces/template/nordicus/wp-content/uploads/elementor/css/post-6.css' media='all'/>
-    <link rel='stylesheet' id='widget-image-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/css/widget-image.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-nav-menu-css' href='/workspaces/template/nordicus/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css' media='all'/>
-    <link rel='stylesheet' id='e-sticky-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor-pro:assets/css/modules/sticky.min.css' media='all'/>
-        <link rel='stylesheet' id='widget-icon-list-css' href='/workspaces/template/nordicus/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css' media='all'/>
-        <link rel='stylesheet' id='widget-social-icons-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/css/widget-social-icons.min.css' media='all'/>
-        <link rel='stylesheet' id='e-apple-webkit-css' href='/workspaces/template/nordicus/wp-content/uploads/elementor/css/custom-apple-webkit.min.css' media='all'/>
-        <link rel='stylesheet' id='widget-heading-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/css/widget-heading.min.css' media='all'/>
-        <link rel='stylesheet' id='widget-divider-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/css/widget-divider.min.css' media='all'/>
-        <link rel='stylesheet' id='e-animation-grow-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/lib/animation:styles/e-animation-grow.min.css' media='all'/>
-        <link rel='stylesheet' id='e-popup-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.28.2' media='all'/>
-    <link rel='stylesheet' id='e-animation-fadeInUp-css' href='/workspaces/template/nordicus/wp-content/plugins/elementor:assets/lib/animation:styles/fadeInUp.min.css' media='all'/>
-        <link rel='stylesheet' id='elementor-post-2009-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-2009.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-23-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-23.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-577-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-577.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-3273-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-3273.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1743668698' media='all'/>
-        <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css?ver=1743752872' media='all'/>
-        <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css?ver=1.1.0' media='all'/>
-        <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css?ver=1.1.0' media='all'/>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-        <link rel="https://api.w.org/" href="https://template3.nicolaipalmkvist.com/wp-json/"/>
-        <link rel="alternate" title="JSON" type="application/json" href="https://template3.nicolaipalmkvist.com/wp-json/wp/v2/pages/2009"/>
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://template3.nicolaipalmkvist.com/xmlrpc.php?rsd"/>
-        <meta name="generator" content="WordPress 6.8.3"/>
-        <link rel="canonical" href="https://template3.nicolaipalmkvist.com/"/>
-        <link rel='shortlink' href='https://template3.nicolaipalmkvist.com/'/>
-        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://template3.nicolaipalmkvist.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate3.nicolaipalmkvist.com%2F"/>
-        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://template3.nicolaipalmkvist.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate3.nicolaipalmkvist.com%2F&#038;format=xml"/>
-        <meta name="generator" content="Elementor 3.32.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <link rel='stylesheet' id='elementor-post-6-css' href='wp-content/uploads/elementor/css/post-6.css' media='all'/>
+    <link rel='stylesheet' id='widget-image-css' href='wp-content/plugins/elementor:assets/css/widget-image.min.css' media='all'/>
+    <link rel='stylesheet' id='widget-nav-menu-css' href='wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css' media='all'/>
+    <link rel='stylesheet' id='e-sticky-css' href='wp-content/plugins/elementor-pro:assets/css/modules/sticky.min.css' media='all'/>
+        <link rel='stylesheet' id='widget-icon-list-css' href='wp-content/uploads/elementor/css/custom-widget-icon-list.min.css' media='all'/>
+        <link rel='stylesheet' id='widget-social-icons-css' href='wp-content/plugins/elementor:assets/css/widget-social-icons.min.css' media='all'/>
+        <link rel='stylesheet' id='e-apple-webkit-css' href='wp-content/uploads/elementor/css/custom-apple-webkit.min.css' media='all'/>
+        <link rel='stylesheet' id='widget-heading-css' href='wp-content/plugins/elementor:assets/css/widget-heading.min.css' media='all'/>
+        <link rel='stylesheet' id='widget-divider-css' href='wp-content/plugins/elementor:assets/css/widget-divider.min.css' media='all'/>
+        <link rel='stylesheet' id='e-animation-grow-css' href='wp-content/plugins/elementor:assets/lib/animation:styles/e-animation-grow.min.css' media='all'/>
+    <link rel='stylesheet' id='e-popup-css' href='wp-content/plugins/elementor-pro:assets/css/conditionals/popup.min.css' media='all'/>
+    <link rel='stylesheet' id='e-animation-fadeInUp-css' href='wp-content/plugins/elementor:assets/lib/animation:styles/fadeInUp.min.css' media='all'/>
+        <link rel='stylesheet' id='elementor-post-2009-css' href='wp-content/uploads/elementor/css/post-2009.css' media='all'/>
+    <link rel='stylesheet' id='elementor-post-23-css' href='wp-content/uploads/elementor/css/post-23.css' media='all'/>
+    <link rel='stylesheet' id='elementor-post-577-css' href='wp-content/uploads/elementor/css/post-577.css' media='all'/>
+    <link rel='stylesheet' id='elementor-post-3273-css' href='wp-content/uploads/elementor/css/post-3273.css' media='all'/>
+    <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='wp-content/uploads/elementor/google-fonts/css/dmsans.css' media='all'/>
+    <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css' media='all'/>
+    <script src="wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+    <script src="wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+     
         <style>
             .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
                 background-image: none !important;
@@ -855,9 +862,9 @@
                         </div>
                         <div class="elementor-element elementor-element-f63d80a e-flex e-con-boxed e-con e-child" data-id="f63d80a" data-element_type="container">
                             <div class="e-con-inner">
-                                <div class="elementor-element elementor-element-4c02fa8 elementor-invisible elementor-widget elementor-widget-heading" data-id="4c02fa8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                                <div class="elementor-element elementor-element-4c02fa8 elementor-widget elementor-widget-heading" data-id="4c02fa8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">
+                                        <h2 class="elementor-heading-title elementor-size-default slide-up-hero" style="opacity:0; transform:translateY(40px); animation:slideUpHero 1s cubic-bezier(.77,0,.175,1) 0.2s forwards;">
                                             Making the world more<br>like your dreams.
                                         </h2>
                                     </div>
