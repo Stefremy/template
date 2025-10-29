@@ -10,7 +10,10 @@ from pathlib import Path
 from datetime import datetime
 import sys
 
-IN_PATH = Path("/workspaces/template/nordicus/index")
+
+# Resolve repo root and nordicus/index relative to it
+repo_root = Path(__file__).resolve().parents[1]
+IN_PATH = repo_root / "nordicus" / "index"
 if not IN_PATH.exists():
     print("File not found:", IN_PATH)
     sys.exit(1)

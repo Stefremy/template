@@ -2,7 +2,10 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 import sys
 
-IN = Path("/workspaces/template/nordicus/index")
+
+# Resolve repo root and nordicus/index relative to it
+repo_root = Path(__file__).resolve().parents[1]
+IN = repo_root / "nordicus" / "index"
 if not IN.exists():
     print("File not found:", IN)
     sys.exit(1)
