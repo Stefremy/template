@@ -1,4 +1,13 @@
-// TypeScript version of parse_index.py
-// TODO: Implement logic to parse index.html as in the Python script
+import * as fs from 'fs';
+import * as path from 'path';
 
-console.log('parse_index.ts placeholder: implement logic here');
+// Path to index.html
+const indexPath = path.join(__dirname, '../nordicus/index.html');
+
+try {
+  const data = fs.readFileSync(indexPath, 'utf-8');
+  console.log('index.html contents:');
+  console.log(data);
+} catch (err) {
+  console.error('Error reading index.html:', err);
+}
