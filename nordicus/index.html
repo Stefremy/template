@@ -587,7 +587,7 @@
     <link rel='stylesheet' id='elementor-frontend-css' href='./wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1759300127' media='all'/>
     <link rel='stylesheet' id='elementor-post-6-css' href='wp-content/uploads/elementor/css/post-6.css' media='all'/>
     <link rel='stylesheet' id='widget-image-css' href='wp-content/plugins/elementor:assets/css/widget-image.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-nav-menu-css' href='wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css' media='all'/>
+    <link rel='stylesheet' id='widget-nav-menu-css' href='./wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css' media='all'/>
     <link rel='stylesheet' id='e-sticky-css' href='wp-content/plugins/elementor-pro:assets/css/modules/sticky.min.css' media='all'/>
         <link rel='stylesheet' id='widget-icon-list-css' href='wp-content/uploads/elementor/css/custom-widget-icon-list.min.css' media='all'/>
         <link rel='stylesheet' id='widget-social-icons-css' href='wp-content/plugins/elementor:assets/css/widget-social-icons.min.css' media='all'/>
@@ -684,12 +684,12 @@
                 <div class="elementor-element elementor-element-e95f074 elementor-align-left elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="e95f074" data-element_type="widget" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="/area-cliente.html">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-icon">
                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                     </span>
-                                    <span class="elementor-button-text">Start a project</span>
+                                    <span class="elementor-button-text">Área de Cliente</span>
                                 </span>
                             </a>
                         </div>
@@ -713,12 +713,12 @@
                         <div class="elementor-element elementor-element-639a60c elementor-align-left elementor-mobile-align-right elementor-hidden-mobile elementor-tablet-align-right elementor-widget elementor-widget-button" data-id="639a60c" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/area-cliente.html">
                                         <span class="elementor-button-content-wrapper">
                                             <span class="elementor-button-icon">
                                                 <i aria-hidden="true" class=" arrow_right-up"></i>
                                             </span>
-                                            <span class="elementor-button-text">Start a project</span>
+                                            <span class="elementor-button-text">Área de Cliente</span>
                                         </span>
                                     </a>
                                 </div>
@@ -798,27 +798,41 @@
                                 }
 
                                 /* the pill itself sits behind the link */
-                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home::before {
-                                    content: "";
-                                    position: absolute;
-                                    left: 50%;
-                                    top: 50%;
-                                    transform: translate(-50%, -50%);
-                                    width: calc(100% + 28px);
-                                    height: 44px;
-                                    background: #ffffff;
-                                    border-radius: 999px;
-                                    z-index: 0;
-                                    transition: all 180ms ease;
-                                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-                                }
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 50%;
+                                                    transform: translate(-50%, -50%) scale(1);
+                                                    width: calc(100% - 10px); /* even smaller pill width */
+                                                    height: 36px; /* keep same height */
+                                                    background: #ffffff;
+                                                    border-radius: 999px;
+                                                    z-index: 0;
+                                                    transition: all 180ms ease;
+                                                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                                                    opacity: 0;
+                                        }
+                                        /* Static pill for active page (Home) */
+                                        nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home.current-menu-item::before {
+                                            opacity: 1;
+                                            transform: translate(-50%, -50%) scale(1.02);
+                                            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                        }
+                                    /* Animate pill on hover for other items */
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li:hover::before,
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a.elementor-item.elementor-item-active::before {
+                                        opacity: 1;
+                                        transform: translate(-50%, -50%) scale(1.02);
+                                        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                    }
 
                                 /* ensure the anchor sits above the pill */
                                 nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a {
-                                    position: relative;
-                                    z-index: 1;
-                                    padding: 10px 18px;
-                                    display: inline-block;
+                                 position: relative;
+                                 z-index: 1;
+                                 padding: 6px 14px; /* tighter padding */
+                                 display: inline-block;
                                 }
 
                                 /* on hover/active keep the same pill look but slightly stronger */
