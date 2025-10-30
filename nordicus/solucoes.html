@@ -39,6 +39,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='elementor-frontend-css' href='wp-content/uploads/elementor/css/custom-frontend.min.css' media='all' />
 <link rel='stylesheet' id='elementor-post-6-css' href='wp-content/uploads/elementor/css/post-6.css' media='all' />
 <link rel='stylesheet' id='widget-image-css' href='wp-content/plugins/elementor/assets/css/widget-image.min.css' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css' media='all' />
 <link rel='stylesheet' id='widget-nav-menu-css' href='wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css' media='all' />
 <link rel='stylesheet' id='e-sticky-css' href='wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css' media='all' />
 <link rel='stylesheet' id='widget-icon-list-css' href='wp-content/uploads/elementor/css/custom-widget-icon-list.min.css' media='all' />
@@ -50,20 +51,38 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='e-popup-css' href='wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css' media='all' />
 <link rel='stylesheet' id='e-animation-fadeInUp-css' href='./wp-content/plugins/elementor:assets/lib/animations/styles/fadeInUp.min.css' media='all' />
 <link rel='stylesheet' id='widget-spacer-css' href='wp-content/plugins/elementor/assets/css/widget-spacer.min.css' media='all' />
-<link rel='stylesheet' id='swiper-css' href='wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' media='all' />
+
+
+<!-- Removed remote widget-image-carousel CSS, using local asset below -->
 <!-- Removed incorrect e-swiper.min.css link -->
-<link rel='stylesheet' id='widget-image-carousel-css' href='wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css' media='all' />
+
 <link rel='stylesheet' id='elementor-post-13-css' href='wp-content/uploads/elementor/css/post-13.css' media='all' />
 <link rel='stylesheet' id='elementor-post-23-css' href='wp-content/uploads/elementor/css/post-23.css' media='all' />
 <link rel='stylesheet' id='elementor-post-577-css' href='wp-content/uploads/elementor/css/post-577.css' media='all' />
 <link rel='stylesheet' id='elementor-post-3273-css' href='wp-content/uploads/elementor/css/post-3273.css' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css' media='all' />
+<link rel="stylesheet" href="wp-content/plugins/elementor/lib/swiper/v8/e-swiper.min.css" />
 <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='wp-content/uploads/elementor/google-fonts/css/dmsans.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-linearicons-icon-css' href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/linearicons.css' media='all' />
 <script src="./wp-includes:js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="./wp-includes:js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	<style>
+	/* Nav bar button hover color: #c4fe61 */
+	.elementor-nav-menu--main .elementor-item:hover,
+	.elementor-nav-menu--main .elementor-item.elementor-item-active {
+		background: #c4fe61 !important;
+		color: #000 !important;
+		border-color: #c4fe61 !important;
+	}
+	/* Área de Cliente button hover color */
+	a.elementor-button[href*="area-cliente"]:hover {
+		background: #c4fe61 !important;
+		color: #000 !important;
+		border-color: #c4fe61 !important;
+	}
+	</style>
 
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -220,13 +239,22 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 						</div>
 				</div>
 				<div class="elementor-element elementor-element-e4d7cab elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-spacer" data-id="e4d7cab" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
+		<div class="elementor-widget-container">
+								</div>
 						</div>
+				<!-- Animated words line above image carousel -->
+				<div style="width:100%;overflow:hidden;margin:24px 0;">
+					<div id="words-marquee" style="white-space:nowrap;display:block;font-size:2rem;font-weight:bold;animation:marquee 18s linear infinite;">
+						ADOBE &nbsp; MARKETING &nbsp; WEBPAGE &nbsp; AI &nbsp; ADOBE &nbsp; MARKETING &nbsp; WEBPAGE &nbsp; AI
+					</div>
 				</div>
-				<div class="elementor-element elementor-element-e330779 clients_logo elementor-widget elementor-widget-image-carousel" data-id="e330779" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;6&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:3000,&quot;slides_to_show_laptop&quot;:&quot;5&quot;,&quot;slides_to_show_tablet&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<style>
+				@keyframes marquee {
+					0% { transform: translateX(100%); }
+					100% { transform: translateX(-100%); }
+				}
+				</style>
+				<div class="elementor-element elementor-element-e330779 clients_logo elementor-widget elementor-widget-image-carousel" data-id="e330779" data-element_type="widget" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
 			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
@@ -292,6 +320,8 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 		</div>
 						</div>
 				</div>
+				<!-- Manual Swiper Carousel with Words -->
+				
 				<div class="elementor-element elementor-element-b3b56c7 elementor-widget elementor-widget-heading" data-id="b3b56c7" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Architecture shaped by vision and detail</h2>				</div>
@@ -632,8 +662,7 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-35f8d91 elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="35f8d91" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="683" height="229" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png" class="attachment-full size-full wp-image-2918" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png 683w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380-300x101.png 300w" sizes="(max-width: 683px) 100vw, 683px" />															</div>
+				
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-1242262 e-con-full e-flex e-con e-child" data-id="1242262" data-element_type="container">
@@ -1118,14 +1147,45 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.1" id="elementor-frontend-js"></script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.2" id="e-sticky-js"></script>
-<script src="wp-content/plugins/elementor/assets/lib/swiper/v8/js/swiper.min.js" id="swiper-js"></script>
+<script src="wp-content/plugins/elementor/lib/swiper/v8/swiper.min.js" id="swiper-js"></script>
 <script>
 	var swiper = new Swiper('.swiper', {
 		slidesPerView: 6,
 		loop: true,
 		autoplay: { delay: 3000 },
 		// Add more options as needed
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
 	});
+</script>
+<script>
+	(function waitAndInit(){
+		function initManual() {
+			if (typeof Swiper === 'undefined') return false;
+			if (document.querySelector('.manual-swiper') && !document.querySelector('.manual-swiper').__manualInited) {
+				new Swiper('.manual-swiper', {
+					slidesPerView: 1,
+					loop: true,
+					autoplay: { delay: 2000, disableOnInteraction: false },
+					pagination: { el: '.manual-swiper .swiper-pagination', clickable: true },
+					navigation: { nextEl: '.manual-swiper .swiper-button-next', prevEl: '.manual-swiper .swiper-button-prev' },
+					effect: 'slide',
+				});
+				document.querySelector('.manual-swiper').__manualInited = true;
+				return true;
+			}
+			return false;
+		}
+		if (!initManual()) {
+			var t = setInterval(function(){ if (initManual()) clearInterval(t); }, 200);
+		}
+	})();
 </script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.2" id="elementor-pro-webpack-runtime-js"></script>
 <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
