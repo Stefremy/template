@@ -513,8 +513,8 @@ Brief, públicos, KPIs e restrições. Fechamos o plano de ação: logística, T
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<div style="width:52px;height:52px;background:#fff;border-radius:11px;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 14px rgba(0,0,0,0.08);">
-<img src="PUBLIC/settings.png" width="20" height="20" alt="settings" style="display:block">
+			<div style="width:48px;height:48px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+<img src="PUBLIC/settings.png" width="18" height="18" alt="settings" style="display:block">
 </div>			</div>
 		</div>
 						</div>
