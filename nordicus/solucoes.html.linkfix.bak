@@ -366,7 +366,7 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div class="elementor-element elementor-element-48cfbd4 elementor-widget elementor-widget-image" data-id="48cfbd4" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="800" height="341" src="PUBLIC/madpixel-logo.png" class="attachment-large size-large wp-image-3292" alt="" srcset="PUBLIC/madpixel-logo.png 1024w, PUBLIC/madpixel-logo.png 300w, PUBLIC/madpixel-logo.png 768w, PUBLIC/madpixel-logo.png 1536w, PUBLIC/madpixel-logo.png 1881w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+															<img decoding="async" width="800" height="341" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5-1024x436.webp" class="attachment-large size-large wp-image-3296" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5-1024x436.webp 1024w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5-300x128.webp 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5-768x327.webp 768w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5-1536x653.webp 1536w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/5.webp 1881w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-d330a57 elementor-widget elementor-widget-button" data-id="d330a57" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -428,7 +428,7 @@ Uma experiência simples e confiável: preços claros, chave na mão, histórico
 				</div>
 				<div class="elementor-element elementor-element-85c704d elementor-widget elementor-widget-image" data-id="85c704d" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="800" height="341" src="" class="attachment-large size-large wp-image-3295" alt="" srcset="/workspaces/template/nordicus/PUBLIC/RedAutologo.png 1024w, /workspaces/template/nordicus/PUBLIC/RedAutologo.png 300w, /workspaces/template/nordicus/PUBLIC/RedAutologo.png 768w, /workspaces/template/nordicus/PUBLIC/RedAutologo.png 1536w, /workspaces/template/nordicus/PUBLIC/RedAutologo.png 1881w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+															<img loading="lazy" decoding="async" width="800" height="341" src="" class="attachment-large size-large wp-image-3295" alt="" srcset="PUBLIC/RedAutologo.png 1024w, PUBLIC/RedAutologo.png 300w, PUBLIC/RedAutologo.png 768w, PUBLIC/RedAutologo.png 1536w, PUBLIC/RedAutologo.png 1881w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-0b740ab elementor-widget elementor-widget-button" data-id="0b740ab" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -1185,7 +1185,6 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/template3.nicolaipalmkvis
 </script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.2" id="elementor-pro-frontend-js"></script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
-            <script src="wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
 
 </body>
 </html>
