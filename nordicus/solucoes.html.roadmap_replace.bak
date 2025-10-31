@@ -595,12 +595,7 @@ Brief, públicos, KPIs e restrições. Fechamos o plano de ação: logística, T
 				</div>
 				<div class="elementor-element elementor-element-a341b0c elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="a341b0c" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<div style="background:rgba(10,106,43,0.6);padding:20px 0;display:flex;justify-content:center;">
-    <video autoplay muted loop playsinline class="attachment-full size-full" style="display:block;width:100%;max-width:1152px;height:auto;border-radius:8px;overflow:hidden;">
-        <source src="PUBLIC/prontos.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>															</div>
+															<img loading="lazy" decoding="async" width="1280" height="1280" src="PUBLIC/roadmap.png" class="attachment-full size-full wp-image-2981" alt="" srcset="PUBLIC/roadmap.png 1280w, PUBLIC/roadmap.png 1024w, PUBLIC/roadmap.png 768w, PUBLIC/roadmap.png 300w" sizes="(max-width: 1280px) 100vw, 1280px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-d6a7d0f elementor-align-justify elementor-widget elementor-widget-button" data-id="d6a7d0f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
