@@ -890,7 +890,27 @@
                                         </h2>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-30ad511 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-right elementor-widget elementor-widget-divider" data-id="30ad511" data-element_type="widget" data-widget_type="divider.default">
+                                <style>
+                                /* Force showing left/right lines for this divider (scoped) */
+                                [data-id="30ad511"] .elementor-divider-separator::before,
+                                [data-id="30ad511"] .elementor-divider-separator::after {
+                                    content: "" !important;
+                                    display: inline-block !important;
+                                    vertical-align: middle !important;
+                                    width: 28% !important;
+                                    height: 2px !important; /* thicker line */
+                                    background: rgba(255,255,255,0.18) !important; /* slightly stronger */
+                                    margin: 0 10px !important; /* bring lines closer to text */
+                                }
+                                [data-id="30ad511"] .elementor-divider__text {
+                                    color: #fff !important;
+                                    white-space: nowrap !important; /* prevent breaking 'ver' */
+                                    display: inline-block !important;
+                                    margin-left: 18px !important; /* nudge text to the right */
+                                }
+                                </style>
+
+                                <div class="elementor-element elementor-element-30ad511 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="30ad511" data-element_type="widget" data-widget_type="divider.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-divider">
                                             <span class="elementor-divider-separator">
@@ -1515,21 +1535,21 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                             <div class="elementor-widget-container">
                                 <div class="elementor-social-icons-wrapper elementor-grid" role="list">
                                     <span class="elementor-grid-item" role="listitem">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-new1" target="_blank">
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-new1" href="https://www.facebook.com/" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
                                             <span class="elementor-screen-only">Facebook</span>
-                                            <img src="PUBLIC/socialmedia/facebook.png" alt="Facebook" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">
+                                            <img src="PUBLIC/socialmedia/facebook.png" alt="Facebook" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;display:block;">
                                         </a>
                                     </span>
                                     <span class="elementor-grid-item" role="listitem">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-new2" target="_blank">
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-new2" href="https://www.instagram.com/" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
                                             <span class="elementor-screen-only">Instagram</span>
-                                            <img src="PUBLIC/socialmedia/instagram.png" alt="Instagram" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">
+                                            <img src="PUBLIC/socialmedia/instagram.png" alt="Instagram" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;display:block;">
                                         </a>
                                     </span>
                                     <span class="elementor-grid-item" role="listitem">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-new3" href="https://wa.me/351928315080" target="_blank">
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-new3" href="https://wa.me/351928315080" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
                                             <span class="elementor-screen-only">WhatsApp</span>
-                                            <img src="PUBLIC/socialmedia/whatsapp.png" alt="WhatsApp" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">
+                                            <img src="PUBLIC/socialmedia/whatsapp.png" alt="WhatsApp" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;display:block;">
                                         </a>
                                     </span>
                                 </div>
@@ -1615,62 +1635,19 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="elementor-element elementor-element-bed968f e-con-full e-flex e-con e-child" data-id="bed968f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-element elementor-element-6876010 e-con-full e-flex e-con e-child" data-id="6876010" data-element_type="container">
-                        <div class="elementor-element elementor-element-6081610 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="6081610" data-element_type="widget" data-widget_type="divider.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-divider">
-                                    <span class="elementor-divider-separator">
-                                        <span class="elementor-divider__text elementor-divider__element" style="font-family: 'zwodrei', sans-serif;">Conexões que transformam</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script type="speculationrules">
-            {
-                "prefetch": [
-                    {
-                        "source": "document",
-                        "where": {
-                            "and": [
-                                {
-                                    "href_matches": "\/*"
-                                },
-                                {
-                                    "not": {
-                                        "href_matches": [
-                                            "\/wp-*.php",
-                                            "\/wp-admin\/*",
-                                            "\/wp-content\/uploads\/*",
-                                            "\/wp-content\/*",
-                                            "\/wp-content\/plugins\/*",
-                                            "\/wp-content\/themes\/hello-elementor\/*",
-                                            "\/*\\?(.+)"
-                                        ]
-                                    }
-                                },
-                                {
-                                    "not": {
-                                        "selector_matches": "a[rel~=\"nofollow\"]"
-                                    }
-                                },
-                                {
-                                    "not": {
-                                        "selector_matches": ".no-prefetch, .no-prefetch a"
-                                    }
-                                }
-                            ]
-                        },
-                        "eagerness": "conservative"
-                    }
-                ]
-            }</script>
-        
+              	<div class="elementor-element elementor-element-6876010 e-con-full e-flex e-con e-child" data-id="6876010" data-element_type="container">
+				<div class="elementor-element elementor-element-6081610 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="6081610" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						<span class="elementor-divider__text elementor-divider__element" style="font-family: 'zwodrei', sans-serif;">
+							Conexões que transformam				</span>
+						</span>
+		</div>
+				</div>
+				</div>
         <script>
             const lazyloadRunObserver = () => {
                 const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
