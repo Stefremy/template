@@ -881,7 +881,11 @@ module.exports = `<!doctype html>
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div class="elementor-element elementor-element-d8fd9e0 elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="d8fd9e0" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="683" height="229" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png" class="attachment-full size-full wp-image-2918" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png 683w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380-300x101.png 300w" sizes="(max-width: 683px) 100vw, 683px"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="elementor-element elementor-element-106d7104 e-con-full e-flex e-con e-child" data-id="106d7104" data-element_type="container">
                                 <div class="elementor-element elementor-element-53170e4 elementor-widget elementor-widget-image" data-id="53170e4" data-element_type="widget" data-widget_type="image.default">
