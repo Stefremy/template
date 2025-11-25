@@ -208,7 +208,7 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				<div class="elementor-element elementor-element-c155e1e e-con-full e-flex e-con e-parent" data-id="c155e1e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-74940f2 elementor-invisible elementor-widget elementor-widget-heading" data-id="74940f2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default e-animation-fadeInUp">About us</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default e-animation-fadeInUp">Localização</h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-cdf7fcf elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-text-editor" data-id="cdf7fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -263,10 +263,7 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 								</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-c18800b elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="c18800b" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="683" height="229" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png" class="attachment-full size-full wp-image-2918" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380.png 683w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-e1743775261380-300x101.png 300w" sizes="(max-width: 683px) 100vw, 683px" />															</div>
-				</div>
+				
 				</div>
 		<div class="elementor-element elementor-element-ac013d9 e-con-full e-flex e-con e-child" data-id="ac013d9" data-element_type="container">
 				<div class="elementor-element elementor-element-fb81732 elementor-widget elementor-widget-image" data-id="fb81732" data-element_type="widget" data-widget_type="image.default">
@@ -311,12 +308,12 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div class="elementor-element elementor-element-04998d5 elementor-widget elementor-widget-heading" data-id="04998d5" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">Contextual Design</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Inovação tecnológica</h3>				</div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-c9e2bc4 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="c9e2bc4" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>We design with the surroundings in mind – creating spaces that feel rooted in place, culture, and natural light.</p>								</div>
+									<p>Simplificar e otimizar processos de comércio eletrónico através de tecnologia avançada e estratégia..</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -345,12 +342,12 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div class="elementor-element elementor-element-91ebba0 elementor-widget elementor-widget-heading" data-id="91ebba0" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">Timeless Aesthetics</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Eficiência operacional</h3>				</div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-e10e56a elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="e10e56a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Every detail is carefully considered to ensure longevity, elegance, and a visual language that transcends trends.</p>								</div>
+									<p>Promover crescimento sustentável e experiência do cliente.</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -379,12 +376,12 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div class="elementor-element elementor-element-c25989d elementor-widget elementor-widget-heading" data-id="c25989d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">Functional Flow</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Ligação ao mercado</h3>				</div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-4d386cd elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="4d386cd" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>From layout to circulation, we prioritize clarity and ease of use – shaping environments that support daily life intuitively.</p>								</div>
+									<p>Conectar negócios às melhores práticas e parceiros do setor digital.</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -413,12 +410,12 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div class="elementor-element elementor-element-7b9a5e9 elementor-widget elementor-widget-heading" data-id="7b9a5e9" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">Collaborative Process</h3>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">Experiência do cliente</h3>				</div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-d00f0eb elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="d00f0eb" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>We work closely with clients, engineers, and builders – ensuring every decision is aligned with the shared vision.</p>								</div>
+									<p>Proporcionar suporte, formação e personalização em cada etapa.</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -436,24 +433,20 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 		<div class="elementor-element elementor-element-e144b1c e-con-full e-flex e-con e-child" data-id="e144b1c" data-element_type="container">
 				<div class="elementor-element elementor-element-cdef77c elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="cdef77c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h1 class="elementor-heading-title elementor-size-default">There are 360 degrees<br>so why stick to one?</h1>				</div>
+					<h1 class="elementor-heading-title elementor-size-default">No mundo digital, não há limites.<br>então por que se limitar a um só?</h1>				</div>
 				</div>
 				<div class="elementor-element elementor-element-a79d608 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-widget elementor-widget-heading" data-id="a79d608" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h1 class="elementor-heading-title elementor-size-default">There are 360 degrees so why stick to one?</h1>				</div>
+					<h1 class="elementor-heading-title elementor-size-default">No mundo digital, não há limites.<br>então por que se limitar a um só?</h1>				</div>
 				</div>
 				<div class="elementor-element elementor-element-40248ed elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="40248ed" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:500,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Break the mold, explore every angle, and design without boundaries.</p>								</div>
+									<p>Descubra novas possibilidades, desafie padrões e faça o seu negócio evoluir sem fronteiras</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-eb2908c elementor-align-left elementor-widget elementor-widget-button" data-id="eb2908c" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/about/">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-				<i aria-hidden="true" class=" arrow_right-up"></i>			</span>
-									<span class="elementor-button-text">About us</span>
+					
 					</span>
 					</a>
 				</div>
