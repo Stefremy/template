@@ -631,6 +631,22 @@
                     background-image: none !important;
                 }
             }
+
+            .custom-hero-video {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                z-index: -1 !important;
+                transform: scale(1.05) !important;
+                transform-origin: center !important;
+            }
+            .elementor-element-3e1f4d94 {
+                position: relative;
+                overflow: hidden;
+            }
         </style>
     </head>
     <body data-rsssl=1 class="home wp-singular page-template-default page page-id-2009 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2009">
@@ -863,9 +879,8 @@
         <main id="content" class="site-main post-2009 page type-page status-publish hentry">
             <div class="page-content">
                 <div data-elementor-type="wp-page" data-elementor-id="2009" class="elementor elementor-2009" data-elementor-post-type="page">
-                        <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;wp-content\/uploads\/2025\/04\/2video-background.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
-                        <div class="elementor-background-video-container" aria-hidden="true">
-                        <video class="elementor-background-video-hosted" autoplay muted playsinline loop src="PUBLIC/istockphoto-1442002630-640_adpp_is.mp4"></video>
+                            <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+                        <div class="elementor-background-video-container" aria-hidden="false">
                         </div>
                         <div class="elementor-element elementor-element-1805b74 e-flex e-con-boxed e-con e-child" data-id="1805b74" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;fixed&quot;}">
                             <div class="e-con-inner">
@@ -1872,5 +1887,39 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
         </script>
     <script src="wp-content/plugins/elementor-pro/assets/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
     <script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+
+        <script>
+            // Custom hero video rewind logic
+            window.addEventListener('load', function() {
+                const container = document.querySelector('.elementor-background-video-container');
+                if (!container) {
+                    console.log('Container not found');
+                    return;
+                }
+                const video = document.createElement('video');
+                video.id = 'hero-video';
+                video.className = 'elementor-background-video-hosted custom-hero-video';
+                video.src = 'PUBLIC/herovideo.mp4';
+                video.muted = true;
+                video.playsInline = true;
+                video.loop = false;
+                container.appendChild(video);
+
+                console.log('Video created and appended');
+                video.playbackRate = 1; // Normal speed initially
+
+                video.addEventListener('timeupdate', function() {
+                    const remaining = video.duration - video.currentTime;
+                    if (remaining < 3) { // Last 3 seconds
+                        video.playbackRate = Math.max(0.5, remaining / 3); // Slow down gradually, minimum 0.5
+                    } else {
+                        video.playbackRate = 1;
+                    }
+                });
+
+                // Start playing once
+                video.play();
+            });
+        </script>
     </body>
 </html>
