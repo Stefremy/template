@@ -1899,25 +1899,19 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                 const video = document.createElement('video');
                 video.id = 'hero-video';
                 video.className = 'elementor-background-video-hosted custom-hero-video';
-                video.src = 'PUBLIC/herovideo.mp4';
+                video.src = 'PUBLIC/herovideo.mp4?' + Date.now();
                 video.muted = true;
                 video.playsInline = true;
-                video.loop = false;
+                video.loop = true;
                 container.appendChild(video);
 
                 console.log('Video created and appended');
-                video.playbackRate = 1; // Normal speed initially
 
-                video.addEventListener('timeupdate', function() {
-                    const remaining = video.duration - video.currentTime;
-                    if (remaining < 3) { // Last 3 seconds
-                        video.playbackRate = Math.max(0.5, remaining / 3); // Slow down gradually, minimum 0.5
-                    } else {
-                        video.playbackRate = 1;
-                    }
+                video.addEventListener('loadedmetadata', () => {
+                    console.log('Video duration:', video.duration);
                 });
 
-                // Start playing once
+                // Start playing
                 video.play();
             });
         </script>
