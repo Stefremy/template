@@ -154,6 +154,52 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 								</div>
 				</div>
 				</div>
+				<style>
+					/* Footer social icons: force greyscale and enable hover-follow effect (scoped) */
+					.elementor-element-6e621a4 .elementor-social-icon img {
+						filter: grayscale(100%) contrast(0.95) brightness(0.98) !important;
+						-webkit-filter: grayscale(100%) contrast(0.95) brightness(0.98) !important;
+						transition: filter 180ms ease, opacity 180ms ease;
+						display: block;
+					}
+					.elementor-element-6e621a4 .elementor-social-icon {
+						background: #fff;
+						transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease;
+						will-change: transform, box-shadow;
+						cursor: pointer;
+					}
+					.elementor-element-6e621a4 .elementor-social-icon:hover {
+						transform: translateY(-4px) scale(1.06);
+					}
+					.elementor-element-6e621a4 .elementor-social-icon:hover img {
+						filter: grayscale(100%) contrast(1.06) brightness(1.12) !important;
+					}
+				</style>
+				<script>
+					// Footer icons follow mouse (scoped to this page)
+					(function(){
+						const wrapper = document.querySelector('.elementor-element-6e621a4 .elementor-social-icons-wrapper');
+						if (!wrapper) return;
+						const icons = Array.from(wrapper.querySelectorAll('.elementor-social-icon'));
+						if (!icons.length) return;
+
+						let raf = null;
+						const state = {x:0,y:0,inside:false};
+
+						function onEnter() { state.inside = true; }
+						function onLeave() { state.inside = false; icons.forEach(i=>{ i.style.transform = ''; i.style.boxShadow = ''; }); }
+						function onMove(e){ state.x = e.clientX; state.y = e.clientY; if (!raf) raf = requestAnimationFrame(update); }
+
+						function update(){ raf = null; if (!state.inside) return; icons.forEach(icon=>{ const r = icon.getBoundingClientRect(); const cx = r.left + r.width/2; const cy = r.top + r.height/2; const dx = state.x - cx; const dy = state.y - cy; const dist = Math.hypot(dx, dy); const max = 140; const strength = Math.max(0, (max - dist) / max); const move = strength * 10; const tx = (dist ? (dx / dist) * move : 0); const ty = (dist ? (dy / dist) * move : 0); const scale = 1 + 0.06 * strength; const shadowAlpha = 0.12 + 0.5 * strength; icon.style.transform = `translate(${tx.toFixed(2)}px, ${ty.toFixed(2)}px) scale(${scale.toFixed(3)})`; icon.style.boxShadow = `0 ${Math.round(6*strength)}px ${8 + Math.round(14*strength)}px rgba(0,0,0,${shadowAlpha.toFixed(2)})`; }); }
+
+						wrapper.addEventListener('mouseenter', ()=>state.inside=true);
+						wrapper.addEventListener('mouseleave', onLeave);
+						wrapper.addEventListener('mousemove', onMove);
+						wrapper.addEventListener('touchstart', (ev)=>{ if (ev.touches && ev.touches[0]){ state.x = ev.touches[0].clientX; state.y = ev.touches[0].clientY; state.inside = true; if (!raf) raf = requestAnimationFrame(update); } }, {passive:true});
+						wrapper.addEventListener('touchmove', (ev)=>{ if (ev.touches && ev.touches[0]){ state.x = ev.touches[0].clientX; state.y = ev.touches[0].clientY; if (!raf) raf = requestAnimationFrame(update); } }, {passive:true});
+						wrapper.addEventListener('touchend', onLeave);
+					})();
+				</script>
 		<div class="elementor-element elementor-element-f412144 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop e-flex e-con-boxed e-con e-parent" data-id="f412144" data-element_type="container" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;widescreen&quot;,&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-a618ca7 e-flex e-con-boxed e-con e-child" data-id="a618ca7" data-element_type="container">
