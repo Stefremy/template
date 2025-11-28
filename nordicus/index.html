@@ -26,27 +26,34 @@
                     animation: slideUpHero 1s cubic-bezier(.77,0,.175,1) 0.2s forwards;
                 }
                     /* Área de Cliente button hover color */
-                    a.elementor-button[href*="area-cliente"]:hover {
-                        background: #C4FE61 !important;
-                        color: #222 !important;
-                        border-radius: 100px;
-                        transition: background 0.2s, color 0.2s;
+                                    .hero-glass-canvas {
+                                        position: absolute;
+                                        inset: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 52; /* above ::before and video, below heading */
+                                        border-radius: inherit;
+                                        pointer-events: none;
+                                        /* gentler filter + less blur to reduce darkened edges */
+                                        filter: url(#hero-glass-distort) saturate(1.03) blur(0.2px);
+                                        /* use 'lighten' so the canvas brightens the glass instead of darkening it */
+                                        mix-blend-mode: lighten;
+                                        /* lower opacity so the distortion is more subtle */
+                                        opacity: 0.6;
+                                        transform-origin: center;
+                                        display: block;
+                                        }
+            </style>
+            <script>
+                window._wpemojiSettings = {
+                    "ext": ".png",
+                    "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+                    "svgExt": ".svg",
+                    "source": {
+                        "concatemoji": "https:\/\/template3.nicolaipalmkvist.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
                     }
-        </style>
-        <link rel="alternate" type="application/rss+xml" title="LINKE, Soluções para Ecommerce &raquo; Feed" href="https://www.linke.pt/feed/"/>
-        <link rel="alternate" type="application/rss+xml" title="LINKE, Soluções para Ecommerce &raquo; Comments Feed" href="https://www.linke.pt/comments/feed/"/>
-    <link rel="stylesheet" href="wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css" media="all"/>
-        <script>
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/template3.nicolaipalmkvist.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
-                }
-            };
-            /*! This file is auto-generated */
+                };
+                /*! This file is auto-generated */
             !function(s, n) {
                 var o, i, e;
                 function c(e) {
@@ -653,6 +660,15 @@
         </style>
     </head>
     <body data-rsssl=1 class="home wp-singular page-template-default page page-id-2009 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2009">
+        <!-- SVG filter for subtle water/magnify distortion used by .hero-glass ::before -->
+        <svg width="0" height="0" style="position:absolute; left:-9999px;" aria-hidden="true" focusable="false">
+            <defs>
+                <filter id="hero-glass-distort">
+                    <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="1" seed="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+                </filter>
+            </defs>
+        </svg>
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
         <div data-elementor-type="header" data-elementor-id="23" class="elementor elementor-23 elementor-location-header" data-elementor-post-type="elementor_library">
             <div class="elementor-element elementor-element-ab04b18 e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="ab04b18" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -859,6 +875,10 @@
                                  z-index: 1;
                                  padding: 6px 14px; /* tighter padding */
                                  display: inline-block;
+                                 /* improve readability on varied backgrounds */
+                                 color: #fff; /* ensure visible */
+                                 text-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 3px 8px rgba(0,0,0,0.48);
+                                 -webkit-text-stroke: 0.22px rgba(0,0,0,0.24);
                                 }
 
                                 /* on hover/active keep the same pill look but slightly stronger */
@@ -866,6 +886,13 @@
                                 nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home > a.elementor-item.elementor-item-active::before {
                                     transform: translate(-50%, -50%) scale(1.02);
                                     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                }
+
+                                /* stronger shadow on hover/active link text for accent */
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a:hover,
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a.elementor-item.elementor-item-active {
+                                    text-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 4px 12px rgba(0,0,0,0.72);
+                                    -webkit-text-stroke: 0.26px rgba(0,0,0,0.32);
                                 }
 
                                 .elementor-menu-toggle {
@@ -903,9 +930,12 @@
                             <div class="e-con-inner">
                                 <div class="elementor-element elementor-element-4c02fa8 elementor-widget elementor-widget-heading" data-id="4c02fa8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default slide-up-hero" style="opacity:0; transform:translateY(40px); animation:slideUpHero 1s cubic-bezier(.77,0,.175,1) 0.2s forwards;">
-                                            Pronto para transformar o seu negócio?<br>Como seus sonhos.
-                                        </h2>
+                                        <div class="hero-glass" aria-hidden="false">
+                                            <canvas class="hero-glass-canvas" aria-hidden="true"></canvas>
+                                            <h2 class="elementor-heading-title elementor-size-default slide-up-hero" style="opacity:0; transform:translateY(40px); animation:slideUpHero 1s cubic-bezier(.77,0,.175,1) 0.2s forwards;">
+                                                Pronto para transformar o seu negócio?<br>Como seus sonhos.
+                                            </h2>
+                                        </div>
                                     </div>
                                 </div>
                                 <style>
@@ -925,6 +955,86 @@
                                     white-space: nowrap !important; /* prevent breaking 'ver' */
                                     display: inline-block !important;
                                     margin-left: 18px !important; /* nudge text to the right */
+                                }
+
+                                /* Frosted glass overlay for hero heading */
+                                .hero-glass {
+                                    display: inline-block;
+                                    position: relative;
+                                    z-index: 50; /* place glass and its distortion above the video (video z-index is 1) */
+                                    padding: 18px 26px;
+                                    border-radius: 14px;
+                                    /* slightly lighter bluish glass to avoid very dark edges */
+                                    background: linear-gradient(180deg, rgba(3,12,40,0.60), rgba(6,20,44,0.36));
+                                    -webkit-backdrop-filter: blur(16px) saturate(1.12);
+                                    backdrop-filter: blur(16px) saturate(1.12);
+                                    border: 1px solid rgba(255,255,255,0.06);
+                                    /* soften outer shadow to reduce perceived edge darkness */
+                                    box-shadow: 0 10px 28px rgba(2,8,30,0.48);
+                                    color: #fff;
+                                    max-width: 92%;
+                                    line-height: 1.06;
+                                    overflow: hidden;
+                                }
+
+                                /* Distortion / magnify layer: shows a clipped, slightly scaled copy of the initial frame
+                                   and applies a gentle SVG displacement to simulate water glass or magnifying effect. */
+                                .hero-glass::before {
+                                    content: "";
+                                    position: absolute;
+                                    inset: 0;
+                                    z-index: 0;
+                                    pointer-events: none;
+                                    border-radius: inherit;
+                                    /* use the same initial frame image as background so it lines up visually */
+                                    background: linear-gradient(180deg, rgba(6,24,56,0.28), rgba(6,20,40,0.18)), url("PUBLIC/initial framenb.png") center/ calc(120% + 8px) no-repeat;
+                                    background-blend-mode: overlay;
+                                    transform: scale(1.03); /* subtle magnify */
+                                    filter: url(#hero-glass-distort) saturate(1.05) blur(1.0px);
+                                    opacity: 0.40; /* balanced distortion visibility */
+                                    mix-blend-mode: screen;
+                                }
+
+                                /* subtle inner highlight to lift the edges (prevents them feeling too dark) */
+                                .hero-glass::after {
+                                    content: "";
+                                    position: absolute;
+                                    inset: 0;
+                                    z-index: 53; /* above canvas but below heading */
+                                    pointer-events: none;
+                                    border-radius: inherit;
+                                    background: radial-gradient(60% 60% at 50% 40%, rgba(255,255,255,0.02), rgba(255,255,255,0) 45%);
+                                    mix-blend-mode: screen;
+                                    opacity: 0.9;
+                                }
+
+                                /* Ensure heading text sits above the pseudo-element */
+                                .hero-glass .elementor-heading-title {
+                                    position: relative;
+                                    z-index: 2;
+                                    margin: 0;
+                                    padding: 0;
+                                    color: #fff !important;
+                                    font-weight: 800;
+                                    /* stronger, accentuated shadows + subtle stroke for better contrast */
+                                    text-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 2px 6px rgba(0,0,0,0.36), 0 10px 36px rgba(0,0,0,0.72);
+                                    -webkit-text-stroke: 0.35px rgba(0,0,0,0.28);
+                                }
+
+                                @media (max-width: 768px) {
+                                    .hero-glass {
+                                        padding: 12px 16px;
+                                        border-radius: 10px;
+                                        -webkit-backdrop-filter: blur(14px) saturate(1.05);
+                                        backdrop-filter: blur(14px) saturate(1.05);
+                                        background: linear-gradient(180deg, rgba(2,10,36,0.88), rgba(6,20,44,0.60));
+                                    }
+                                    .hero-glass .elementor-heading-title {
+                                        font-size: 1.2rem;
+                                        text-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 2px 5px rgba(0,0,0,0.38), 0 8px 28px rgba(0,0,0,0.70);
+                                        -webkit-text-stroke: 0.3px rgba(0,0,0,0.26);
+                                    }
+                                    .hero-glass::before { opacity: 0.46; transform: scale(1.02); }
                                 }
                                 </style>
 
@@ -1952,6 +2062,123 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                     console.warn('Video failed to load');
                 });
             });
+        </script>
+        <script>
+            // Animate the SVG feTurbulence and feDisplacementMap for subtle water movement
+            (function() {
+                const turb = document.querySelector('#hero-glass-distort feTurbulence');
+                const disp = document.querySelector('#hero-glass-distort feDisplacementMap');
+                if (!turb) return;
+
+                let start = performance.now();
+                function frame(ts) {
+                    const t = (ts - start) / 1000;
+                    // baseFrequency oscillates gently between ~0.014 and ~0.026
+                    const base = 0.02 + Math.sin(t * 0.9) * 0.006;
+                    turb.setAttribute('baseFrequency', base.toFixed(4));
+                    // gently vary displacement strength between 3 and 8
+                    if (disp) {
+                        const scale = 5 + Math.sin(t * 1.1) * 2;
+                        disp.setAttribute('scale', (scale).toFixed(2));
+                    }
+                    requestAnimationFrame(frame);
+                }
+                requestAnimationFrame(frame);
+            })();
+        </script>
+        <script>
+            // Draw live video frames into the canvas inside .hero-glass so the distortion reacts to the playing video
+            (function() {
+                const waitFor = (selector, cb) => {
+                    const el = document.querySelector(selector);
+                    if (el) return cb(el);
+                    const obs = new MutationObserver(() => {
+                        const found = document.querySelector(selector);
+                        if (found) {
+                            obs.disconnect();
+                            cb(found);
+                        }
+                    });
+                    obs.observe(document.documentElement, {childList:true, subtree:true});
+                };
+
+                waitFor('.hero-glass-canvas', (canvas) => {
+                    const ctx = canvas.getContext('2d');
+                    const heroGlass = canvas.closest('.hero-glass');
+                    const heroBlock = document.querySelector('.elementor-element-3e1f4d94');
+
+                    function resize() {
+                        const rect = canvas.getBoundingClientRect();
+                        const ratio = window.devicePixelRatio || 1;
+                        canvas.width = Math.max(1, Math.round(rect.width * ratio));
+                        canvas.height = Math.max(1, Math.round(rect.height * ratio));
+                        canvas.style.width = rect.width + 'px';
+                        canvas.style.height = rect.height + 'px';
+                        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+                    }
+
+                    let video = null;
+                    function findVideo() {
+                        video = document.getElementById('hero-video');
+                        return !!video;
+                    }
+
+                    function drawLoop() {
+                        if (!video || video.readyState < 2) {
+                            requestAnimationFrame(drawLoop);
+                            return;
+                        }
+
+                        // draw center-cropped video into canvas and slightly scale for magnify effect
+                        const dw = canvas.width / (window.devicePixelRatio || 1);
+                        const dh = canvas.height / (window.devicePixelRatio || 1);
+                        const vw = video.videoWidth || video.clientWidth;
+                        const vh = video.videoHeight || video.clientHeight;
+                        if (vw && vh) {
+                            // compute centered source rectangle to cover canvas aspect
+                            const srcRatio = vw / vh;
+                            const dstRatio = dw / dh;
+                            let sx = 0, sy = 0, sw = vw, sh = vh;
+                            if (srcRatio > dstRatio) {
+                                sw = Math.round(vh * dstRatio);
+                                sx = Math.round((vw - sw) / 2);
+                            } else {
+                                sh = Math.round(vw / dstRatio);
+                                sy = Math.round((vh - sh) / 2);
+                            }
+
+                            const scale = 1.03; // subtle magnify
+                            const dx = (dw - dw * scale) / 2;
+                            const dy = (dh - dh * scale) / 2;
+
+                            ctx.clearRect(0,0,canvas.width,canvas.height);
+                            ctx.save();
+                            ctx.drawImage(video, sx, sy, sw, sh, dx, dy, dw * scale, dh * scale);
+                            ctx.restore();
+                        }
+
+                        requestAnimationFrame(drawLoop);
+                    }
+
+                    // start when video exists and metadata loaded
+                    function startIfReady() {
+                        if (!findVideo()) {
+                            // try again later
+                            setTimeout(startIfReady, 250);
+                            return;
+                        }
+                        resize();
+                        window.addEventListener('resize', resize);
+                        if (video.readyState >= 2) {
+                            requestAnimationFrame(drawLoop);
+                        } else {
+                            video.addEventListener('loadedmetadata', () => requestAnimationFrame(drawLoop), {once:true});
+                        }
+                    }
+
+                    startIfReady();
+                });
+            })();
         </script>
     </body>
 </html>
