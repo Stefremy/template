@@ -639,13 +639,16 @@
                 width: 100% !important;
                 height: 100% !important;
                 object-fit: cover !important;
-                z-index: -1 !important;
+                z-index: 1 !important;
                 transform: scale(1.05) !important;
                 transform-origin: center !important;
             }
             .elementor-element-3e1f4d94 {
                 position: relative;
                 overflow: hidden;
+                /* initial frame image that fills the hero area until the video is ready */
+                background: url("PUBLIC/initial framenb.png") center/ calc(120% + 8px) no-repeat !important;
+                background-size: calc(120% + 8px) !important;
             }
         </style>
     </head>
@@ -1907,13 +1910,15 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
     <script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
 
         <script>
-            // Custom hero video rewind logic
+            // Custom hero video: fade in above the initial frame when ready
             window.addEventListener('load', function() {
                 const container = document.querySelector('.elementor-background-video-container');
-                if (!container) {
+                const heroBlock = document.querySelector('.elementor-element-3e1f4d94');
+                if (!container || !heroBlock) {
                     console.log('Container not found');
                     return;
                 }
+
                 const video = document.createElement('video');
                 video.id = 'hero-video';
                 video.className = 'elementor-background-video-hosted custom-hero-video';
@@ -1921,16 +1926,31 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                 video.muted = true;
                 video.playsInline = true;
                 video.loop = true;
-                container.appendChild(video);
+                // start hidden; will fade in when ready
+                video.style.opacity = '0';
+                video.style.transition = 'opacity 360ms ease';
 
+                container.appendChild(video);
                 console.log('Video created and appended');
 
+                const showVideo = () => {
+                    try { video.play().catch(()=>{}); } catch(e) {}
+                    requestAnimationFrame(() => {
+                        video.style.opacity = '1';
+                        // optionally remove the background image after a short delay
+                        setTimeout(() => {
+                            heroBlock.style.backgroundImage = 'none';
+                        }, 420);
+                    });
+                };
+
+                video.addEventListener('canplay', showVideo, {once: true});
                 video.addEventListener('loadedmetadata', () => {
                     console.log('Video duration:', video.duration);
                 });
-
-                // Start playing
-                video.play();
+                video.addEventListener('error', () => {
+                    console.warn('Video failed to load');
+                });
             });
         </script>
     </body>
