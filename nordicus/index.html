@@ -1641,7 +1641,7 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                     <div class="elementor-element elementor-element-925ae0f e-con-full e-flex e-con e-child" data-id="925ae0f" data-element_type="container">
                         <div class="elementor-element elementor-element-3bb9854 elementor-widget elementor-widget-image" data-id="3bb9854" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="792" height="88" src="PUBLIC/linkelogo.png" class="attachment-large size-large wp-image-1780" alt="LINKE logo" srcset="PUBLIC/linkelogo.png 792w" sizes="(max-width: 792px) 100vw, 792px"/>
+                                <img width="792" height="88" src="PUBLIC/linkelogo.png" class="attachment-large size-large wp-image-1780 footer-logo" alt="LINKE logo" srcset="PUBLIC/linkelogo.png 792w" sizes="(max-width: 792px) 100vw, 792px"/>
                                 <p class="footer-tagline" style="color:#FFFFFF;margin-top:12px;font-size:18px;max-width:420px;line-height:1.3;">
                                     Transformamos conexões em <br>oportunidades para o seu e-commerce.
                                 </p>
@@ -1654,7 +1654,7 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                     <li class="elementor-icon-list-item">
                                         <a href="tel:+351928315080">
                                             <span class="elementor-icon-list-icon footer-phone-icon">
-                                                <img src="PUBLIC/socialmedia/smartphone copy.png" alt="Telefone" style="width: 28px; height: 28px;">
+                                                <img src="PUBLIC/socialmedia/smartphone copy.png" alt="Telefone" style="width: 32px; height: 32px; display:block; object-fit:contain;">
                                             </span>
                                         </a>
                                     </li>
@@ -1666,7 +1666,7 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                     <li class="elementor-icon-list-item">
                                         <a href="mailto:geral@linke.pt">
                                             <span class="elementor-icon-list-icon footer-email-icon">
-                                                <img src="PUBLIC/socialmedia/email copy.png" alt="Email" style="width: 28px; height: 28px;">
+                                                <img src="PUBLIC/socialmedia/email copy.png" alt="Email" style="width: 32px; height: 32px; display:block; object-fit:contain;">
                                             </span>
                                         </a>
                                     </li>
@@ -1809,6 +1809,58 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                 .elementor-element-6e621a4 .elementor-social-icon:hover img {
                                     filter: grayscale(100%) contrast(1.06) brightness(1.12) !important;
                                 }
+                                /* phone/email icons: match social icon sizing and hover */
+                                .footer-phone-icon, .footer-email-icon {
+                                    display:inline-flex;
+                                    align-items:center;
+                                    justify-content:center;
+                                    width:44px;
+                                    height:44px;
+                                    border-radius:50%;
+                                    background:#fff;
+                                    overflow:hidden;
+                                    padding:6px;
+                                    box-sizing:border-box;
+                                    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease;
+                                    will-change: transform, box-shadow;
+                                    cursor: pointer;
+                                }
+                                .footer-phone-icon img, .footer-email-icon img {
+                                    width:32px; height:32px; display:block; object-fit:contain;
+                                    filter: grayscale(100%) contrast(0.95) brightness(0.98) !important;
+                                }
+                                .footer-phone-icon:hover img, .footer-email-icon:hover img {
+                                    filter: grayscale(100%) contrast(1.06) brightness(1.12) !important;
+                                }
+                                .footer-phone-icon:hover, .footer-email-icon:hover {
+                                    transform: translateY(-4px) scale(1.06);
+                                }
+                                /* tint icons and footer logo to navbar-green on hover */
+                                .elementor-element-6e621a4 .elementor-social-icon img,
+                                .footer-phone-icon img,
+                                .footer-email-icon img {
+                                    transition: filter 220ms ease;
+                                }
+                                .elementor-element-6e621a4 .elementor-social-icon:hover img,
+                                .footer-phone-icon:hover img,
+                                .footer-email-icon:hover img,
+                                .elementor-element-7420d3b .elementor-icon-list-item a:hover img {
+                                    filter: grayscale(1) sepia(1) saturate(7) hue-rotate(80deg) brightness(1.02) contrast(1.02) !important;
+                                }
+                                /* footer logo tinting */
+                                .footer-logo {
+                                    transition: filter 220ms ease, transform 220ms ease;
+                                    will-change: filter, transform;
+                                    display: inline-block;
+                                }
+                                /* approximate navbar green tint using filters */
+                                .footer-logo.tint-green {
+                                    filter: grayscale(1) sepia(1) saturate(7) hue-rotate(80deg) brightness(1.02) contrast(1.02);
+                                }
+                                /* contact text turns green on hover of link */
+                                .elementor-element-7420d3b .elementor-icon-list-item a:hover .elementor-icon-list-text {
+                                    color: #C4FE61 !important;
+                                }
                             </style>
                             <script>
                                 // Footer icons follow mouse: subtle parallax/hover effect
@@ -1866,6 +1918,24 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                     wrapper.addEventListener('touchstart', (ev)=>{ if (ev.touches && ev.touches[0]){ state.x = ev.touches[0].clientX; state.y = ev.touches[0].clientY; state.inside = true; if (!raf) raf = requestAnimationFrame(update); } }, {passive:true});
                                     wrapper.addEventListener('touchmove', (ev)=>{ if (ev.touches && ev.touches[0]){ state.x = ev.touches[0].clientX; state.y = ev.touches[0].clientY; if (!raf) raf = requestAnimationFrame(update); } }, {passive:true});
                                     wrapper.addEventListener('touchend', ()=>{ onLeave(); });
+                                })();
+                            </script>
+                            <script>
+                                // Tint footer logo to navbar green when hovering footer icons/contacts
+                                (function(){
+                                    const logo = document.querySelector('.footer-logo');
+                                    if (!logo) return;
+                                    const selector = '.elementor-element-6e621a4 .elementor-social-icon, .footer-phone-icon, .footer-email-icon, .elementor-element-7420d3b .elementor-icon-list-item a';
+                                    const targets = Array.from(document.querySelectorAll(selector));
+                                    if (!targets.length) return;
+                                    function add(){ logo.classList.add('tint-green'); }
+                                    function rem(){ logo.classList.remove('tint-green'); }
+                                    targets.forEach(t => {
+                                        t.addEventListener('mouseenter', add);
+                                        t.addEventListener('mouseleave', rem);
+                                        t.addEventListener('touchstart', add, {passive:true});
+                                        t.addEventListener('touchend', rem, {passive:true});
+                                    });
                                 })();
                             </script>
                         </div>
