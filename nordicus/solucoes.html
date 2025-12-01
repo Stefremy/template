@@ -1207,5 +1207,42 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/template3.nicolaipalmkvis
 <script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
             <script src="wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
 
-</body>
+	<!-- Banner (show when footer entered) -->
+	<style>
+	.site-bottom-banner{background:#ffffff;color:#000000;text-align:center;padding:0 12px;font-size:14px;border-top:1px solid #e6e6e6;width:100%;position:fixed;left:0;right:0;bottom:0;height:36px;line-height:36px;box-sizing:border-box;z-index:9999;transform:translateY(100%);opacity:0;transition:transform .28s ease,opacity .28s ease}
+	.site-bottom-banner.show{transform:translateY(0);opacity:1}
+	.site-bottom-banner a{color:#000000;text-decoration:none;margin:0 8px}
+	body.banner-visible{padding-bottom:36px !important}
+	.elementor-element-6081610{--divider-element-spacing:8px !important}
+	.elementor-element-6081610 .elementor-divider{padding-block-start:6px !important;padding-block-end:6px !important}
+	.elementor-element-6876010{--gap:8px 8px !important}
+	.footer-tagline{margin-top:4px !important;margin-bottom:0 !important}
+	</style>
+
+        <div class="site-bottom-banner" role="contentinfo" aria-hidden="true">
+        	<p style="margin:0">©2025. GO LINKE UNIPESSOAL LIMITADA | <a href="./avisos-legais.html">Avisos Legais</a> | <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a></p>
+    	</div>
+
+	<script>
+	(function(){
+		const banner = document.querySelector('.site-bottom-banner'); if(!banner) return;
+		const body = document.body;
+		const target = document.querySelector('.elementor-element-6876010');
+		if(!target){
+			const onScroll = () => {
+				if((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 120)){
+					banner.classList.add('show'); body.classList.add('banner-visible'); banner.setAttribute('aria-hidden','false');
+				} else { banner.classList.remove('show'); body.classList.remove('banner-visible'); banner.setAttribute('aria-hidden','true'); }
+			};
+			window.addEventListener('scroll', onScroll, {passive:true}); onScroll(); return;
+		}
+		const obs = new IntersectionObserver(entries=>{ entries.forEach(entry=>{
+			if(entry.isIntersecting){ banner.classList.add('show'); body.classList.add('banner-visible'); banner.setAttribute('aria-hidden','false'); }
+			else { banner.classList.remove('show'); body.classList.remove('banner-visible'); banner.setAttribute('aria-hidden','true'); }
+		}) }, { threshold: 0.12 });
+		obs.observe(target);
+	})();
+	</script>
+
+	</body>
 </html>
