@@ -1896,6 +1896,46 @@ module.exports = `<!doctype html>
         </script>
         <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.2" id="elementor-pro-frontend-js"></script>
         <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
+        <!-- Botpress Webchat inject -->
+        <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/02/25/17/20250225174247-YDOR8OY4.js" defer></script>
+        <script>
+        // Small webchat tweak: scale widget down while keeping it interactive
+        (function(){
+            const SCALE = 0.82; // tweak this to make it smaller/larger
+            const applyScale = () => {
+                const iframes = Array.from(document.querySelectorAll('iframe'));
+                let applied = false;
+                iframes.forEach(f => {
+                    try{
+                        const src = f.getAttribute('src') || '';
+                        if(src.includes('botpress') || src.includes('bpcontent') || src.includes('webchat')){
+                            const w = f.offsetWidth || f.clientWidth || 360;
+                            const h = f.offsetHeight || f.clientHeight || 640;
+                            f.style.transform = 'scale(' + SCALE + ')';
+                            f.style.transformOrigin = 'bottom right';
+                            f.style.width = Math.round(w / SCALE) + 'px';
+                            f.style.height = Math.round(h / SCALE) + 'px';
+                            f.style.pointerEvents = 'auto';
+                            applied = true;
+                        }
+                    }catch(e){}
+                });
+                const selectors = ['.bpw-widget', '.botpress-webchat', '.bpw-webchat', '[id^="bp-"]'];
+                selectors.forEach(sel => {
+                    document.querySelectorAll(sel).forEach(node => {
+                        node.style.transform = 'scale(' + SCALE + ')';
+                        node.style.transformOrigin = 'bottom right';
+                        node.style.pointerEvents = 'auto';
+                        applied = true;
+                    });
+                });
+                if(!applied) setTimeout(applyScale, 400);
+            };
+            window.addEventListener('load', () => { setTimeout(applyScale, 300); });
+            setTimeout(applyScale, 900);
+        })();
+        </script>
     </body>
 </html>
 `;
