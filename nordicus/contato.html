@@ -45,6 +45,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 <link rel='stylesheet' id='hello-elementor-css' href='./wp-content/themes/hello-elementor/assets/css/reset.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./wp-content/themes/hello-elementor/assets/css/theme.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./wp-content/themes/hello-elementor/assets/css/header-footer.css' media='all' />
@@ -732,7 +734,8 @@ body {
 				</div>
 				<div class="elementor-element elementor-element-a14c2df elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="a14c2df" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="1024" height="1024" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271.png" class="attachment-full size-full wp-image-2981" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271.png 1024w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-300x300.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-150x150.png 150w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+															<div id="vanta-net-image" style="width: 100%; height: 100%; min-height: 300px; position: relative; border-radius: 20px; padding-bottom: 20px;"></div>
+															</div>
 				</div>
 				<div class="elementor-element elementor-element-ce42b46 elementor-align-justify elementor-widget elementor-widget-button" data-id="ce42b46" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -1045,6 +1048,43 @@ body {
 							child.style.position = 'relative';
 							child.style.zIndex = '1';
 						}
+					});
+				});
+			</script>
+			<script>
+				// Initialize Vanta NET animation for image replacement
+				document.addEventListener('DOMContentLoaded', function() {
+					const netElement = document.getElementById('vanta-net-image');
+					if (!netElement || window.VANTA === undefined || window.VANTA.NET === undefined) return;
+					
+					// Get parent container's computed background color
+					const parentContainer = netElement.closest('.elementor-widget-container');
+					const computedStyle = window.getComputedStyle(parentContainer);
+					const bgColor = computedStyle.backgroundColor || '#FCFCFC';
+					
+					// Add smooth blend effect with blur on edges
+					netElement.style.maskImage = 'radial-gradient(ellipse 90% 90% at center, black 0%, black 50%, rgba(0,0,0,0.3) 80%, transparent 100%)';
+					netElement.style.webkitMaskImage = 'radial-gradient(ellipse 90% 90% at center, black 0%, black 50%, rgba(0,0,0,0.3) 80%, transparent 100%)';
+					netElement.style.filter = 'blur(0px)';
+					netElement.style.backdropFilter = 'blur(0px)';
+					
+					// Apply box-shadow for edge blending
+					netElement.style.boxShadow = 'inset 0 0 60px rgba(252,252,252,0.8)';
+					
+					VANTA.NET({
+						el: netElement,
+						mouseControls: true,
+						touchControls: true,
+						gyroControls: false,
+						minHeight: 200.00,
+						minWidth: 200.00,
+						scale: 1.00,
+						scaleMobile: 1.00,
+						color: 0x6bf26b,
+						backgroundColor: 0xFCFCFC,
+						points: 6.00,
+						maxDistance: 25.00,
+						spacing: 17.00
 					});
 				});
 			</script>
