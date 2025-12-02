@@ -43,6 +43,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 <link rel='stylesheet' id='hello-elementor-css' href='./wp-content/themes/hello-elementor/assets/css/reset.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./wp-content/themes/hello-elementor/assets/css/theme.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./wp-content/themes/hello-elementor/assets/css/header-footer.css' media='all' />
@@ -963,7 +965,7 @@ body {
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 		
-					<script>
+			<script>
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -1000,6 +1002,52 @@ body {
 					function add(){ logo.classList.add('tint-green'); }
 					function rem(){ logo.classList.remove('tint-green'); }
 					targets.forEach(t => { t.addEventListener('mouseenter', add); t.addEventListener('mouseleave', rem); t.addEventListener('touchstart', add, {passive:true}); t.addEventListener('touchend', rem, {passive:true}); });
+				})();
+			</script>
+
+			<script>
+				// Initialize Vanta Globe animation on Contato hero section
+				document.addEventListener('DOMContentLoaded', function() {
+					const heroElement = document.querySelector('.elementor-element-5c2eb76');
+					if (!heroElement || window.VANTA === undefined || window.VANTA.GLOBE === undefined) return;
+					
+					// Create canvas wrapper
+					const canvasWrapper = document.createElement('div');
+					canvasWrapper.style.position = 'absolute';
+					canvasWrapper.style.top = '0';
+					canvasWrapper.style.left = '0';
+					canvasWrapper.style.width = '100%';
+					canvasWrapper.style.height = '100%';
+					canvasWrapper.style.borderRadius = 'inherit';
+					canvasWrapper.style.zIndex = '0';
+					heroElement.style.position = 'relative';
+					heroElement.insertBefore(canvasWrapper, heroElement.firstChild);
+					
+					// Initialize Vanta Globe
+					VANTA.GLOBE({
+						el: canvasWrapper,
+						mouseControls: true,
+						touchControls: true,
+						gyroControls: false,
+						minHeight: 200.00,
+						minWidth: 200.00,
+						scale: 1.00,
+						scaleMobile: 1.00,
+						color: 0x3fff60,
+						color2: 0x36896a,
+						backgroundColor: 0x8fb693,
+						size: 1.60
+					});
+					
+					// Ensure all child content is above the animation
+					Array.from(heroElement.children).forEach(child => {
+						if (child !== canvasWrapper && child.style.position !== 'absolute') {
+							child.style.position = 'relative';
+							child.style.zIndex = '1';
+						}
+					});
+				});
+			</script>.forEach(t => { t.addEventListener('mouseenter', add); t.addEventListener('mouseleave', rem); t.addEventListener('touchstart', add, {passive:true}); t.addEventListener('touchend', rem, {passive:true}); });
 				})();
 			</script>
 			<script src="https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
