@@ -11,8 +11,8 @@ module.exports = `<!doctype html>
                 contain-intrinsic-size: 3000px 1500px
             }
         </style>
-        <link rel="alternate" type="application/rss+xml" title="Nordicus Architects &raquo; Feed" href="https://template3.nicolaipalmkvist.com/feed/"/>
-        <link rel="alternate" type="application/rss+xml" title="Nordicus Architects &raquo; Comments Feed" href="https://template3.nicolaipalmkvist.com/comments/feed/"/>
+        <link rel="alternate" type="application/rss+xml" title="Nordicus Architects &raquo; Feed" href="/feed/"/>
+        <link rel="alternate" type="application/rss+xml" title="Nordicus Architects &raquo; Comments Feed" href="/comments/feed/"/>
         <script>
             window._wpemojiSettings = {
                 "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
@@ -565,40 +565,40 @@ module.exports = `<!doctype html>
                 line-height: 1.6;
             }
         </style>
-        <link rel='stylesheet' id='hello-elementor-css' href='https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all'/>
-        <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all'/>
-        <link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all'/>
-        <link rel='stylesheet' id='elementor-frontend-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1759300127' media='all'/>
-        <link rel='stylesheet' id='elementor-post-6-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-6.css?ver=1759300127' media='all'/>
-        <link rel='stylesheet' id='widget-image-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='widget-nav-menu-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css?ver=1759300127' media='all'/>
-        <link rel='stylesheet' id='e-sticky-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.28.2' media='all'/>
-        <link rel='stylesheet' id='widget-icon-list-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1759300127' media='all'/>
-        <link rel='stylesheet' id='widget-social-icons-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='e-apple-webkit-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1759300127' media='all'/>
-        <link rel='stylesheet' id='widget-heading-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='widget-divider-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='e-animation-grow-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='e-popup-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.28.2' media='all'/>
-        <link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.32.1' media='all'/>
-        <link rel='stylesheet' id='elementor-post-2009-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-2009.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-23-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-23.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-577-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-577.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-post-3273-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/css/post-3273.css?ver=1759300128' media='all'/>
-        <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1743668698' media='all'/>
-        <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='https://template3.nicolaipalmkvist.com/wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css?ver=1743752872' media='all'/>
-        <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css?ver=1.1.0' media='all'/>
-        <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='https://template3.nicolaipalmkvist.com/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css?ver=1.1.0' media='all'/>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-        <link rel="https://api.w.org/" href="https://template3.nicolaipalmkvist.com/wp-json/"/>
-        <link rel="alternate" title="JSON" type="application/json" href="https://template3.nicolaipalmkvist.com/wp-json/wp/v2/pages/2009"/>
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://template3.nicolaipalmkvist.com/xmlrpc.php?rsd"/>
+        <link rel='stylesheet' id='hello-elementor-css' href='/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all'/>
+        <link rel='stylesheet' id='hello-elementor-theme-style-css' href='/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all'/>
+        <link rel='stylesheet' id='hello-elementor-header-footer-css' href='/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all'/>
+        <link rel='stylesheet' id='elementor-frontend-css' href='/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1759300127' media='all'/>
+        <link rel='stylesheet' id='elementor-post-6-css' href='/wp-content/uploads/elementor/css/post-6.css?ver=1759300127' media='all'/>
+        <link rel='stylesheet' id='widget-image-css' href='/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='widget-nav-menu-css' href='/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css?ver=1759300127' media='all'/>
+        <link rel='stylesheet' id='e-sticky-css' href='/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.28.2' media='all'/>
+        <link rel='stylesheet' id='widget-icon-list-css' href='/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1759300127' media='all'/>
+        <link rel='stylesheet' id='widget-social-icons-css' href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='e-apple-webkit-css' href='/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1759300127' media='all'/>
+        <link rel='stylesheet' id='widget-heading-css' href='/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='widget-divider-css' href='/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='e-animation-grow-css' href='/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='e-popup-css' href='/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.28.2' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeInUp-css' href='/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.32.1' media='all'/>
+        <link rel='stylesheet' id='elementor-post-2009-css' href='/wp-content/uploads/elementor/css/post-2009.css?ver=1759300128' media='all'/>
+        <link rel='stylesheet' id='elementor-post-23-css' href='/wp-content/uploads/elementor/css/post-23.css?ver=1759300128' media='all'/>
+        <link rel='stylesheet' id='elementor-post-577-css' href='/wp-content/uploads/elementor/css/post-577.css?ver=1759300128' media='all'/>
+        <link rel='stylesheet' id='elementor-post-3273-css' href='/wp-content/uploads/elementor/css/post-3273.css?ver=1759300128' media='all'/>
+        <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1743668698' media='all'/>
+        <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='/wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css?ver=1743752872' media='all'/>
+        <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css?ver=1.1.0' media='all'/>
+        <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='/wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css?ver=1.1.0' media='all'/>
+        <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+        <link rel="https://api.w.org/" href="/wp-json/"/>
+        <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/2009"/>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd"/>
         <meta name="generator" content="WordPress 6.8.3"/>
-        <link rel="canonical" href="https://template3.nicolaipalmkvist.com/"/>
-        <link rel='shortlink' href='https://template3.nicolaipalmkvist.com/'/>
-        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://template3.nicolaipalmkvist.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate3.nicolaipalmkvist.com%2F"/>
-        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://template3.nicolaipalmkvist.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate3.nicolaipalmkvist.com%2F&#038;format=xml"/>
+        <link rel="canonical" href="/"/>
+        <link rel='shortlink' href='/'/>
+        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=/"/>
+        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=/&#038;format=xml"/>
         <meta name="generator" content="Elementor 3.32.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
         <style>
             .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -624,7 +624,7 @@ module.exports = `<!doctype html>
             <div class="elementor-element elementor-element-ab04b18 e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="ab04b18" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div class="elementor-element elementor-element-e3cd8e5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e3cd8e5" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
-                        <a href="https://template3.nicolaipalmkvist.com">
+                        <a href="index.html">
                             <img fetchpriority="high" width="792" height="88" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png 792w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                         </a>
                     </div>
@@ -634,16 +634,16 @@ module.exports = `<!doctype html>
                         <nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                             <ul id="menu-1-5dde0be" class="elementor-nav-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2009 current_page_item menu-item-2770">
-                                    <a href="https://template3.nicolaipalmkvist.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a>
+                                    <a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34">
-                                    <a href="https://template3.nicolaipalmkvist.com/solutions/" class="elementor-item">Solutions</a>
+                                    <a href="solucoes.html" class="elementor-item">Soluções</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                                    <a href="https://template3.nicolaipalmkvist.com/about/" class="elementor-item">About</a>
+                                    <a href="sobre-nos.html" class="elementor-item">Sobre Nós</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
-                                    <a href="https://template3.nicolaipalmkvist.com/contact/" class="elementor-item">Contact</a>
+                                    <a href="contato.html" class="elementor-item">Contato</a>
                                 </li>
                             </ul>
                         </nav>
@@ -658,16 +658,16 @@ module.exports = `<!doctype html>
                         <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
                             <ul id="menu-2-5dde0be" class="elementor-nav-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2009 current_page_item menu-item-2770">
-                                    <a href="https://template3.nicolaipalmkvist.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a>
+                                    <a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34">
-                                    <a href="https://template3.nicolaipalmkvist.com/solutions/" class="elementor-item" tabindex="-1">Solutions</a>
+                                    <a href="solucoes.html" class="elementor-item" tabindex="-1">Soluções</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                                    <a href="https://template3.nicolaipalmkvist.com/about/" class="elementor-item" tabindex="-1">About</a>
+                                    <a href="sobre-nos.html" class="elementor-item" tabindex="-1">Sobre Nós</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
-                                    <a href="https://template3.nicolaipalmkvist.com/contact/" class="elementor-item" tabindex="-1">Contact</a>
+                                    <a href="contato.html" class="elementor-item" tabindex="-1">Contato</a>
                                 </li>
                             </ul>
                         </nav>
@@ -676,7 +676,7 @@ module.exports = `<!doctype html>
                 <div class="elementor-element elementor-element-e95f074 elementor-align-left elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="e95f074" data-element_type="widget" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-icon">
                                         <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -694,7 +694,7 @@ module.exports = `<!doctype html>
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-b660468 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="b660468" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <a href="https://template3.nicolaipalmkvist.com">
+                                    <a href="index.html">
                                         <img fetchpriority="high" width="792" height="88" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png 792w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                                     </a>
                                 </div>
@@ -705,7 +705,7 @@ module.exports = `<!doctype html>
                         <div class="elementor-element elementor-element-639a60c elementor-align-left elementor-mobile-align-right elementor-hidden-mobile elementor-tablet-align-right elementor-widget elementor-widget-button" data-id="639a60c" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                         <span class="elementor-button-content-wrapper">
                                             <span class="elementor-button-icon">
                                                 <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -723,16 +723,16 @@ module.exports = `<!doctype html>
                                 <nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                     <ul id="menu-1-f33cef5" class="elementor-nav-menu">
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2009 current_page_item menu-item-2770">
-                                            <a href="https://template3.nicolaipalmkvist.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a>
+                                            <a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34">
-                                            <a href="https://template3.nicolaipalmkvist.com/solutions/" class="elementor-item">Solutions</a>
+                                            <a href="solucoes.html" class="elementor-item">Soluções</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                                            <a href="https://template3.nicolaipalmkvist.com/about/" class="elementor-item">About</a>
+                                            <a href="sobre-nos.html" class="elementor-item">Sobre Nós</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
-                                            <a href="https://template3.nicolaipalmkvist.com/contact/" class="elementor-item">Contact</a>
+                                            <a href="contato.html" class="elementor-item">Contato</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -747,16 +747,16 @@ module.exports = `<!doctype html>
                                 <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
                                     <ul id="menu-2-f33cef5" class="elementor-nav-menu">
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2009 current_page_item menu-item-2770">
-                                            <a href="https://template3.nicolaipalmkvist.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a>
+                                            <a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34">
-                                            <a href="https://template3.nicolaipalmkvist.com/solutions/" class="elementor-item" tabindex="-1">Solutions</a>
+                                            <a href="solucoes.html" class="elementor-item" tabindex="-1">Soluções</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                                            <a href="https://template3.nicolaipalmkvist.com/about/" class="elementor-item" tabindex="-1">About</a>
+                                            <a href="sobre-nos.html" class="elementor-item" tabindex="-1">Sobre Nós</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
-                                            <a href="https://template3.nicolaipalmkvist.com/contact/" class="elementor-item" tabindex="-1">Contact</a>
+                                            <a href="contato.html" class="elementor-item" tabindex="-1">Contato</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -855,7 +855,7 @@ module.exports = `<!doctype html>
                                     <div class="elementor-element elementor-element-4428a3f elementor-align-left elementor-widget elementor-widget-button" data-id="4428a3f" data-element_type="widget" data-widget_type="button.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/about/">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="sobre-nos.html">
                                                     <span class="elementor-button-content-wrapper">
                                                         <span class="elementor-button-icon">
                                                             <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -869,7 +869,7 @@ module.exports = `<!doctype html>
                                     <div class="elementor-element elementor-element-7665a71 elementor-align-left elementor-widget elementor-widget-button" data-id="7665a71" data-element_type="widget" data-widget_type="button.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/about/">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="sobre-nos.html">
                                                     <span class="elementor-button-content-wrapper">
                                                         <span class="elementor-button-icon">
                                                             <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -927,7 +927,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-76f42c21 elementor-align-left elementor-widget elementor-widget-button" data-id="76f42c21" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -941,7 +941,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-8f77d9 elementor-align-left elementor-widget elementor-widget-button" data-id="8f77d9" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-text">How?</span>
                                                 </span>
@@ -968,7 +968,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-8922219 elementor-align-left elementor-widget elementor-widget-button" data-id="8922219" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -982,7 +982,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-53251245 elementor-align-left elementor-widget elementor-widget-button" data-id="53251245" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-text">Contact</span>
                                                 </span>
@@ -1009,7 +1009,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-31a434c elementor-align-left elementor-widget elementor-widget-button" data-id="31a434c" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -1023,7 +1023,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-ccab759 elementor-align-left elementor-widget elementor-widget-button" data-id="ccab759" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-text">Contact</span>
                                                 </span>
@@ -1050,7 +1050,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-ec3f467 elementor-align-left elementor-widget elementor-widget-button" data-id="ec3f467" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -1064,7 +1064,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-0a63170 elementor-align-left elementor-widget elementor-widget-button" data-id="0a63170" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-text">How?</span>
                                                 </span>
@@ -1086,7 +1086,7 @@ module.exports = `<!doctype html>
                                 <div class="elementor-element elementor-element-ad63bb8 elementor-align-left elementor-widget elementor-widget-button" data-id="ad63bb8" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/?p=29">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm" href="index.html">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
@@ -1123,7 +1123,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-a0d2030 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="a0d2030" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Office</span>
                                                             </span>
@@ -1134,7 +1134,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-612e626 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="612e626" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Denmark</span>
                                                             </span>
@@ -1145,7 +1145,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-2dc669d elementor-widget__width-auto elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="2dc669d" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Skyscraper</span>
                                                             </span>
@@ -1170,7 +1170,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-8362c02 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="8362c02" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Apartments</span>
                                                             </span>
@@ -1181,7 +1181,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-6585153 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="6585153" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">New York</span>
                                                             </span>
@@ -1192,7 +1192,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-5420f16 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="5420f16" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Waves</span>
                                                             </span>
@@ -1219,7 +1219,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-9058092 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="9058092" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Law firm</span>
                                                             </span>
@@ -1230,7 +1230,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-94a882f elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="94a882f" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Norway</span>
                                                             </span>
@@ -1241,7 +1241,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-b86ff54 elementor-widget__width-auto elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="b86ff54" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Office</span>
                                                             </span>
@@ -1266,7 +1266,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-1c228b8 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="1c228b8" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Branding</span>
                                                             </span>
@@ -1277,7 +1277,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-c0891b1 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="c0891b1" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Paid Social </span>
                                                             </span>
@@ -1288,7 +1288,7 @@ module.exports = `<!doctype html>
                                             <div class="elementor-element elementor-element-d527a81 elementor-widget__width-auto elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="d527a81" data-element_type="widget" data-widget_type="button.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="elementor-button-wrapper">
-                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/solutions/">
+                                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="solucoes.html">
                                                             <span class="elementor-button-content-wrapper">
                                                                 <span class="elementor-button-text">Ecommerce</span>
                                                             </span>
@@ -1324,7 +1324,7 @@ module.exports = `<!doctype html>
                             <div class="elementor-element elementor-element-6ec8638 elementor-align-left elementor-widget elementor-widget-button" data-id="6ec8638" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/about/">
+                                        <a class="elementor-button elementor-button-link elementor-size-sm" href="sobre-nos.html">
                                             <span class="elementor-button-content-wrapper">
                                                 <span class="elementor-button-icon">
                                                     <i aria-hidden="true" class=" arrow_right-up"></i>
@@ -1358,7 +1358,7 @@ module.exports = `<!doctype html>
                         <div class="elementor-element elementor-element-d6851b0 elementor-align-left elementor-widget elementor-widget-button" data-id="d6851b0" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://template3.nicolaipalmkvist.com/contact/">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                         <span class="elementor-button-content-wrapper">
                                             <span class="elementor-button-icon">
                                                 <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
@@ -1476,17 +1476,17 @@ module.exports = `<!doctype html>
                                         <span class="elementor-icon-list-text">home</span>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/solutions/">
+                                        <a href="solucoes.html">
                                             <span class="elementor-icon-list-text">Solutions</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/about/">
+                                        <a href="sobre-nos.html">
                                             <span class="elementor-icon-list-text">about</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/contact/">
+                                        <a href="contato.html">
                                             <span class="elementor-icon-list-text">contact</span>
                                         </a>
                                     </li>
@@ -1504,22 +1504,22 @@ module.exports = `<!doctype html>
                             <div class="elementor-widget-container">
                                 <ul class="elementor-icon-list-items">
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/solutions/">
+                                        <a href="solucoes.html">
                                             <span class="elementor-icon-list-text">The Red Tower</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a href="solucoes.html">
                                             <span class="elementor-icon-list-text">White Residences</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a href="solucoes.html">
                                             <span class="elementor-icon-list-text">Stacked Form Blocks</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/solutions/">
+                                            <a href="solucoes.html">
                                             <span class="elementor-icon-list-text">Blue Crest Tower</span>
                                         </a>
                                     </li>
@@ -1537,12 +1537,12 @@ module.exports = `<!doctype html>
                             <div class="elementor-widget-container">
                                 <ul class="elementor-icon-list-items">
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/contact/">
+                                        <a href="contato.html">
                                             <span class="elementor-icon-list-text">Call us</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="https://template3.nicolaipalmkvist.com/contact/">
+                                        <a href="contato.html">
                                             <span class="elementor-icon-list-text">Send email</span>
                                         </a>
                                     </li>
