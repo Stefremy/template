@@ -668,6 +668,70 @@
                 background-size: cover !important;
             }
         </style>
+    <style>
+    /* Project card soft shadow + hover lift for project containers */
+    /* Keep original selector for inline-background cards (MADPiXEL) */
+    .elementor-element[style*="PUBLIC/projects"],
+    /* Explicit project containers inside the "Os nossos Projectos" section */
+    .elementor-element-aba69b1, /* MADPiXEL */
+    .elementor-element-c24c7ae, /* AutoGo */
+    .elementor-element-c8beb5d, /* Aurora */
+    .elementor-element-343269c, /* Outros clientes heading container */
+    .elementor-element-548ef7d  /* Outros clients cards container */
+    {
+        box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        transition: transform 0.28s ease, box-shadow 0.28s ease;
+        will-change: transform, box-shadow;
+    }
+    .elementor-element[style*="PUBLIC/projects"]:hover,
+    .elementor-element[style*="PUBLIC/projects"]:focus-within,
+    .elementor-element-aba69b1:hover,
+    .elementor-element-c24c7ae:hover,
+    .elementor-element-c8beb5d:hover,
+    .elementor-element-343269c:hover,
+    .elementor-element-548ef7d:hover,
+    .elementor-element-aba69b1:focus-within,
+    .elementor-element-c24c7ae:focus-within,
+    .elementor-element-c8beb5d:focus-within,
+    .elementor-element-343269c:focus-within,
+    .elementor-element-548ef7d:focus-within {
+        box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+        transform: translateY(-4px);
+    }
+
+    /* Button hover effect inside project categories */
+    .elementor-element[style*="PUBLIC/projects"] .elementor-button,
+    .elementor-element-aba69b1 .elementor-button,
+    .elementor-element-c24c7ae .elementor-button,
+    .elementor-element-c8beb5d .elementor-button,
+    .elementor-element-548ef7d .elementor-button {
+        transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+        will-change: transform, box-shadow;
+    }
+    .elementor-element[style*="PUBLIC/projects"] .elementor-button:hover,
+    .elementor-element-aba69b1 .elementor-button:hover,
+    .elementor-element-c24c7ae .elementor-button:hover,
+    .elementor-element-c8beb5d .elementor-button:hover,
+    .elementor-element-548ef7d .elementor-button:hover,
+    .elementor-element[style*="PUBLIC/projects"] .elementor-button:focus,
+    .elementor-element-aba69b1 .elementor-button:focus,
+    .elementor-element-c24c7ae .elementor-button:focus,
+    .elementor-element-c8beb5d .elementor-button:focus,
+    .elementor-element-548ef7d .elementor-button:focus {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        filter: brightness(1.03);
+    }
+
+    /* Slightly more pronounced effect for small buttons */
+    .elementor-element-aba69b1 .elementor-button.elementor-size-sm:hover,
+    .elementor-element-c24c7ae .elementor-button.elementor-size-sm:hover,
+    .elementor-element-c8beb5d .elementor-button.elementor-size-sm:hover,
+    .elementor-element-548ef7d .elementor-button.elementor-size-sm:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+    }
+    </style>
     </head>
     <body data-rsssl=1 class="home wp-singular page-template-default page page-id-2009 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2009">
         <!-- SVG filter for subtle water/magnify distortion used by .hero-glass ::before -->
@@ -2616,6 +2680,53 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                 obs.observe(target);
             })();
             </script>
+
+        <!-- Botpress Webchat inject -->
+        <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/02/25/17/20250225174247-YDOR8OY4.js" defer></script>
+        <script>
+        // Small webchat tweak: scale widget down while keeping it interactive
+        (function(){
+            const SCALE = 0.82; // tweak this to make it smaller/larger
+            const applyScale = () => {
+                // iframe approach: many providers inject an iframe for the widget
+                const iframes = Array.from(document.querySelectorAll('iframe'));
+                let applied = false;
+                iframes.forEach(f => {
+                    try{
+                        const src = f.getAttribute('src') || '';
+                        if(src.includes('botpress') || src.includes('bpcontent') || src.includes('webchat')){
+                            // set transform on iframe and increase its CSS width/height to preserve click area
+                            const w = f.offsetWidth || f.clientWidth || 360;
+                            const h = f.offsetHeight || f.clientHeight || 640;
+                            f.style.transform = `scale(${SCALE})`;
+                            f.style.transformOrigin = 'bottom right';
+                            f.style.width = Math.round(w / SCALE) + 'px';
+                            f.style.height = Math.round(h / SCALE) + 'px';
+                            f.style.pointerEvents = 'auto';
+                            applied = true;
+                        }
+                    }catch(e){}
+                });
+
+                // container approach: some widgets add a root div with identifiable classes/ids
+                const selectors = ['.bpw-widget', '.botpress-webchat', '.bpw-webchat', '[id^="bp-"]'];
+                selectors.forEach(sel => {
+                    document.querySelectorAll(sel).forEach(node => {
+                        node.style.transform = `scale(${SCALE})`;
+                        node.style.transformOrigin = 'bottom right';
+                        node.style.pointerEvents = 'auto';
+                        applied = true;
+                    });
+                });
+
+                if(!applied) setTimeout(applyScale, 400);
+            };
+            // run shortly after load and also after a small delay to catch late injections
+            window.addEventListener('load', () => { setTimeout(applyScale, 300); });
+            setTimeout(applyScale, 900);
+        })();
+        </script>
 
         </body>
     </html>
