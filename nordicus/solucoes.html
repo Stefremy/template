@@ -69,27 +69,48 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <script src="wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 	<style>
-	.elementor-nav-menu--main .elementor-item:hover,
-	.elementor-nav-menu--main .elementor-item.elementor-item-active {
-		background: #c4fe61 !important;
-		color: #000 !important;
-		border-color: #c4fe61 !important;
-	}
-	/* Área de Cliente button hover color */
-	a.elementor-button[href*="area-cliente"]:hover {
-		background: #c4fe61 !important;
-		color: #000 !important;
-		border-color: #c4fe61 !important;
-	}
+			/* Buttons for Arturel Tower categories: Office / Denmark / Skyscraper */
+			.elementor-element-2df66c6 .elementor-button,
+			.elementor-element-87b2c42 .elementor-button,
+			.elementor-element-fa74c2a .elementor-button {
+				transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+				will-change: transform, box-shadow;
+			}
+			.elementor-element-2df66c6 .elementor-button:hover,
+			.elementor-element-87b2c42 .elementor-button:hover,
+			.elementor-element-fa74c2a .elementor-button:hover,
+			.elementor-element-2df66c6 .elementor-button:focus,
+			.elementor-element-87b2c42 .elementor-button:focus,
+			.elementor-element-fa74c2a .elementor-button:focus {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+				filter: brightness(1.04);
+			}
+			/* Slightly stronger lift for small buttons */
+			.elementor-element-2df66c6 .elementor-button.elementor-size-sm:hover,
+			.elementor-element-87b2c42 .elementor-button.elementor-size-sm:hover,
+			.elementor-element-fa74c2a .elementor-button.elementor-size-sm:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+			}
+			</style>
 
-		/* Page-specific: nudge header and white background up to match other pages */
-		.elementor-location-header {
-			margin-top: 0px;
-		}
-		.elementor-element-556c22b {
-			top: 0px;
-		}
-	</style>
+			<style>
+			/* Área de Cliente button hover color */
+			a.elementor-button[href*="area-cliente"]:hover {
+				background: #c4fe61 !important;
+				color: #000 !important;
+				border-color: #c4fe61 !important;
+			}
+
+			/* Page-specific: nudge header and white background up to match other pages */
+			.elementor-location-header {
+				margin-top: 0px;
+			}
+			.elementor-element-556c22b {
+				top: 0px;
+			}
+			</style>
 
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -318,9 +339,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					<style>
 
 /*main menu area css start*/
-nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
-    background: #FFFFFF;
-    border-radius: 100px;
+nav.elementor-nav-menu--main ul li a:hover,
+nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+	background: #C4FE61 !important;
+	color: #367670 !important;
+	border-radius: 100px;
 }
 .elementor-menu-toggle {
     padding: 8px;
