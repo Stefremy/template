@@ -61,6 +61,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 
 <link rel='stylesheet' id='elementor-post-13-css' href='wp-content/uploads/elementor/css/post-13.css' media='all' />
 <link rel='stylesheet' id='elementor-post-23-css' href='wp-content/uploads/elementor/css/post-23.css' media='all' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 <link rel='stylesheet' id='elementor-post-577-css' href='wp-content/uploads/elementor/css/post-577.css' media='all' />
 <link rel='stylesheet' id='elementor-post-3273-css' href='wp-content/uploads/elementor/css/post-3273.css' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css' media='all' />
@@ -1268,6 +1270,50 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/template3.nicolaipalmkvis
 		}) }, { threshold: 0.12 });
 		obs.observe(target);
 	})();
+	</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const heroElement = document.querySelector('.elementor-element-efaa85c');
+		if (heroElement) {
+		const vantaInstance = VANTA.BIRDS({
+			el: heroElement,
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			backgroundColor: 0xb8b8b8,
+			color1: 0x367670,
+			color2: 0xc4fe61,
+			birdSize: 1.70,
+			quantity: 3.00,
+			backgroundAlpha: 1.00
+		});			// Position canvas to fill hero section exactly
+			const canvas = heroElement.querySelector('canvas');
+			if (canvas) {
+				canvas.style.position = 'absolute';
+				canvas.style.top = '0';
+				canvas.style.left = '0';
+				canvas.style.width = '100%';
+				canvas.style.height = '100%';
+				canvas.style.borderRadius = 'inherit';
+			}
+			
+			// Ensure hero container allows absolute positioning
+			heroElement.style.position = 'relative';
+			
+			// Ensure content stays above the animation
+			Array.from(heroElement.children).forEach(child => {
+				if (child !== canvas) {
+					child.style.position = 'relative';
+					child.style.zIndex = '1';
+				}
+			});
+		}
+	});
 	</script>
 
 	</body>
