@@ -392,6 +392,27 @@ a.elementor-button[href*="area-cliente"]:hover {
     fill: #367670 !important;
 }
 
+/* 52x white rounded icon wrapper used across Soluções pages */
+.icon-52 {
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease;
+    will-change: transform, box-shadow;
+}
+.icon-52 img { display:block; object-fit:contain; }
+.icon-52:hover {
+    transform: translateY(-6px) scale(1.08);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+}
+.icon-52:active { transform: translateY(-2px) scale(1.03); }
+.icon-52:focus { outline: 2px solid rgba(54,118,112,0.12); }
+
 /* Explicit arrow transform & tint for contato/sobre buttons to ensure inline SVGs animate */
 .elementor-element-28abf73 .elementor-button .e-font-icon-svg,
 .elementor-element-28abf73 .elementor-button svg,
