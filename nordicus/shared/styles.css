@@ -413,6 +413,29 @@ a.elementor-button[href*="area-cliente"]:hover {
 .icon-52:active { transform: translateY(-2px) scale(1.03); }
 .icon-52:focus { outline: 2px solid rgba(54,118,112,0.12); }
 
+/* Scoped hover for the 'Entre em Contacto' button on Soluções page */
+.elementor-element-d6a7d0f .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    border-radius: 8px;
+}
+.elementor-element-d6a7d0f .elementor-button:hover {
+    background: #C4FE61 !important; /* green pill */
+    color: #367670 !important; /* bluish text/icon */
+    box-shadow: 0 10px 30px rgba(54,118,112,0.12);
+}
+.elementor-element-d6a7d0f .elementor-button .e-font-icon-svg,
+.elementor-element-d6a7d0f .elementor-button svg {
+    transition: transform 180ms ease, fill 180ms ease;
+    transform-origin: center;
+}
+.elementor-element-d6a7d0f .elementor-button svg path {
+    fill: currentColor; /* inherit color so hover tint works */
+}
+.elementor-element-d6a7d0f .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.03);
+    fill: #367670 !important;
+}
+
 /* Explicit arrow transform & tint for contato/sobre buttons to ensure inline SVGs animate */
 .elementor-element-28abf73 .elementor-button .e-font-icon-svg,
 .elementor-element-28abf73 .elementor-button svg,
