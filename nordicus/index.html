@@ -1801,6 +1801,27 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                 </div>
                             </div>
                         </div>
+                                <style>
+                                    /* Scoped hover pill for Contacte-nos hoje! (desktop + mobile duplicate) */
+                                    .elementor-element-d6851b0 .elementor-button {
+                                        transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 160ms ease;
+                                        border-radius: 999px;
+                                    }
+                                    .elementor-element-d6851b0 .elementor-button:hover,
+                                    .elementor-element-d6851b0 .elementor-button:focus {
+                                        background: #C4FE61 !important; /* pill color */
+                                        color: #367670 !important; /* bluish text */
+                                        box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+                                        transform: translateY(-2px);
+                                    }
+                                    /* ensure icon inherits hover color */
+                                    .elementor-element-d6851b0 .elementor-button:hover .elementor-button-icon svg,
+                                    .elementor-element-d6851b0 .elementor-button:hover .elementor-button-icon i {
+                                        fill: currentColor !important;
+                                        stroke: currentColor !important;
+                                        color: inherit !important;
+                                    }
+                                </style>
                        
                         </div>
                     </div>
