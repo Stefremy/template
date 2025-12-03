@@ -92,6 +92,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					}
 				}
 			</style>
+			<style>
+			/* Fade-up entrance animation helper */
+			.fade-up{opacity:0;transform:translateY(22px);transition:opacity 640ms cubic-bezier(.2,.9,.2,1),transform 640ms cubic-bezier(.2,.9,.2,1);will-change:opacity,transform}
+			.fade-up.is-visible{opacity:1;transform:translateY(0)}
+			</style>
 			</head>
 <body data-rsssl=1 class="wp-singular page-template page-template-elementor_header_footer page page-id-15 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-15">
 
@@ -679,14 +684,14 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 		<div class="elementor-element elementor-element-1e116c5 e-con-full e-flex e-con e-child" data-id="1e116c5" data-element_type="container">
 				<div class="elementor-element elementor-element-3263ca5 elementor-widget elementor-widget-heading" data-id="3263ca5" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Histórias que Conectam Negócios ao Futuro
+					<h2 class="elementor-heading-title elementor-size-default fade-up">Histórias que Conectam Negócios ao Futuro
 
 </h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-e9eadb8 elementor-align-left elementor-widget elementor-widget-button" data-id="e9eadb8" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.google.com/maps/place/R.+R%C3%B3mulo+de+Carvalho+388+desk+2,+4800-019+Guimar%C3%A3es,+Portugal/@41.4532082,-8.3022051,17z/data=!3m1!4b1!4m6!3m5!1s0xd24ef337e177c23:0x36f01aeec207269b!8m2!3d41.4532082!3d-8.3022051!16s%2Fg%2F11c1q3q3q3?entry=ttu" target="_blank">
+										<a class="elementor-button elementor-button-link elementor-size-sm fade-up" href="https://www.google.com/maps/place/R.+R%C3%B3mulo+de+Carvalho+388+desk+2,+4800-019+Guimar%C3%A3es,+Portugal/@41.4532082,-8.3022051,17z/data=!3m1!4b1!4m6!3m5!1s0xd24ef337e177c23:0x36f01aeec207269b!8m2!3d41.4532082!3d-8.3022051!16s%2Fg%2F11c1q3q3q3?entry=ttu" target="_blank">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
@@ -699,7 +704,18 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 		<div class="elementor-element elementor-element-357b63d e-con-full e-flex e-con e-child" data-id="357b63d" data-element_type="container">
 				<div class="elementor-element elementor-element-a0344af elementor-widget elementor-widget-text-editor" data-id="a0344af" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
+				<div class="elementor-widget-container fade-up">
+									<style>
+										/* Make the Sobre Nós paragraphs a bit larger and more readable */
+										.elementor-15 .elementor-element.elementor-element-a0344af .elementor-widget-container p {
+											font-size: 18px;
+											line-height: 1.8;
+										}
+										@media (max-width: 767px) {
+											.elementor-15 .elementor-element.elementor-element-a0344af .elementor-widget-container p { font-size: 16px; }
+										}
+									</style>
+                                    
 									<p>Cada parceria é única e cada desafio é uma oportunidade para inovar.</p>
 									<p>Das pequenas lojas locais aos grandes projetos empresariais, ajudamos a criar experiências digitais que transformam sonhos em realidade.</p>
 									<p>Ligamos pessoas, ideias e mercados — porque acreditamos que, juntos, podemos ir mais longe.</p>								</div>
@@ -1087,6 +1103,24 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/template3.nicolaipalmkvis
 		}
 	});
 	</script>
+		<script>
+		// Fade-up scroll observer for page elements
+		(function(){
+		  if (!('IntersectionObserver' in window)) return; // fallback: no-op
+		  function onReady(){
+		    const io = new IntersectionObserver((entries, obs) => {
+		      entries.forEach(e => {
+		        if (e.isIntersecting){
+		          e.target.classList.add('is-visible');
+		          obs.unobserve(e.target);
+		        }
+		      });
+		    }, {threshold: 0.15});
+		    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+		  }
+		  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', onReady); else onReady();
+		})();
+		</script>
 
 </body>
 </html>
