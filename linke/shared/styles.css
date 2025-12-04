@@ -1,0 +1,651 @@
+/* Shared styles for nordicus pages: nav pill, CTA pill, project card shadows */
+
+/* Navbar hover/active pill (match index) */
+nav.elementor-nav-menu--main ul li a:hover,
+nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-radius: 100px;
+}
+
+/* Simple entrance animation used by `shared/animate-text.js` */
+.js-animate {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 560ms cubic-bezier(.2,.9,.2,1), transform 560ms cubic-bezier(.2,.9,.2,1);
+    will-change: opacity, transform;
+    --animate-delay: 0ms;
+}
+.js-animate.in {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: var(--animate-delay);
+}
+/* Optional: stagger children (if the widget contains multiple inline children) */
+.js-animate > * {
+    transition: opacity 420ms ease, transform 420ms ease;
+    opacity: 0;
+    transform: translateY(8px);
+    transition-delay: var(--animate-delay);
+}
+.js-animate.in > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CTA pill and text hover: pill = #C4FE61, text = #367670 */
+.elementor-element-4428a3f .elementor-button,
+.elementor-element-7665a71 .elementor-button,
+.elementor-element-76f42c21 .elementor-button,
+.elementor-element-8f77d9 .elementor-button,
+.elementor-element-8922219 .elementor-button,
+.elementor-element-53251245 .elementor-button,
+.elementor-element-31a434c .elementor-button,
+.elementor-element-ccab759 .elementor-button,
+.elementor-element-ec3f467 .elementor-button,
+.elementor-element-0a63170 .elementor-button,
+.elementor-element-ad63bb8 .elementor-button,
+.elementor-element-abf4d37 .elementor-button,
+.elementor-element-cb9a024 .elementor-button,
+.elementor-element-3bdfaff .elementor-button,
+.elementor-element-a4e420f .elementor-button,
+.elementor-element-ae06be9 .elementor-button,
+.elementor-element-28abf73 .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    border-radius: 999px;
+}
+.elementor-element-4428a3f .elementor-button:hover,
+.elementor-element-7665a71 .elementor-button:hover,
+.elementor-element-76f42c21 .elementor-button:hover,
+.elementor-element-8f77d9 .elementor-button:hover,
+.elementor-element-8922219 .elementor-button:hover,
+.elementor-element-53251245 .elementor-button:hover,
+.elementor-element-31a434c .elementor-button:hover,
+.elementor-element-ccab759 .elementor-button:hover,
+.elementor-element-ec3f467 .elementor-button:hover,
+.elementor-element-0a63170 .elementor-button:hover,
+.elementor-element-ad63bb8 .elementor-button:hover,
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover,
+.elementor-element-3bdfaff .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover {
+    background: #C4FE61 !important; /* pill color */
+    color: #367670 !important; /* ensure anchor inherits text color */
+    box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+}
+
+.elementor-element-4428a3f .elementor-button .elementor-button-text,
+.elementor-element-7665a71 .elementor-button .elementor-button-text,
+.elementor-element-76f42c21 .elementor-button .elementor-button-text,
+.elementor-element-8f77d9 .elementor-button .elementor-button-text,
+.elementor-element-8922219 .elementor-button .elementor-button-text,
+.elementor-element-53251245 .elementor-button .elementor-button-text,
+.elementor-element-31a434c .elementor-button .elementor-button-text,
+.elementor-element-ccab759 .elementor-button .elementor-button-text,
+.elementor-element-ec3f467 .elementor-button .elementor-button-text,
+.elementor-element-0a63170 .elementor-button .elementor-button-text,
+.elementor-element-ad63bb8 .elementor-button .elementor-button-text,
+.elementor-element-3bdfaff .elementor-button .elementor-button-text,
+.elementor-element-a4e420f .elementor-button .elementor-button-text {
+    transition: color 180ms ease;
+}
+
+/* Area de Cliente hover */
+a.elementor-button[href*="area-cliente"]:hover {
+    background: #c4fe61 !important;
+    color: #000 !important;
+    border-color: #c4fe61 !important;
+}
+
+/* Project card soft shadow + hover lift for project containers */
+.elementor-element[style*="PUBLIC/projects"],
+.elementor-element-aba69b1,
+.elementor-element-c24c7ae,
+.elementor-element-c8beb5d,
+.elementor-element-343269c,
+.elementor-element-548ef7d {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    will-change: transform, box-shadow;
+}
+.elementor-element[style*="PUBLIC/projects"]:hover,
+.elementor-element[style*="PUBLIC/projects"]:focus-within,
+.elementor-element-aba69b1:hover,
+.elementor-element-c24c7ae:hover,
+.elementor-element-c8beb5d:hover,
+.elementor-element-343269c:hover,
+.elementor-element-548ef7d:hover {
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    transform: translateY(-4px);
+}
+
+/* Buttons inside project categories */
+.elementor-element[style*="PUBLIC/projects"] .elementor-button,
+.elementor-element-aba69b1 .elementor-button,
+.elementor-element-c24c7ae .elementor-button,
+.elementor-element-c8beb5d .elementor-button,
+.elementor-element-548ef7d .elementor-button {
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+.elementor-element[style*="PUBLIC/projects"] .elementor-button:hover,
+.elementor-element-aba69b1 .elementor-button:hover,
+.elementor-element-c24c7ae .elementor-button:hover,
+.elementor-element-c8beb5d .elementor-button:hover,
+.elementor-element-548ef7d .elementor-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+}
+
+/* Small button stronger lift */
+.elementor-element-aba69b1 .elementor-button.elementor-size-sm:hover,
+.elementor-element-c24c7ae .elementor-button.elementor-size-sm:hover,
+.elementor-element-c8beb5d .elementor-button.elementor-size-sm:hover,
+.elementor-element-548ef7d .elementor-button.elementor-size-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+}
+
+/* Extra high-specificity overrides for Soluções/Contacto and Operamos buttons */
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover,
+.elementor-element-8d5fa3b .elementor-button:hover,
+.elementor-element-3616a34 .elementor-button:hover,
+.elementor-element-b5db1c7 .elementor-button:hover,
+.elementor-element-6139156 .elementor-button:hover,
+.elementor-element-3bdfaff .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover,
+.elementor-element-ae06be9 .elementor-button:hover,
+.elementor-element-28abf73 .elementor-button:hover {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-color: #C4FE61 !important;
+    box-shadow: 0 8px 22px rgba(54,118,112,0.14) !important;
+}
+
+/* Expand and tint the arrow on hover for the 'Contacte-nos hoje' button and Contacto on Sobre Nós */
+.elementor-element-6139156 .elementor-button,
+.elementor-element-a4e420f .elementor-button,
+.elementor-element-ae06be9 .elementor-button,
+.elementor-element-28abf73 .elementor-button {
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease, padding 220ms ease;
+    will-change: transform, box-shadow, padding;
+    display: inline-flex;
+    align-items: center;
+}
+.elementor-element-6139156 .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover,
+.elementor-element-ae06be9 .elementor-button:hover,
+.elementor-element-28abf73 .elementor-button:hover {
+    transform: translateY(-4px) scale(1.03);
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    box-shadow: 0 14px 36px rgba(54,118,112,0.16) !important;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button svg,
+.elementor-element-a4e420f .elementor-button .e-font-icon-svg,
+.elementor-element-a4e420f .elementor-button svg,
+.elementor-element-ae06be9 .elementor-button .e-font-icon-svg,
+.elementor-element-ae06be9 .elementor-button svg,
+.elementor-element-28abf73 .elementor-button .e-font-icon-svg,
+.elementor-element-28abf73 .elementor-button svg {
+    transition: fill 180ms ease, transform 220ms ease;
+    transform-origin: center;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg path,
+.elementor-element-a4e420f .elementor-button .e-font-icon-svg path,
+.elementor-element-ae06be9 .elementor-button .e-font-icon-svg path,
+.elementor-element-28abf73 .elementor-button .e-font-icon-svg path {
+    transition: fill 180ms ease;
+    fill: currentColor;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button:hover svg,
+.elementor-element-a4e420f .elementor-button:hover .e-font-icon-svg,
+.elementor-element-a4e420f .elementor-button:hover svg,
+.elementor-element-ae06be9 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-ae06be9 .elementor-button:hover svg,
+.elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-28abf73 .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.05);
+    fill: #367670;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path,
+.elementor-element-a4e420f .elementor-button:hover .e-font-icon-svg path,
+.elementor-element-ae06be9 .elementor-button:hover .e-font-icon-svg path,
+.elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg path {
+    fill: #367670 !important;
+}
+/* Shared styles for nordicus pages: nav pill, CTA pill, project card shadows */
+
+/* Navbar hover/active pill (match index) */
+nav.elementor-nav-menu--main ul li a:hover,
+nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-radius: 100px;
+}
+
+/* CTA pill and text hover: pill = #C4FE61, text = #367670 */
+.elementor-element-4428a3f .elementor-button,
+.elementor-element-7665a71 .elementor-button,
+.elementor-element-76f42c21 .elementor-button,
+.elementor-element-8f77d9 .elementor-button,
+.elementor-element-8922219 .elementor-button,
+.elementor-element-53251245 .elementor-button,
+.elementor-element-31a434c .elementor-button,
+.elementor-element-ccab759 .elementor-button,
+.elementor-element-ec3f467 .elementor-button,
+.elementor-element-0a63170 .elementor-button,
+.elementor-element-ad63bb8 .elementor-button,
+.elementor-element-abf4d37 .elementor-button,
+.elementor-element-cb9a024 .elementor-button,
+.elementor-element-3bdfaff .elementor-button,
+.elementor-element-a4e420f .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    border-radius: 999px;
+}
+.elementor-element-4428a3f .elementor-button:hover,
+.elementor-element-7665a71 .elementor-button:hover,
+.elementor-element-76f42c21 .elementor-button:hover,
+.elementor-element-8f77d9 .elementor-button:hover,
+.elementor-element-8922219 .elementor-button:hover,
+.elementor-element-53251245 .elementor-button:hover,
+.elementor-element-31a434c .elementor-button:hover,
+.elementor-element-ccab759 .elementor-button:hover,
+.elementor-element-ec3f467 .elementor-button:hover,
+.elementor-element-0a63170 .elementor-button:hover,
+.elementor-element-ad63bb8 .elementor-button:hover,
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover,
+.elementor-element-3bdfaff .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover {
+    background: #C4FE61 !important; /* pill color */
+    color: #367670 !important; /* ensure anchor inherits text color */
+    box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+}
+
+.elementor-element-4428a3f .elementor-button .elementor-button-text,
+.elementor-element-7665a71 .elementor-button .elementor-button-text,
+.elementor-element-76f42c21 .elementor-button .elementor-button-text,
+.elementor-element-8f77d9 .elementor-button .elementor-button-text,
+.elementor-element-8922219 .elementor-button .elementor-button-text,
+.elementor-element-53251245 .elementor-button .elementor-button-text,
+.elementor-element-31a434c .elementor-button .elementor-button-text,
+.elementor-element-ccab759 .elementor-button .elementor-button-text,
+.elementor-element-ec3f467 .elementor-button .elementor-button-text,
+.elementor-element-0a63170 .elementor-button .elementor-button-text,
+.elementor-element-ad63bb8 .elementor-button .elementor-button-text,
+.elementor-element-3bdfaff .elementor-button .elementor-button-text,
+.elementor-element-a4e420f .elementor-button .elementor-button-text {
+    transition: color 180ms ease;
+}
+
+/* Area de Cliente hover */
+a.elementor-button[href*="area-cliente"]:hover {
+    background: #c4fe61 !important;
+    color: #000 !important;
+    border-color: #c4fe61 !important;
+}
+
+/* Project card soft shadow + hover lift for project containers */
+.elementor-element[style*="PUBLIC/projects"],
+.elementor-element-aba69b1,
+.elementor-element-c24c7ae,
+.elementor-element-c8beb5d,
+.elementor-element-343269c,
+.elementor-element-548ef7d {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    will-change: transform, box-shadow;
+}
+.elementor-element[style*="PUBLIC/projects"]:hover,
+.elementor-element[style*="PUBLIC/projects"]:focus-within,
+.elementor-element-aba69b1:hover,
+.elementor-element-c24c7ae:hover,
+.elementor-element-c8beb5d:hover,
+.elementor-element-343269c:hover,
+.elementor-element-548ef7d:hover {
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    transform: translateY(-4px);
+}
+
+/* Buttons inside project categories */
+.elementor-element[style*="PUBLIC/projects"] .elementor-button,
+.elementor-element-aba69b1 .elementor-button,
+.elementor-element-c24c7ae .elementor-button,
+.elementor-element-c8beb5d .elementor-button,
+.elementor-element-548ef7d .elementor-button {
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+.elementor-element[style*="PUBLIC/projects"] .elementor-button:hover,
+.elementor-element-aba69b1 .elementor-button:hover,
+.elementor-element-c24c7ae .elementor-button:hover,
+.elementor-element-c8beb5d .elementor-button:hover,
+.elementor-element-548ef7d .elementor-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+}
+
+/* Small button stronger lift */
+.elementor-element-aba69b1 .elementor-button.elementor-size-sm:hover,
+.elementor-element-c24c7ae .elementor-button.elementor-size-sm:hover,
+.elementor-element-c8beb5d .elementor-button.elementor-size-sm:hover,
+.elementor-element-548ef7d .elementor-button.elementor-size-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+}
+
+/* Extra high-specificity overrides for Soluções/Contacto and Operamos buttons */
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover,
+.elementor-element-8d5fa3b .elementor-button:hover,
+.elementor-element-3616a34 .elementor-button:hover,
+.elementor-element-b5db1c7 .elementor-button:hover,
+.elementor-element-6139156 .elementor-button:hover,
+.elementor-element-3bdfaff .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-color: #C4FE61 !important;
+    box-shadow: 0 8px 22px rgba(54,118,112,0.14) !important;
+}
+
+/* Expand and tint the arrow on hover for the 'Contacte-nos hoje' button and Contacto on Sobre Nós */
+.elementor-element-6139156 .elementor-button,
+.elementor-element-a4e420f .elementor-button {
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease, padding 220ms ease;
+    will-change: transform, box-shadow, padding;
+    display: inline-flex;
+    align-items: center;
+}
+.elementor-element-6139156 .elementor-button:hover,
+.elementor-element-a4e420f .elementor-button:hover {
+    transform: translateY(-4px) scale(1.03);
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    box-shadow: 0 14px 36px rgba(54,118,112,0.16) !important;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button svg,
+.elementor-element-a4e420f .elementor-button .e-font-icon-svg,
+.elementor-element-a4e420f .elementor-button svg {
+    transition: fill 180ms ease, transform 220ms ease;
+    transform-origin: center;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg path,
+.elementor-element-a4e420f .elementor-button .e-font-icon-svg path {
+    transition: fill 180ms ease;
+    fill: currentColor;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button:hover svg,
+.elementor-element-a4e420f .elementor-button:hover .e-font-icon-svg,
+.elementor-element-a4e420f .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.05);
+    fill: #367670;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path,
+.elementor-element-a4e420f .elementor-button:hover .e-font-icon-svg path {
+    fill: #367670 !important;
+}
+
+/* 52x white rounded icon wrapper used across Soluções pages */
+.icon-52 {
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease;
+    will-change: transform, box-shadow;
+}
+.icon-52 img { display:block; object-fit:contain; }
+.icon-52:hover {
+    transform: translateY(-6px) scale(1.08);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+}
+.icon-52:active { transform: translateY(-2px) scale(1.03); }
+.icon-52:focus { outline: 2px solid rgba(54,118,112,0.12); }
+
+/* Scoped hover for the 'Entre em Contacto' button on Soluções page */
+.elementor-element-d6a7d0f .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    border-radius: 8px;
+}
+.elementor-element-d6a7d0f .elementor-button:hover {
+    background: #C4FE61 !important; /* green pill */
+    color: #367670 !important; /* bluish text/icon */
+    box-shadow: 0 10px 30px rgba(54,118,112,0.12);
+}
+.elementor-element-d6a7d0f .elementor-button .e-font-icon-svg,
+.elementor-element-d6a7d0f .elementor-button svg {
+    transition: transform 180ms ease, fill 180ms ease;
+    transform-origin: center;
+}
+.elementor-element-d6a7d0f .elementor-button svg path {
+    fill: currentColor; /* inherit color so hover tint works */
+}
+.elementor-element-d6a7d0f .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.03);
+    fill: #367670 !important;
+}
+
+/* Explicit arrow transform & tint for contato/sobre buttons to ensure inline SVGs animate */
+.elementor-element-28abf73 .elementor-button .e-font-icon-svg,
+.elementor-element-28abf73 .elementor-button svg,
+.elementor-element-ae06be9 .elementor-button .e-font-icon-svg,
+.elementor-element-ae06be9 .elementor-button svg {
+    display: inline-block;
+    transition: transform 220ms ease, fill 180ms ease;
+    transform-origin: center;
+    will-change: transform, fill;
+}
+.elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-28abf73 .elementor-button:hover svg,
+.elementor-element-ae06be9 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-ae06be9 .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.05);
+    fill: #367670;
+}
+.elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg path,
+.elementor-element-ae06be9 .elementor-button:hover .e-font-icon-svg path {
+    fill: #367670 !important;
+}
+/* Accessibility: keyboard focus states — match hover visuals and animate arrow */
+.elementor-element-abf4d37 .elementor-button:focus,
+.elementor-element-cb9a024 .elementor-button:focus,
+.elementor-element-8d5fa3b .elementor-button:focus,
+.elementor-element-3616a34 .elementor-button:focus,
+.elementor-element-b5db1c7 .elementor-button:focus,
+.elementor-element-6139156 .elementor-button:focus,
+.elementor-element-3bdfaff .elementor-button:focus,
+.elementor-element-a4e420f .elementor-button:focus,
+.elementor-element-ae06be9 .elementor-button:focus,
+.elementor-element-28abf73 .elementor-button:focus {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    box-shadow: 0 8px 22px rgba(54,118,112,0.16) !important;
+    outline: 3px solid rgba(54,118,112,0.10);
+    outline-offset: 3px;
+}
+.elementor-element-6139156 .elementor-button:focus .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button:focus svg,
+.elementor-element-a4e420f .elementor-button:focus .e-font-icon-svg,
+.elementor-element-a4e420f .elementor-button:focus svg,
+.elementor-element-ae06be9 .elementor-button:focus .e-font-icon-svg,
+.elementor-element-ae06be9 .elementor-button:focus svg,
+.elementor-element-28abf73 .elementor-button:focus .e-font-icon-svg,
+.elementor-element-28abf73 .elementor-button:focus svg {
+    transform: translateX(4px) scale(1.05);
+    fill: #367670;
+}
+.elementor-element-6139156 .elementor-button:focus .e-font-icon-svg path,
+.elementor-element-a4e420f .elementor-button:focus .e-font-icon-svg path,
+.elementor-element-ae06be9 .elementor-button:focus .e-font-icon-svg path,
+.elementor-element-28abf73 .elementor-button:focus .e-font-icon-svg path {
+    fill: #367670 !important;
+}
+/* Shared styles for nordicus pages: nav pill, CTA pill, project card shadows */
+
+/* Navbar hover/active pill (match index) */
+nav.elementor-nav-menu--main ul li a:hover,
+nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-radius: 100px;
+}
+
+/* CTA pill and text hover: pill = #C4FE61, text = #367670 */
+.elementor-element-4428a3f .elementor-button,
+.elementor-element-7665a71 .elementor-button,
+.elementor-element-76f42c21 .elementor-button,
+.elementor-element-8f77d9 .elementor-button,
+.elementor-element-8922219 .elementor-button,
+.elementor-element-53251245 .elementor-button,
+.elementor-element-31a434c .elementor-button,
+.elementor-element-ccab759 .elementor-button,
+.elementor-element-ec3f467 .elementor-button,
+.elementor-element-0a63170 .elementor-button,
+.elementor-element-ad63bb8 .elementor-button,
+.elementor-element-abf4d37 .elementor-button,
+.elementor-element-cb9a024 .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    border-radius: 999px;
+}
+.elementor-element-4428a3f .elementor-button:hover,
+.elementor-element-7665a71 .elementor-button:hover,
+.elementor-element-76f42c21 .elementor-button:hover,
+.elementor-element-8f77d9 .elementor-button:hover,
+.elementor-element-8922219 .elementor-button:hover,
+.elementor-element-53251245 .elementor-button:hover,
+.elementor-element-31a434c .elementor-button:hover,
+.elementor-element-ccab759 .elementor-button:hover,
+.elementor-element-ec3f467 .elementor-button:hover,
+.elementor-element-0a63170 .elementor-button:hover,
+.elementor-element-ad63bb8 .elementor-button:hover,
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover {
+    background: #C4FE61 !important; /* pill color */
+    color: #367670 !important; /* ensure anchor inherits text color */
+    box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+}
+
+.elementor-element-4428a3f .elementor-button .elementor-button-text,
+.elementor-element-7665a71 .elementor-button .elementor-button-text,
+.elementor-element-76f42c21 .elementor-button .elementor-button-text,
+.elementor-element-8f77d9 .elementor-button .elementor-button-text,
+.elementor-element-8922219 .elementor-button .elementor-button-text,
+.elementor-element-53251245 .elementor-button .elementor-button-text,
+.elementor-element-31a434c .elementor-button .elementor-button-text,
+.elementor-element-ccab759 .elementor-button .elementor-button-text,
+.elementor-element-ec3f467 .elementor-button .elementor-button-text,
+.elementor-element-0a63170 .elementor-button .elementor-button-text,
+.elementor-element-ad63bb8 .elementor-button .elementor-button-text {
+    transition: color 180ms ease;
+}
+
+/* Area de Cliente hover */
+a.elementor-button[href*="area-cliente"]:hover {
+    background: #c4fe61 !important;
+    color: #000 !important;
+    border-color: #c4fe61 !important;
+}
+
+/* Project card soft shadow + hover lift for project containers */
+.elementor-element[style*="PUBLIC/projects"],
+.elementor-element-aba69b1,
+.elementor-element-c24c7ae,
+.elementor-element-c8beb5d,
+.elementor-element-343269c,
+.elementor-element-548ef7d {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    will-change: transform, box-shadow;
+}
+.elementor-element[style*="PUBLIC/projects"]:hover,
+.elementor-element[style*="PUBLIC/projects"]:focus-within,
+.elementor-element-aba69b1:hover,
+.elementor-element-c24c7ae:hover,
+.elementor-element-c8beb5d:hover,
+.elementor-element-343269c:hover,
+.elementor-element-548ef7d:hover {
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    transform: translateY(-4px);
+}
+
+/* Buttons inside project categories */
+.elementor-element[style*="PUBLIC/projects"] .elementor-button,
+.elementor-element-aba69b1 .elementor-button,
+.elementor-element-c24c7ae .elementor-button,
+.elementor-element-c8beb5d .elementor-button,
+.elementor-element-548ef7d .elementor-button {
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+.elementor-element[style*="PUBLIC/projects"] .elementor-button:hover,
+.elementor-element-aba69b1 .elementor-button:hover,
+.elementor-element-c24c7ae .elementor-button:hover,
+.elementor-element-c8beb5d .elementor-button:hover,
+.elementor-element-548ef7d .elementor-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+}
+
+/* Small button stronger lift */
+.elementor-element-aba69b1 .elementor-button.elementor-size-sm:hover,
+.elementor-element-c24c7ae .elementor-button.elementor-size-sm:hover,
+.elementor-element-c8beb5d .elementor-button.elementor-size-sm:hover,
+.elementor-element-548ef7d .elementor-button.elementor-size-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+}
+
+/* Extra high-specificity overrides for Soluções/Contacto and Operamos buttons */
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover,
+.elementor-element-8d5fa3b .elementor-button:hover,
+.elementor-element-3616a34 .elementor-button:hover,
+.elementor-element-b5db1c7 .elementor-button:hover,
+.elementor-element-6139156 .elementor-button:hover {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-color: #C4FE61 !important;
+    box-shadow: 0 8px 22px rgba(54,118,112,0.14) !important;
+}
+
+/* Expand and tint the arrow on hover for the 'Contacte-nos hoje' button */
+.elementor-element-6139156 .elementor-button {
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease, padding 220ms ease;
+    will-change: transform, box-shadow, padding;
+    display: inline-flex;
+    align-items: center;
+}
+.elementor-element-6139156 .elementor-button:hover {
+    transform: translateY(-4px) scale(1.03);
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    box-shadow: 0 14px 36px rgba(54,118,112,0.16) !important;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button svg {
+    transition: fill 180ms ease, transform 220ms ease;
+    transform-origin: center;
+}
+.elementor-element-6139156 .elementor-button .e-font-icon-svg path {
+    transition: fill 180ms ease;
+    fill: currentColor;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg,
+.elementor-element-6139156 .elementor-button:hover svg {
+    transform: translateX(4px) scale(1.05);
+    fill: #367670;
+}
+.elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path {
+    fill: #367670 !important;
+}

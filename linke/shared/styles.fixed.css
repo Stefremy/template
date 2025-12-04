@@ -1,0 +1,123 @@
+/* Shared styles for nordicus pages: nav pill, CTA pill, project card shadows */
+
+/* Navbar hover/active pill (match index) */
+nav.elementor-nav-menu--main ul li a:hover,
+nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-radius: 100px;
+}
+
+/* CTA pill and text hover: pill = #C4FE61, text = #367670 */
+.elementor-element-4428a3f .elementor-button,
+.elementor-element-7665a71 .elementor-button,
+.elementor-element-76f42c21 .elementor-button,
+.elementor-element-8f77d9 .elementor-button,
+.elementor-element-8922219 .elementor-button,
+.elementor-element-53251245 .elementor-button,
+.elementor-element-31a434c .elementor-button,
+.elementor-element-ccab759 .elementor-button,
+.elementor-element-ec3f467 .elementor-button,
+.elementor-element-0a63170 .elementor-button,
+.elementor-element-ad63bb8 .elementor-button,
+.elementor-element-abf4d37 .elementor-button,
+.elementor-element-cb9a024 .elementor-button {
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    border-radius: 999px;
+}
+.elementor-element-4428a3f .elementor-button:hover,
+.elementor-element-7665a71 .elementor-button:hover,
+.elementor-element-76f42c21 .elementor-button:hover,
+.elementor-element-8f77d9 .elementor-button:hover,
+.elementor-element-8922219 .elementor-button:hover,
+.elementor-element-53251245 .elementor-button:hover,
+.elementor-element-31a434c .elementor-button:hover,
+.elementor-element-ccab759 .elementor-button:hover,
+.elementor-element-ec3f467 .elementor-button:hover,
+.elementor-element-0a63170 .elementor-button:hover,
+.elementor-element-ad63bb8 .elementor-button:hover,
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover {
+    background: #C4FE61 !important; /* pill color */
+    color: #367670 !important; /* ensure anchor inherits text color */
+    box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+}
+
+.elementor-element-4428a3f .elementor-button .elementor-button-text,
+.elementor-element-7665a71 .elementor-button .elementor-button-text,
+.elementor-element-76f42c21 .elementor-button .elementor-button-text,
+.elementor-element-8f77d9 .elementor-button .elementor-button-text,
+.elementor-element-8922219 .elementor-button .elementor-button-text,
+.elementor-element-53251245 .elementor-button .elementor-button-text,
+.elementor-element-31a434c .elementor-button .elementor-button-text,
+.elementor-element-ccab759 .elementor-button .elementor-button-text,
+.elementor-element-ec3f467 .elementor-button .elementor-button-text,
+.elementor-element-0a63170 .elementor-button .elementor-button-text,
+.elementor-element-ad63bb8 .elementor-button .elementor-button-text {
+    transition: color 180ms ease;
+}
+
+/* Area de Cliente hover */
+a.elementor-button[href*="area-cliente"]:hover {
+    background: #c4fe61 !important;
+    color: #000 !important;
+    border-color: #c4fe61 !important;
+}
+
+/* Project card soft shadow + hover lift for project containers */
+.elementor-element[style*="PUBLIC/projects"],
+.elementor-element-aba69b1,
+.elementor-element-c24c7ae,
+.elementor-element-c8beb5d,
+.elementor-element-343269c,
+.elementor-element-548ef7d {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    will-change: transform, box-shadow;
+}
+.elementor-element[style*="PUBLIC/projects"]:hover,
+.elementor-element[style*="PUBLIC/projects"]:focus-within,
+.elementor-element-aba69b1:hover,
+.elementor-element-c24c7ae:hover,
+.elementor-element-c8beb5d:hover,
+.elementor-element-343269c:hover,
+.elementor-element-548ef7d:hover {
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    transform: translateY(-4px);
+}
+
+/* Buttons inside project categories */
+.elementor-element[style*="PUBLIC/projects"] .elementor-button,
+.elementor-element-aba69b1 .elementor-button,
+.elementor-element-c24c7ae .elementor-button,
+.elementor-element-c8beb5d .elementor-button,
+.elementor-element-548ef7d .elementor-button {
+    transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+.elementor-element[style*="PUBLIC/projects"] .elementor-button:hover,
+.elementor-element-aba69b1 .elementor-button:hover,
+.elementor-element-c24c7ae .elementor-button:hover,
+.elementor-element-c8beb5d .elementor-button:hover,
+.elementor-element-548ef7d .elementor-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+}
+
+/* Small button stronger lift */
+.elementor-element-aba69b1 .elementor-button.elementor-size-sm:hover,
+.elementor-element-c24c7ae .elementor-button.elementor-size-sm:hover,
+.elementor-element-c8beb5d .elementor-button.elementor-size-sm:hover,
+.elementor-element-548ef7d .elementor-button.elementor-size-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+}
+
+/* Extra high-specificity overrides for the two Soluções/Contacto buttons */
+.elementor-element-abf4d37 .elementor-button:hover,
+.elementor-element-cb9a024 .elementor-button:hover {
+    background: #C4FE61 !important;
+    color: #367670 !important;
+    border-color: #C4FE61 !important;
+    box-shadow: 0 8px 22px rgba(54,118,112,0.14) !important;
+}

@@ -10,6 +10,23 @@ a.elementor-button[href*="contato"]:hover {
 	color: #000 !important;
 	border-color: #c4fe61 !important;
 }
+
+/* Top Contacte-nos button (elementor-element-ce42b46) — green background on hover
+	 with bluish text & icon */
+.elementor-17 .elementor-element.elementor-element-ce42b46 .elementor-button {
+	transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.elementor-17 .elementor-element.elementor-element-ce42b46 .elementor-button:hover,
+.elementor-17 .elementor-element.elementor-element-ce42b46 .elementor-button:focus {
+	background-color: #C4FE61 !important; /* green */
+	color: #367670 !important; /* bluish */
+	box-shadow: 0 8px 18px rgba(54,118,112,0.12);
+	transform: translateY(-1px);
+}
+.elementor-17 .elementor-element.elementor-element-ce42b46 .elementor-button:hover svg,
+.elementor-17 .elementor-element.elementor-element-ce42b46 .elementor-button:focus svg {
+	fill: #367670 !important;
+}
 </style>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,6 +60,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 <link rel='stylesheet' id='hello-elementor-css' href='./wp-content/themes/hello-elementor/assets/css/reset.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./wp-content/themes/hello-elementor/assets/css/theme.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./wp-content/themes/hello-elementor/assets/css/header-footer.css' media='all' />
@@ -69,6 +90,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='elementor-icons-skb_cife-linearicons-icon-css' href='./wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/linearicons.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='./wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css' media='all' />
 <script src="./wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<link rel="stylesheet" href="shared/styles.css" />
+<script src="shared/animate-text.js" defer></script>
+<script src="shared/animate-text-new.js" defer></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 		<style>	
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -623,7 +647,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class=" ti-eye"></i>			</div>
+			<img src="./PUBLIC/customer-support.png" alt="Customer Support" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -647,7 +671,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="lnr lnr-chart-bars"></i>			</div>
+			<img src="./PUBLIC/clipboard.png" alt="Clipboard" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -673,7 +697,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<svg aria-hidden="true" class="e-font-icon-svg e-fab-laravel" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54c.21.08.41.2.63.26a7.92,7.92,0,0,0,4.1,0c.2-.05.37-.16.55-.22a8.6,8.6,0,0,0,1.4-.58L404.4,400.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39h0Z"></path></svg>			</div>
+			<img src="./PUBLIC/saas.png" alt="SaaS" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -697,7 +721,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<svg aria-hidden="true" class="e-font-icon-svg e-fab-connectdevelop" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M550.5 241l-50.089-86.786c1.071-2.142 1.875-4.553 1.875-7.232 0-8.036-6.696-14.733-14.732-15.001l-55.447-95.893c.536-1.607 1.071-3.214 1.071-4.821 0-8.571-6.964-15.268-15.268-15.268-4.821 0-8.839 2.143-11.786 5.625H299.518C296.839 18.143 292.821 16 288 16s-8.839 2.143-11.518 5.625H170.411C167.464 18.143 163.447 16 158.625 16c-8.303 0-15.268 6.696-15.268 15.268 0 1.607.536 3.482 1.072 4.821l-55.983 97.233c-5.356 2.41-9.107 7.5-9.107 13.661 0 .535.268 1.071.268 1.607l-53.304 92.143c-7.232 1.339-12.59 7.5-12.59 15 0 7.232 5.089 13.393 12.054 15l55.179 95.358c-.536 1.607-.804 2.946-.804 4.821 0 7.232 5.089 13.393 12.054 14.732l51.697 89.732c-.536 1.607-1.071 3.482-1.071 5.357 0 8.571 6.964 15.268 15.268 15.268 4.821 0 8.839-2.143 11.518-5.357h106.875C279.161 493.857 283.447 496 288 496s8.839-2.143 11.518-5.357h107.143c2.678 2.946 6.696 4.821 10.982 4.821 8.571 0 15.268-6.964 15.268-15.268 0-1.607-.267-2.946-.803-4.285l51.697-90.268c6.964-1.339 12.054-7.5 12.054-14.732 0-1.607-.268-3.214-.804-4.821l54.911-95.358c6.964-1.339 12.322-7.5 12.322-15-.002-7.232-5.092-13.393-11.788-14.732zM153.535 450.732l-43.66-75.803h43.66v75.803zm0-83.839h-43.66c-.268-1.071-.804-2.142-1.339-3.214l44.999-47.41v50.624zm0-62.411l-50.357 53.304c-1.339-.536-2.679-1.34-4.018-1.607L43.447 259.75c.535-1.339.535-2.679.535-4.018s0-2.41-.268-3.482l51.965-90c2.679-.268 5.357-1.072 7.768-2.679l50.089 51.965v92.946zm0-102.322l-45.803-47.41c1.339-2.143 2.143-4.821 2.143-7.767 0-.268-.268-.804-.268-1.072l43.928-15.804v72.053zm0-80.625l-43.66 15.804 43.66-75.536v59.732zm326.519 39.108l.804 1.339L445.5 329.125l-63.75-67.232 98.036-101.518.268.268zM291.75 355.107l11.518 11.786H280.5l11.25-11.786zm-.268-11.25l-83.303-85.446 79.553-84.375 83.036 87.589-79.286 82.232zm5.357 5.893l79.286-82.232 67.5 71.25-5.892 28.125H313.714l-16.875-17.143zM410.411 44.393c1.071.536 2.142 1.072 3.482 1.34l57.857 100.714v.536c0 2.946.803 5.624 2.143 7.767L376.393 256l-83.035-87.589L410.411 44.393zm-9.107-2.143L287.732 162.518l-57.054-60.268 166.339-60h4.287zm-123.483 0c2.678 2.678 6.16 4.285 10.179 4.285s7.5-1.607 10.179-4.285h75L224.786 95.821 173.893 42.25h103.928zm-116.249 5.625l1.071-2.142a33.834 33.834 0 0 0 2.679-.804l51.161 53.84-54.911 19.821V47.875zm0 79.286l60.803-21.964 59.732 63.214-79.553 84.107-40.982-42.053v-83.304zm0 92.678L198 257.607l-36.428 38.304v-76.072zm0 87.858l42.053-44.464 82.768 85.982-17.143 17.678H161.572v-59.196zm6.964 162.053c-1.607-1.607-3.482-2.678-5.893-3.482l-1.071-1.607v-89.732h99.91l-91.607 94.821h-1.339zm129.911 0c-2.679-2.41-6.428-4.285-10.447-4.285s-7.767 1.875-10.447 4.285h-96.429l91.607-94.821h38.304l91.607 94.821H298.447zm120-11.786l-4.286 7.5c-1.339.268-2.41.803-3.482 1.339l-89.196-91.875h114.376l-17.412 83.036zm12.856-22.232l12.858-60.803h21.964l-34.822 60.803zm34.822-68.839h-20.357l4.553-21.16 17.143 18.214c-.535.803-1.071 1.874-1.339 2.946zm66.161-107.411l-55.447 96.697c-1.339.535-2.679 1.071-4.018 1.874l-20.625-21.964 34.554-163.928 45.803 79.286c-.267 1.339-.803 2.678-.803 4.285 0 1.339.268 2.411.536 3.75z"></path></svg>			</div>
+			<img src="./PUBLIC/project-management.png" alt="Project Management" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -727,7 +751,8 @@ body {
 				</div>
 				<div class="elementor-element elementor-element-a14c2df elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="a14c2df" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="1024" height="1024" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271.png" class="attachment-full size-full wp-image-2981" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271.png 1024w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-300x300.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-150x150.png 150w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/1bb111d5-5c9f-4a13-942c-6683e82e1271-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+															<div id="vanta-net-image" style="width: 100%; height: 100%; min-height: 300px; position: relative; border-radius: 20px; padding-bottom: 20px;"></div>
+															</div>
 				</div>
 				<div class="elementor-element elementor-element-ce42b46 elementor-align-justify elementor-widget elementor-widget-button" data-id="ce42b46" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -736,7 +761,7 @@ body {
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
-									<span class="elementor-button-text">Reach out now</span>
+									<span class="elementor-button-text">Contacte-nos</span>
 					</span>
 					</a>
 				</div>
@@ -748,12 +773,12 @@ body {
 				</div>
 		<div class="elementor-element elementor-element-3fe0192 e-con-full e-flex e-con e-parent" data-id="3fe0192" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-289b4c4 elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="289b4c4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">Let's build your dream</p>				</div>
+				<div class="elementor-widget-container js-animate">
+					<p class="elementor-heading-title elementor-size-default">Let's build your dream</p>			</div>
 				</div>
 				<div class="elementor-element elementor-element-91b4ab0 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="91b4ab0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Está na altura de levar<br> o seu projeto ao próximo nível.</h2>				</div>
+				<div class="elementor-widget-container js-animate">
+					<h2 class="elementor-heading-title elementor-size-default">Está na altura de levar<br> o seu projeto ao próximo nível.</h2>			</div>
 				</div>
 				<div class="elementor-element elementor-element-0d4b1b6 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-widget elementor-widget-heading" data-id="0d4b1b6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -761,7 +786,7 @@ body {
 				</div>
 				<div class="elementor-element elementor-element-b9190e4 elementor-widget elementor-widget-text-editor" data-id="b9190e4" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Vamos elevar o seu projeto—entre em contacto e descubra como podemos fazê-lo acontecer. .</p>								</div>
+									<p>Vamos elevar o seu projeto—entre em contacto e descubra como podemos fazê-lo acontecer.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-28abf73 elementor-align-left elementor-widget elementor-widget-button" data-id="28abf73" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -879,13 +904,19 @@ body {
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-							<span class="elementor-icon-list-text">AutoGo</span>
+							<a href="https://www.autogo.pt/" target="_blank" rel="noopener noreferrer">
+								<span class="elementor-icon-list-text">AutoGo</span>
+							</a>
 							</li>
 							<li class="elementor-icon-list-item">
-							<span class="elementor-icon-list-text">MADPiXEL</span>
+							<a href="https://www.madpixel.pt/index.html" target="_blank" rel="noopener noreferrer">
+								<span class="elementor-icon-list-text">MADPiXEL</span>
+							</a>
 							</li>
 							<li class="elementor-icon-list-item">
-							<span class="elementor-icon-list-text">Aurora</span>
+							<a href="https://www.instagram.com/auroracastro.oficial/" target="_blank" rel="noopener noreferrer">
+								<span class="elementor-icon-list-text">Aurora</span>
+							</a>
 							</li>
 							<li class="elementor-icon-list-item">
 							<span class="elementor-icon-list-text">Outros Parceiros</span>
@@ -960,7 +991,7 @@ body {
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 		
-					<script>
+			<script>
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -998,6 +1029,87 @@ body {
 					function rem(){ logo.classList.remove('tint-green'); }
 					targets.forEach(t => { t.addEventListener('mouseenter', add); t.addEventListener('mouseleave', rem); t.addEventListener('touchstart', add, {passive:true}); t.addEventListener('touchend', rem, {passive:true}); });
 				})();
+			</script>
+
+			<script>
+				// Initialize Vanta Globe animation on Contato hero section
+				document.addEventListener('DOMContentLoaded', function() {
+					const heroElement = document.querySelector('.elementor-element-5c2eb76');
+					if (!heroElement || window.VANTA === undefined || window.VANTA.GLOBE === undefined) return;
+					
+					// Create canvas wrapper
+					const canvasWrapper = document.createElement('div');
+					canvasWrapper.style.position = 'absolute';
+					canvasWrapper.style.top = '0';
+					canvasWrapper.style.left = '0';
+					canvasWrapper.style.width = '100%';
+					canvasWrapper.style.height = '100%';
+					canvasWrapper.style.borderRadius = 'inherit';
+					canvasWrapper.style.zIndex = '0';
+					heroElement.style.position = 'relative';
+					heroElement.insertBefore(canvasWrapper, heroElement.firstChild);
+					
+					// Initialize Vanta Globe
+					VANTA.GLOBE({
+						el: canvasWrapper,
+						mouseControls: true,
+						touchControls: true,
+						gyroControls: false,
+						minHeight: 200.00,
+						minWidth: 200.00,
+						scale: 1.00,
+						scaleMobile: 1.00,
+						color: 0x3fff60,
+						color2: 0x36896a,
+						backgroundColor: 0x8fb693,
+						size: 1.60
+					});
+					
+					// Ensure all child content is above the animation
+					Array.from(heroElement.children).forEach(child => {
+						if (child !== canvasWrapper && child.style.position !== 'absolute') {
+							child.style.position = 'relative';
+							child.style.zIndex = '1';
+						}
+					});
+				});
+			</script>
+			<script>
+				// Initialize Vanta NET animation for image replacement
+				document.addEventListener('DOMContentLoaded', function() {
+					const netElement = document.getElementById('vanta-net-image');
+					if (!netElement || window.VANTA === undefined || window.VANTA.NET === undefined) return;
+					
+					// Get parent container's computed background color
+					const parentContainer = netElement.closest('.elementor-widget-container');
+					const computedStyle = window.getComputedStyle(parentContainer);
+					const bgColor = computedStyle.backgroundColor || '#FCFCFC';
+					
+					// Add smooth blend effect with blur on edges
+					netElement.style.maskImage = 'radial-gradient(ellipse 90% 90% at center, black 0%, black 50%, rgba(0,0,0,0.3) 80%, transparent 100%)';
+					netElement.style.webkitMaskImage = 'radial-gradient(ellipse 90% 90% at center, black 0%, black 50%, rgba(0,0,0,0.3) 80%, transparent 100%)';
+					netElement.style.filter = 'blur(0px)';
+					netElement.style.backdropFilter = 'blur(0px)';
+					
+					// Apply box-shadow for edge blending
+					netElement.style.boxShadow = 'inset 0 0 60px rgba(252,252,252,0.8)';
+					
+					VANTA.NET({
+						el: netElement,
+						mouseControls: true,
+						touchControls: true,
+						gyroControls: false,
+						minHeight: 200.00,
+						minWidth: 200.00,
+						scale: 1.00,
+						scaleMobile: 1.00,
+						color: 0x6bf26b,
+						backgroundColor: 0xFCFCFC,
+						points: 6.00,
+						maxDistance: 25.00,
+						spacing: 17.00
+					});
+				});
 			</script>
 			<script src="https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
 <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.1" id="elementor-webpack-runtime-js"></script>
