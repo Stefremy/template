@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Start a simple HTTP server serving the `nordicus` directory.
+Start a simple HTTP server serving the `linke` directory.
 Try ports 8000 then 8001 and pick the first available.
 """
 import os
@@ -26,8 +26,8 @@ def main():
         print(f"No available ports in {ports}", file=sys.stderr)
         sys.exit(1)
 
-    # Change to the nordicus directory relative to repo root (cwd when npm runs)
-    target_dir = os.path.join(os.getcwd(), "nordicus")
+    # Change to the linke directory relative to repo root (cwd when npm runs)
+    target_dir = os.path.join(os.getcwd(), "linke")
     if not os.path.isdir(target_dir):
         print(f"Directory not found: {target_dir}", file=sys.stderr)
         sys.exit(1)
