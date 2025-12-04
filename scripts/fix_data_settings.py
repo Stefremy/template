@@ -11,9 +11,9 @@ from datetime import datetime
 import re
 
 
-# Resolve repo root and nordicus/index relative to it
+# Resolve repo root and linke/index relative to it
 repo_root = Path(__file__).resolve().parents[1]
-IN_PATH = repo_root / "nordicus" / "index"
+IN_PATH = repo_root / "linke" / "index"
 if not IN_PATH.exists():
     raise SystemExit(f'File not found: {IN_PATH}')
 

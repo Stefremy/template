@@ -13,9 +13,9 @@ import html
 from bs4 import BeautifulSoup
 
 
-# Resolve repo root and nordicus/index relative to it
+# Resolve repo root and linke/index relative to it
 repo_root = Path(__file__).resolve().parents[1]
-IN_PATH = repo_root / "nordicus" / "index"
+IN_PATH = repo_root / "linke" / "index"
 if not IN_PATH.exists():
     raise SystemExit(f"File not found: {IN_PATH}")
 
@@ -103,7 +103,7 @@ if not main.head.find('meta', attrs={'name':'viewport'}):
     main.head.append(main.new_tag('meta', attrs={'name':'viewport','content':'width=device-width, initial-scale=1'}))
 if not main.head.title or not (main.head.title.string and main.head.title.string.strip()):
     t = main.new_tag('title')
-    t.string = 'Nordicus Architects — Template'
+    t.string = 'Linke — Template'
     main.head.append(t)
 
 # Write back
