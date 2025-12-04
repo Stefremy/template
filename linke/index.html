@@ -731,8 +731,10 @@
         transform: translateY(-4px);
         box-shadow: 0 12px 34px rgba(0,0,0,0.14);
     }
-    </style>
-    </head>
+            </style>
+            <link rel="stylesheet" href="shared/styles.css" />
+            <script src="shared/animate-text-new.js" defer></script>
+            </head>
     <body data-rsssl=1 class="home wp-singular page-template-default page page-id-2009 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2009">
         <!-- SVG filter for subtle water/magnify distortion used by .hero-glass ::before -->
         <svg width="0" height="0" style="position:absolute; left:-9999px;" aria-hidden="true" focusable="false">
@@ -1799,6 +1801,27 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                                 </div>
                             </div>
                         </div>
+                                <style>
+                                    /* Scoped hover pill for Contacte-nos hoje! (desktop + mobile duplicate) */
+                                    .elementor-element-d6851b0 .elementor-button {
+                                        transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 160ms ease;
+                                        border-radius: 999px;
+                                    }
+                                    .elementor-element-d6851b0 .elementor-button:hover,
+                                    .elementor-element-d6851b0 .elementor-button:focus {
+                                        background: #C4FE61 !important; /* pill color */
+                                        color: #367670 !important; /* bluish text */
+                                        box-shadow: 0 6px 18px rgba(54,118,112,0.12);
+                                        transform: translateY(-2px);
+                                    }
+                                    /* ensure icon inherits hover color */
+                                    .elementor-element-d6851b0 .elementor-button:hover .elementor-button-icon svg,
+                                    .elementor-element-d6851b0 .elementor-button:hover .elementor-button-icon i {
+                                        fill: currentColor !important;
+                                        stroke: currentColor !important;
+                                        color: inherit !important;
+                                    }
+                                </style>
                        
                         </div>
                     </div>
@@ -1918,13 +1941,19 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
                             <div class="elementor-widget-container">
                                 <ul class="elementor-icon-list-items">
                                     <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-text">AutoGo</span>
+                                        <a href="https://www.autogo.pt/" target="_blank" rel="noopener noreferrer">
+                                            <span class="elementor-icon-list-text">AutoGo</span>
+                                        </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-text">MADPiXEL</span>
+                                        <a href="https://www.madpixel.pt/index.html" target="_blank" rel="noopener noreferrer">
+                                            <span class="elementor-icon-list-text">MADPiXEL</span>
+                                        </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <span class="elementor-icon-list-text">Aurora</span>
+                                        <a href="https://www.instagram.com/auroracastro.oficial/" target="_blank" rel="noopener noreferrer">
+                                            <span class="elementor-icon-list-text">Aurora</span>
+                                        </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
                                         <span class="elementor-icon-list-text">Outros Parceiros</span>
