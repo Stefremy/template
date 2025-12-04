@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 
 root = Path('/workspaces/template')
-file_path = root / 'nordicus' / 'solucoes.html'
+file_path = root / 'linke' / 'solucoes.html'
 backup = file_path.with_suffix('.setupicon.bak')
 text = file_path.read_text(encoding='utf-8')
 

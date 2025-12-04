@@ -3,9 +3,9 @@ from pathlib import Path
 import sys
 
 
-# Resolve repo root and nordicus/index relative to it
+# Resolve repo root and linke/index relative to it
 repo_root = Path(__file__).resolve().parents[1]
-IN = repo_root / "nordicus" / "index"
+IN = repo_root / "linke" / "index"
 if not IN.exists():
     print("File not found:", IN)
     sys.exit(1)

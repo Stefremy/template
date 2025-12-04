@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix and prettify nordicus index HTML.
+"""Fix and prettify linke index HTML.
 
 Backs up the original to the same directory with a timestamped suffix,
 parses with html5lib via BeautifulSoup, performs light cleanups, and
@@ -11,9 +11,9 @@ from datetime import datetime
 import sys
 
 
-# Resolve repo root and nordicus/index relative to it
+# Resolve repo root and linke/index relative to it
 repo_root = Path(__file__).resolve().parents[1]
-IN_PATH = repo_root / "nordicus" / "index"
+IN_PATH = repo_root / "linke" / "index"
 if not IN_PATH.exists():
     print("File not found:", IN_PATH)
     sys.exit(1)
