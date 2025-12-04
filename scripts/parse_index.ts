@@ -1,9 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Path to nordicus/index resolved relative to repo root
+// Path to linke/index resolved relative to repo root
 const repoRoot = path.resolve(__dirname, '..');
-const IN_PATH = path.resolve(repoRoot, 'nordicus', 'index');
+const IN_PATH = path.resolve(repoRoot, 'linke', 'index');
 
 try {
   const data = fs.readFileSync(IN_PATH, 'utf-8');

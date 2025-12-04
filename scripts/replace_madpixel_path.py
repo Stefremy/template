@@ -3,10 +3,10 @@ import shutil
 from pathlib import Path
 
 root = Path('/workspaces/template')
-file_path = root / 'nordicus' / 'solucoes.html'
+file_path = root / 'linke' / 'solucoes.html'
 backup = file_path.with_suffix('.madpixel.bak')
 
-old = '/workspaces/template/nordicus/PUBLIC/madpixel-logo.png'
+old = '/workspaces/template/linke/PUBLIC/madpixel-logo.png'
 new = 'PUBLIC/madpixel-logo.png'
 
 print(f'Reading {file_path}')
