@@ -2757,39 +2757,61 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
         })();
         </script>
 
+        <script>
+        // Inject linkobanner image into hero and animate it drifting (up/down) inside container
+        document.addEventListener('DOMContentLoaded', function(){
+            try{
+                const hero = document.querySelector('.elementor-2009 .elementor-element.elementor-element-18729f0');
+                if(!hero) return;
+                if(hero.querySelector('.hero-pan-img')) return; // already injected
+
+                const img = new Image();
+                img.className = 'hero-pan-img';
+                img.src = '../../../../PUBLIC/linkobanner.png';
+                img.alt = '';
+
+                img.addEventListener('load', function(){
+                    // ensure container clipping
+                    if(!getComputedStyle(hero).position || getComputedStyle(hero).position === 'static') hero.style.position = 'relative';
+                    hero.style.overflow = 'hidden';
+
+                    // insert image as first child so content overlays it
+                    hero.insertBefore(img, hero.firstChild);
+
+                    // apply styles to position and size
+                    img.style.position = 'absolute';
+                    img.style.top = '0';
+                    img.style.left = '50%';
+                    img.style.transform = 'translateX(-50%) translateY(0)';
+                    img.style.willChange = 'transform';
+                    img.style.pointerEvents = 'none';
+                    img.style.zIndex = '1';
+                    img.style.minWidth = '100%';
+                    img.style.height = 'auto';
+
+                    // create keyframe animation that drifts from top to bottom of image
+                    if(!document.getElementById('hero-drift-keyframes')){
+                        const style = document.createElement('style');
+                        style.id = 'hero-drift-keyframes';
+                        style.textContent = `
+                            @keyframes heroDrift {
+                                0% { transform: translateX(-50%) translateY(0); }
+                                50% { transform: translateX(-50%) translateY(-80px); }
+                                100% { transform: translateX(-50%) translateY(0); }
+                            }
+                            .hero-pan-img {
+                                animation: heroDrift 8s ease-in-out infinite !important;
+                            }
+                        `;
+                        document.head.appendChild(style);
+                    }
+                });
+            }catch(e){console.error('hero-drift error', e)}
+        });
+        </script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-        <script>
-        // GSAP ScrollTrigger pinned section effect for linkobanner hero
-        (function(){
-            gsap.registerPlugin(ScrollTrigger);
-            
-            const heroSection = document.querySelector('[class*="elementor-element-18729f0"]');
-            if(!heroSection) return;
-            
-            // Pin the hero section and control background position on scroll
-            ScrollTrigger.create({
-                trigger: heroSection,
-                start: "top top",
-                end: "+=1500", // Scroll distance before unpinning (adjust as needed)
-                pin: true,
-                scrub: 1, // Smooth animation tied to scroll
-                onUpdate: (self) => {
-                    // Move the background image based on scroll progress
-                    const progress = self.progress; // 0 to 1
-                    // Start at top (100%), scroll down reveals bottom (0%), clamped between 0-100%
-                    let yPosition = 100 - (progress * 100);
-                    yPosition = Math.max(0, Math.min(100, yPosition)); // Clamp to 0-100%
-                    gsap.to(heroSection, {
-                        backgroundPosition: `center ${yPosition}%`,
-                        duration: 0,
-                        overwrite: false
-                    });
-                }
-            });
-        })();
-        </script>
 
         </body>
     </html>
