@@ -2757,5 +2757,39 @@ Está na altura de levar<br> o seu projeto ao próximo nível?                  
         })();
         </script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <script>
+        // GSAP ScrollTrigger pinned section effect for linkobanner hero
+        (function(){
+            gsap.registerPlugin(ScrollTrigger);
+            
+            const heroSection = document.querySelector('[class*="elementor-element-18729f0"]');
+            if(!heroSection) return;
+            
+            // Pin the hero section and control background position on scroll
+            ScrollTrigger.create({
+                trigger: heroSection,
+                start: "top top",
+                end: "+=1500", // Scroll distance before unpinning (adjust as needed)
+                pin: true,
+                scrub: 1, // Smooth animation tied to scroll
+                onUpdate: (self) => {
+                    // Move the background image based on scroll progress
+                    const progress = self.progress; // 0 to 1
+                    // Start at top (100%), scroll down reveals bottom (0%), clamped between 0-100%
+                    let yPosition = 100 - (progress * 100);
+                    yPosition = Math.max(0, Math.min(100, yPosition)); // Clamp to 0-100%
+                    gsap.to(heroSection, {
+                        backgroundPosition: `center ${yPosition}%`,
+                        duration: 0,
+                        overwrite: false
+                    });
+                }
+            });
+        })();
+        </script>
+
         </body>
     </html>
