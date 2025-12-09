@@ -11,7 +11,7 @@
 
     // Auto-target by text content across pages
     const phrases = [
-      "Let's build your dream",
+      "Vamos construir o seu sonho",
       'Está na altura de levar',
       'Vamos elevar o seu projeto'
     ];
