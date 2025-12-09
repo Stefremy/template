@@ -20,7 +20,7 @@ module.exports = `<!doctype html>
                 "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
                 "svgExt": ".svg",
                 "source": {
-                    "concatemoji": "https:\/\/template3.nicolaipalmkvist.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+                    "concatemoji": ".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
                 }
             };
             /*! This file is auto-generated */
@@ -625,7 +625,7 @@ module.exports = `<!doctype html>
                 <div class="elementor-element elementor-element-e3cd8e5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e3cd8e5" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                         <a href="index.html">
-                            <img fetchpriority="high" width="792" height="88" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png 792w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                            <img fetchpriority="high" width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                         </a>
                     </div>
                 </div>
@@ -681,7 +681,7 @@ module.exports = `<!doctype html>
                                     <span class="elementor-button-icon">
                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                     </span>
-                                    <span class="elementor-button-text">Start a project</span>
+                                    <span class="elementor-button-text">Iniciar projeto</span>
                                 </span>
                             </a>
                         </div>
@@ -695,7 +695,7 @@ module.exports = `<!doctype html>
                             <div class="elementor-element elementor-element-b660468 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="b660468" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                     <a href="index.html">
-                                        <img fetchpriority="high" width="792" height="88" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png 792w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                                        <img fetchpriority="high" width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                                     </a>
                                 </div>
                             </div>
@@ -710,7 +710,7 @@ module.exports = `<!doctype html>
                                             <span class="elementor-button-icon">
                                                 <i aria-hidden="true" class=" arrow_right-up"></i>
                                             </span>
-                                            <span class="elementor-button-text">Start a project</span>
+                                            <span class="elementor-button-text">Iniciar projeto</span>
                                         </span>
                                     </a>
                                 </div>
@@ -790,7 +790,7 @@ module.exports = `<!doctype html>
         <main id="content" class="site-main post-2009 page type-page status-publish hentry">
             <div class="page-content">
                 <div data-elementor-type="wp-page" data-elementor-id="2009" class="elementor elementor-2009" data-elementor-post-type="page">
-                    <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/template3.nicolaipalmkvist.com\/wp-content\/uploads\/2025\/04\/2video-background.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+                    <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/wp-content\/uploads\/2025\/04\/2video-background.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
                         <div class="elementor-background-video-container" aria-hidden="true">
                             <video class="elementor-background-video-hosted" autoplay muted playsinline loop></video>
                         </div>
@@ -874,7 +874,7 @@ module.exports = `<!doctype html>
                                                         <span class="elementor-button-icon">
                                                             <i aria-hidden="true" class=" arrow_right-up"></i>
                                                         </span>
-                                                        <span class="elementor-button-text">Contact</span>
+                                                        <span class="elementor-button-text">Contacte-nos</span>
                                                     </span>
                                                 </a>
                                             </div>
@@ -886,7 +886,7 @@ module.exports = `<!doctype html>
                             <div class="elementor-element elementor-element-106d7104 e-con-full e-flex e-con e-child" data-id="106d7104" data-element_type="container">
                                 <div class="elementor-element elementor-element-53170e4 elementor-widget elementor-widget-image" data-id="53170e4" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img decoding="async" width="800" height="457" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/Modern-Architecture-and-Nature-1024x585.jpeg" class="attachment-large size-large wp-image-3307" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/Modern-Architecture-and-Nature-1024x585.jpeg 1024w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/Modern-Architecture-and-Nature-300x172.jpeg 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/Modern-Architecture-and-Nature-768x439.jpeg 768w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/06/Modern-Architecture-and-Nature.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"/>
+                                        <img decoding="async" width="800" height="457" src="./wp-content/uploads/2025/06/Modern-Architecture-and-Nature-1024x585.jpeg" class="attachment-large size-large wp-image-3307" alt="" srcset="./wp-content/uploads/2025/06/Modern-Architecture-and-Nature-1024x585.jpeg 1024w, ./wp-content/uploads/2025/06/Modern-Architecture-and-Nature-300x172.jpeg 300w, ./wp-content/uploads/2025/06/Modern-Architecture-and-Nature-768x439.jpeg 768w, ./wp-content/uploads/2025/06/Modern-Architecture-and-Nature.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"/>
                                     </div>
                                 </div>
                             </div>
@@ -932,7 +932,7 @@ module.exports = `<!doctype html>
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                                     </span>
-                                                    <span class="elementor-button-text">EXPLORE SOLUTIONS</span>
+                                                    <span class="elementor-button-text">Explorar soluções</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -943,7 +943,7 @@ module.exports = `<!doctype html>
                                         <div class="elementor-button-wrapper">
                                                 <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">How?</span>
+                                                    <span class="elementor-button-text">Como?</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -973,7 +973,7 @@ module.exports = `<!doctype html>
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                                     </span>
-                                                    <span class="elementor-button-text">EXPLORE SOLUTIONS</span>
+                                                    <span class="elementor-button-text">Explorar soluções</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -984,7 +984,7 @@ module.exports = `<!doctype html>
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">Contact</span>
+                                                    <span class="elementor-button-text">Contacte-nos</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1014,7 +1014,7 @@ module.exports = `<!doctype html>
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                                     </span>
-                                                    <span class="elementor-button-text">EXPLORE SOLUTIONS</span>
+                                                    <span class="elementor-button-text">Explorar soluções</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1025,7 +1025,7 @@ module.exports = `<!doctype html>
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">Contact</span>
+                                                    <span class="elementor-button-text">Contacte-nos</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1055,7 +1055,7 @@ module.exports = `<!doctype html>
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true" class=" arrow_right-up"></i>
                                                     </span>
-                                                    <span class="elementor-button-text">EXPLORE SOLUTIONS</span>
+                                                    <span class="elementor-button-text">Explorar soluções</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1066,7 +1066,7 @@ module.exports = `<!doctype html>
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">How?</span>
+                                                    <span class="elementor-button-text">Como?</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1365,7 +1365,7 @@ module.exports = `<!doctype html>
                                                     <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
                                                 </svg>
                                             </span>
-                                            <span class="elementor-button-text">Contact us today</span>
+                                            <span class="elementor-button-text">Contacte-nos hoje</span>
                                         </span>
                                     </a>
                                 </div>
@@ -1378,7 +1378,7 @@ module.exports = `<!doctype html>
                         </div>
                         <div class="elementor-element elementor-element-d8bfeb6 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="d8bfeb6" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="768" height="480" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/04/2-9-768x480.png" class="attachment-medium_large size-medium_large wp-image-2918" alt=""/>
+                                <img loading="lazy" decoding="async" width="768" height="480" src="./wp-content/uploads/2025/04/2-9-768x480.png" class="attachment-medium_large size-medium_large wp-image-2918" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -1412,7 +1412,7 @@ module.exports = `<!doctype html>
                     <div class="elementor-element elementor-element-925ae0f e-con-full e-flex e-con e-child" data-id="925ae0f" data-element_type="container">
                         <div class="elementor-element elementor-element-3bb9854 elementor-widget elementor-widget-image" data-id="3bb9854" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="792" height="88" src="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG.png 792w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, https://template3.nicolaipalmkvist.com/wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                                <img width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-7420d3b elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7420d3b" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1428,7 +1428,7 @@ module.exports = `<!doctype html>
                                             <span class="elementor-icon-list-icon">
                                                 <i aria-hidden="true" class=" arrow_right-up"></i>
                                             </span>
-                                            <span class="elementor-icon-list-text">Start project</span>
+                                            <span class="elementor-icon-list-text">Iniciar projeto</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1487,7 +1487,7 @@ module.exports = `<!doctype html>
                                     </li>
                                     <li class="elementor-icon-list-item">
                                         <a href="contato.html">
-                                            <span class="elementor-icon-list-text">contact</span>
+                                            <span class="elementor-icon-list-text">Contacto</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1497,7 +1497,7 @@ module.exports = `<!doctype html>
                     <div class="elementor-element elementor-element-7ffe2d0 e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-child" data-id="7ffe2d0" data-element_type="container">
                         <div class="elementor-element elementor-element-e1fb7c1 elementor-widget elementor-widget-heading" data-id="e1fb7c1" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h5 class="elementor-heading-title elementor-size-default">Projects</h5>
+                                <h5 class="elementor-heading-title elementor-size-default" style="font-family: 'zwodrei', sans-serif;">Projetos</h5>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-0c38b12 elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0c38b12" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1530,7 +1530,7 @@ module.exports = `<!doctype html>
                     <div class="elementor-element elementor-element-4747feb e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-child" data-id="4747feb" data-element_type="container">
                         <div class="elementor-element elementor-element-2838400 elementor-widget elementor-widget-heading" data-id="2838400" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h5 class="elementor-heading-title elementor-size-default">Contact us</h5>
+                                <h5 class="elementor-heading-title elementor-size-default" style="font-family: 'zwodrei', sans-serif;">Contacto</h5>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-56e6487 elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="56e6487" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1610,7 +1610,7 @@ module.exports = `<!doctype html>
                 <div class="elementor-element elementor-element-2014eb9e elementor-align-left elementor-widget__width-inherit elementor-tablet-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="2014eb9e" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;widescreen&quot;,&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://nicolaipalmkvist.com/choose-your-plan/" target="_blank">
+                            <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="contato.html">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-icon">
                                         <i aria-hidden="true" class=" ti-arrow-top-right"></i>
@@ -1653,10 +1653,10 @@ module.exports = `<!doctype html>
             }
             );
         </script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.1" id="elementor-webpack-runtime-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.1" id="elementor-frontend-modules-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+        <script src="./wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
+        <script src="./wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.1" id="elementor-webpack-runtime-js"></script>
+        <script src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.1" id="elementor-frontend-modules-js"></script>
+        <script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
         <script id="elementor-frontend-js-before">
             var elementorFrontendConfig = {
                 "environmentMode": {
@@ -1756,9 +1756,9 @@ module.exports = `<!doctype html>
                     "import-export-customization": true
                 },
                 "urls": {
-                    "assets": "https:\/\/template3.nicolaipalmkvist.com\/wp-content\/plugins\/elementor\/assets\/",
-                    "ajaxurl": "https:\/\/template3.nicolaipalmkvist.com\/wp-admin\/admin-ajax.php",
-                    "uploadUrl": "https:\/\/template3.nicolaipalmkvist.com\/wp-content\/uploads"
+                    "assets": ".\/wp-content\/plugins\/elementor\/assets",
+                    "ajaxurl": ".\/wp-admin\/admin-ajax.php",
+                    "uploadUrl": ".\/wp-content\/uploads"
                 },
                 "nonces": {
                     "floatingButtonsClickTracking": "e878d578c3"
@@ -1789,12 +1789,12 @@ module.exports = `<!doctype html>
                 }
             };
         </script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.1" id="elementor-frontend-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.2" id="e-sticky-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.2" id="elementor-pro-webpack-runtime-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+        <script src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.1" id="elementor-frontend-js"></script>
+        <script src="./wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+        <script src="./wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.2" id="e-sticky-js"></script>
+        <script src="./wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.2" id="elementor-pro-webpack-runtime-js"></script>
+        <script src="./wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+        <script src="./wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
         <script id="wp-i18n-js-after">
             wp.i18n.setLocaleData({
                 'text direction\u0004ltr': ['ltr']
@@ -1802,11 +1802,11 @@ module.exports = `<!doctype html>
         </script>
         <script id="elementor-pro-frontend-js-before">
             var ElementorProFrontendConfig = {
-                "ajaxurl": "https:\/\/template3.nicolaipalmkvist.com\/wp-admin\/admin-ajax.php",
+                "ajaxurl": ".\/wp-admin\/admin-ajax.php",
                 "nonce": "7a8d82cce2",
                 "urls": {
-                    "assets": "https:\/\/template3.nicolaipalmkvist.com\/wp-content\/plugins\/elementor-pro\/assets\/",
-                    "rest": "https:\/\/template3.nicolaipalmkvist.com\/wp-json\/"
+                    "assets": ".\/wp-content\/plugins\/elementor-pro\/assets",
+                    "rest": ".\/wp-json"
                 },
                 "settings": {
                     "lazy_load_background_images": true
@@ -1890,12 +1890,12 @@ module.exports = `<!doctype html>
                     "app_id": ""
                 },
                 "lottie": {
-                    "defaultAnimationUrl": "https:\/\/template3.nicolaipalmkvist.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+                    "defaultAnimationUrl": ".\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
                 }
             };
         </script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.2" id="elementor-pro-frontend-js"></script>
-        <script src="https://template3.nicolaipalmkvist.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
+        <script src="./wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.2" id="elementor-pro-frontend-js"></script>
+        <script src="./wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
         <!-- Botpress Webchat inject -->
         <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
         <script src="https://files.bpcontent.cloud/2025/02/25/17/20250225174247-YDOR8OY4.js" defer></script>

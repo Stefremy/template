@@ -1,5 +1,12 @@
 /* Shared styles for linke pages: nav pill, CTA pill, project card shadows */
 
+/* Fallback font for Portuguese special characters in zwodrei headings */
+[style*="zwodrei"] {
+    font-family: 'zwodrei', 'Playfair Display', serif !important;
+    font-weight: 700;
+}
+
+
 /* Navbar hover/active pill (match index) */
 nav.elementor-nav-menu--main ul li a:hover,
 nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
@@ -216,6 +223,15 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-ae06be9 .elementor-button:hover .e-font-icon-svg path,
 .elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
+}
+
+/* Increase subtext (paragraphs, small widget text) by 3px across all pages.
+   This targets standard paragraphs and common Elementor text widgets. */
+.elementor-widget-container > p,
+.elementor-widget-text-editor p,
+p {
+    font-size: calc(1em + 3px) !important;
+    line-height: 1.5;
 }
 /* Shared styles for linke pages: nav pill, CTA pill, project card shadows */
 
