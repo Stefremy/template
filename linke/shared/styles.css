@@ -111,7 +111,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
+                0 8px 20px rgba(0,0,0,0.15),
+                0 4px 8px rgba(0,0,0,0.08);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -122,7 +124,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
+                0 12px 28px rgba(0,0,0,0.20),
+                0 6px 12px rgba(0,0,0,0.12);
     transform: translateY(-4px);
 }
 
@@ -312,7 +316,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
+                0 8px 20px rgba(0,0,0,0.15),
+                0 4px 8px rgba(0,0,0,0.08);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -323,7 +329,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
+                0 12px 28px rgba(0,0,0,0.20),
+                0 6px 12px rgba(0,0,0,0.12);
     transform: translateY(-4px);
 }
 
@@ -580,7 +588,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
+                0 8px 20px rgba(0,0,0,0.15),
+                0 4px 8px rgba(0,0,0,0.08);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -591,7 +601,9 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
+                0 12px 28px rgba(0,0,0,0.20),
+                0 6px 12px rgba(0,0,0,0.12);
     transform: translateY(-4px);
 }
 
@@ -664,4 +676,44 @@ a.elementor-button[href*="area-cliente"]:hover {
 }
 .elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
+}
+
+/* Blur background image only using pseudo-element - text and buttons remain sharp */
+.elementor-element-aba69b1,
+.elementor-element-c24c7ae,
+.elementor-element-c8beb5d,
+.elementor-element-343269c,
+.elementor-element-548ef7d {
+    overflow: hidden;
+}
+
+.elementor-element-aba69b1::after,
+.elementor-element-c24c7ae::after,
+.elementor-element-c8beb5d::after,
+.elementor-element-343269c::after,
+.elementor-element-548ef7d::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(2px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Reduce blur and shadow for Outros clientes section (548ef7d) */
+.elementor-element-548ef7d {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+}
+
+.elementor-element-548ef7d:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Apply DM Sans font to all button text */
+.elementor-button,
+.elementor-button-text {
+    font-family: 'DM Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600;
 }
