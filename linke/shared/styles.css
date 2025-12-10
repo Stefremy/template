@@ -399,6 +399,16 @@ a.elementor-button[href*="area-cliente"]:hover {
     transition: fill 180ms ease, transform 220ms ease;
     transform-origin: center;
 }
+/* Scoped drop shadows for the 'WEBPAGES PERSONALIZADAS' block
+   - Heading: stronger, more pronounced shadow for emphasis
+   - Paragraph: lighter shadow to improve legibility on busy backgrounds
+*/
+.elementor-element-4ad0da5 .elementor-heading-title {
+    text-shadow: 0 4px 10px rgba(0,0,0,0.48), 0 12px 36px rgba(0,0,0,0.28);
+}
+.elementor-element-28c3efb4 .elementor-widget-container p {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.36);
+}
 .elementor-element-6139156 .elementor-button .e-font-icon-svg path,
 .elementor-element-a4e420f .elementor-button .e-font-icon-svg path {
     transition: fill 180ms ease;
