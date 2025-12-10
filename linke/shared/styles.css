@@ -399,6 +399,26 @@ a.elementor-button[href*="area-cliente"]:hover {
     transition: fill 180ms ease, transform 220ms ease;
     transform-origin: center;
 }
+
+/* Override: use local `estradaporto.png` as background for the
+   "Como trabalhamos" section (elementor element c06b24c). This sits
+   in `linke/PUBLIC/estradaporto.png`. We keep cover/position and
+   reduce the dark overlay for better visibility. */
+.elementor-13 .elementor-element.elementor-element-c06b24c {
+    background-image: url("/PUBLIC/estradaporto.png") !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.elementor-13 .elementor-element.elementor-element-c06b24c::before {
+    background-color: rgba(23,51,48,0.30) !important; /* darker overlay for better contrast */
+}
+
+/* Slight transition so the swap feels smooth in-page */
+.elementor-13 .elementor-element.elementor-element-c06b24c,
+.elementor-13 .elementor-element.elementor-element-c06b24c::before {
+    transition: background-image 220ms ease, background-color 220ms ease;
+}
 /* Scoped drop shadows for the 'WEBPAGES PERSONALIZADAS' block
    - Heading: stronger, more pronounced shadow for emphasis
    - Paragraph: lighter shadow to improve legibility on busy backgrounds
