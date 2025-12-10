@@ -727,3 +727,32 @@ a.elementor-button[href*="area-cliente"]:hover {
     font-family: 'DM Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     font-weight: 400;
 }
+
+/* Clickable image hover/focus styles: show pointer and subtle lift for linked images */
+.elementor-widget-image .elementor-widget-container a img,
+.elementor-widget-image .elementor-widget-container a > img {
+    cursor: pointer;
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease;
+    will-change: transform, box-shadow;
+    display: block;
+}
+.elementor-widget-image .elementor-widget-container a:hover img,
+.elementor-widget-image .elementor-widget-container a:focus img,
+.elementor-widget-image .elementor-widget-container a:focus-visible img {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+.elementor-widget-image .elementor-widget-container a:focus {
+    outline: 3px solid rgba(54,118,112,0.16);
+    outline-offset: 6px;
+    border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .elementor-widget-image .elementor-widget-container a img,
+    .elementor-widget-image .elementor-widget-container a > img {
+        transition: none !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
