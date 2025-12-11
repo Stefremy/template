@@ -684,7 +684,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 /* Solutions page: background for the "Como trabalhamos" section */
 /* Targets only the Soluções page (elementor-page-13) and the container with id c06b24c */
 .elementor-page-13 .elementor-element.elementor-element-c06b24c {
-    background-image: url("/PUBLIC/estradaporto.png") !important;
+    background-image: url("/PUBLIC/estradaaveiro.png") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
