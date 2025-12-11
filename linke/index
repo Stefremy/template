@@ -625,7 +625,7 @@ module.exports = `<!doctype html>
                 <div class="elementor-element elementor-element-e3cd8e5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e3cd8e5" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                         <a href="index.html">
-                            <img fetchpriority="high" width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                            <img fetchpriority="high" width="792" height="88" src="./PUBLIC/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./PUBLIC/Hvid-PNG.png 792w, ./PUBLIC/Hvid-PNG-300x33.png 300w, ./PUBLIC/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                         </a>
                     </div>
                 </div>
@@ -695,7 +695,7 @@ module.exports = `<!doctype html>
                             <div class="elementor-element elementor-element-b660468 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="b660468" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                     <a href="index.html">
-                                        <img fetchpriority="high" width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                                        <img fetchpriority="high" width="792" height="88" src="./PUBLIC/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./PUBLIC/Hvid-PNG.png 792w, ./PUBLIC/Hvid-PNG-300x33.png 300w, ./PUBLIC/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                                     </a>
                                 </div>
                             </div>
@@ -790,7 +790,7 @@ module.exports = `<!doctype html>
         <main id="content" class="site-main post-2009 page type-page status-publish hentry">
             <div class="page-content">
                 <div data-elementor-type="wp-page" data-elementor-id="2009" class="elementor elementor-2009" data-elementor-post-type="page">
-                    <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/wp-content\/uploads\/2025\/04\/2video-background.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+                    <div class="elementor-element elementor-element-3e1f4d94 e-con-full e-flex e-con e-parent" data-id="3e1f4d94" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;.\/PUBLIC\/2video-background.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
                         <div class="elementor-background-video-container" aria-hidden="true">
                             <video class="elementor-background-video-hosted" autoplay muted playsinline loop></video>
                         </div>
@@ -1412,7 +1412,7 @@ module.exports = `<!doctype html>
                     <div class="elementor-element elementor-element-925ae0f e-con-full e-flex e-con e-child" data-id="925ae0f" data-element_type="container">
                         <div class="elementor-element elementor-element-3bb9854 elementor-widget elementor-widget-image" data-id="3bb9854" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="792" height="88" src="./wp-content/uploads/2025/03/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./wp-content/uploads/2025/03/Hvid-PNG.png 792w, ./wp-content/uploads/2025/03/Hvid-PNG-300x33.png 300w, ./wp-content/uploads/2025/03/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
+                                <img width="792" height="88" src="./PUBLIC/Hvid-PNG.png" class="attachment-large size-large wp-image-1780" alt="" srcset="./PUBLIC/Hvid-PNG.png 792w, ./PUBLIC/Hvid-PNG-300x33.png 300w, ./PUBLIC/Hvid-PNG-768x85.png 768w" sizes="(max-width: 792px) 100vw, 792px"/>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-7420d3b elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7420d3b" data-element_type="widget" data-widget_type="icon-list.default">
