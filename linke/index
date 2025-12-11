@@ -1537,15 +1537,40 @@ module.exports = `<!doctype html>
                             <div class="elementor-widget-container">
                                 <ul class="elementor-icon-list-items">
                                     <li class="elementor-icon-list-item">
-                                        <a href="contato.html">
-                                            <span class="elementor-icon-list-text">Ligue-nos</span>
+                                            <a href="tel:+351928315080">
+
+                                                <span class="elementor-icon-list-icon footer-phone-icon">
+                                                    <img src="PUBLIC/socialmedia/smartphone copy.png" alt="Telefone" style="width: 32px; height: 32px; display:block; object-fit:contain;">
+                                                </span>
+                                                </a>
+                                            </li>
+                                    <li class="elementor-icon-list-item">
+                                        <a href="#">
+
+                                            <span class="elementor-icon-list-text">+351 928 315 080</span>
+                                            </a>
+                                    </li>
+                                    <li class="elementor-icon-list-item">
+                                            <a href="mailto:geral@linke.pt">
+
+                                            <span class="elementor-icon-list-icon footer-email-icon">
+                                                <img src="PUBLIC/socialmedia/email copy.png" alt="Email" style="width: 32px; height: 32px; display:block; object-fit:contain;">
+                                            </span>
+                                            </a>
+                                    </li>
+                                    <li class="elementor-icon-list-item">
+                                        <a href="mailto:geral@linke.pt">
+
+                                        <span class="elementor-icon-list-text">geral@linke.pt</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
-                                        <a href="contato.html">
-                                            <span class="elementor-icon-list-text">Enviar e-mail</span>
+                                        <a href="#">
+
+                                            <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class=" arrow_right-up"></i>                        </span>
                                         </a>
-                                    </li>
+                                </li>
                                 </ul>
                             </div>
                         </div>
