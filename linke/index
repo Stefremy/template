@@ -1538,12 +1538,12 @@ module.exports = `<!doctype html>
                                 <ul class="elementor-icon-list-items">
                                     <li class="elementor-icon-list-item">
                                         <a href="contato.html">
-                                            <span class="elementor-icon-list-text">Call us</span>
+                                            <span class="elementor-icon-list-text">Ligue-nos</span>
                                         </a>
                                     </li>
                                     <li class="elementor-icon-list-item">
                                         <a href="contato.html">
-                                            <span class="elementor-icon-list-text">Send email</span>
+                                            <span class="elementor-icon-list-text">Enviar e-mail</span>
                                         </a>
                                     </li>
                                 </ul>
