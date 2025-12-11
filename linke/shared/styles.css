@@ -111,9 +111,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
-                0 8px 20px rgba(0,0,0,0.15),
-                0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -124,9 +122,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
-                0 12px 28px rgba(0,0,0,0.20),
-                0 6px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
     transform: translateY(-4px);
 }
 
@@ -228,15 +224,6 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-28abf73 .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
 }
-
-/* Increase subtext (paragraphs, small widget text) by 3px across all pages.
-   This targets standard paragraphs and common Elementor text widgets. */
-.elementor-widget-container > p,
-.elementor-widget-text-editor p,
-p {
-    font-size: calc(1em + 3px) !important;
-    line-height: 1.5;
-}
 /* Shared styles for linke pages: nav pill, CTA pill, project card shadows */
 
 /* Navbar hover/active pill (match index) */
@@ -316,9 +303,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
-                0 8px 20px rgba(0,0,0,0.15),
-                0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -329,9 +314,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
-                0 12px 28px rgba(0,0,0,0.20),
-                0 6px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
     transform: translateY(-4px);
 }
 
@@ -399,36 +382,6 @@ a.elementor-button[href*="area-cliente"]:hover {
     transition: fill 180ms ease, transform 220ms ease;
     transform-origin: center;
 }
-
-/* Override: use local `estradaporto.png` as background for the
-   "Como trabalhamos" section (elementor element c06b24c). This sits
-   in `linke/PUBLIC/estradaporto.png`. We keep cover/position and
-   reduce the dark overlay for better visibility. */
-.elementor-13 .elementor-element.elementor-element-c06b24c {
-    background-image: url("/PUBLIC/estradaporto.png") !important;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-.elementor-13 .elementor-element.elementor-element-c06b24c::before {
-    background-color: rgba(23,51,48,0.30) !important; /* darker overlay for better contrast */
-}
-
-/* Slight transition so the swap feels smooth in-page */
-.elementor-13 .elementor-element.elementor-element-c06b24c,
-.elementor-13 .elementor-element.elementor-element-c06b24c::before {
-    transition: background-image 220ms ease, background-color 220ms ease;
-}
-/* Scoped drop shadows for the 'WEBPAGES PERSONALIZADAS' block
-   - Heading: stronger, more pronounced shadow for emphasis
-   - Paragraph: lighter shadow to improve legibility on busy backgrounds
-*/
-.elementor-element-4ad0da5 .elementor-heading-title {
-    text-shadow: 0 4px 10px rgba(0,0,0,0.48), 0 12px 36px rgba(0,0,0,0.28);
-}
-.elementor-element-28c3efb4 .elementor-widget-container p {
-    text-shadow: 0 2px 6px rgba(0,0,0,0.36);
-}
 .elementor-element-6139156 .elementor-button .e-font-icon-svg path,
 .elementor-element-a4e420f .elementor-button .e-font-icon-svg path {
     transition: fill 180ms ease;
@@ -444,6 +397,29 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path,
 .elementor-element-a4e420f .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
+}
+
+/* Blur the contact hero background (elementor-17 .elementor-element-96668b8) without affecting text */
+.elementor-17 .elementor-element.elementor-element-96668b8 {
+    position: relative;
+    overflow: hidden;
+    background-image: none !important;
+}
+.elementor-17 .elementor-element.elementor-element-96668b8::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: -5px !important;
+    background-image: url("/PUBLIC/pacodosduques.png") !important;
+    background-color: transparent !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    filter: blur(2px) !important;
+    z-index: 0 !important;
+}
+.elementor-17 .elementor-element.elementor-element-96668b8 > .elementor-container {
+    position: relative;
+    z-index: 2;
 }
 
 /* 52x white rounded icon wrapper used across Soluções pages */
@@ -618,9 +594,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d,
 .elementor-element-343269c,
 .elementor-element-548ef7d {
-    box-shadow: 0 16px 40px rgba(0,0,0,0.20),
-                0 8px 20px rgba(0,0,0,0.15),
-                0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
     transition: transform 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, box-shadow;
 }
@@ -631,9 +605,7 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-c8beb5d:hover,
 .elementor-element-343269c:hover,
 .elementor-element-548ef7d:hover {
-    box-shadow: 0 24px 56px rgba(0,0,0,0.28),
-                0 12px 28px rgba(0,0,0,0.20),
-                0 6px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 18px 48px rgba(0,0,0,0.16);
     transform: translateY(-4px);
 }
 
@@ -706,73 +678,4 @@ a.elementor-button[href*="area-cliente"]:hover {
 }
 .elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
-}
-
-/* Blur background image only using pseudo-element - text and buttons remain sharp */
-.elementor-element-aba69b1,
-.elementor-element-c24c7ae,
-.elementor-element-c8beb5d,
-.elementor-element-343269c,
-.elementor-element-548ef7d {
-    overflow: hidden;
-}
-
-.elementor-element-aba69b1::after,
-.elementor-element-c24c7ae::after,
-.elementor-element-c8beb5d::after,
-.elementor-element-343269c::after,
-.elementor-element-548ef7d::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: inherit;
-    filter: blur(2px);
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* Reduce blur and shadow for Outros clientes section (548ef7d) */
-.elementor-element-548ef7d {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
-}
-
-.elementor-element-548ef7d:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
-    transform: translateY(-2px) !important;
-}
-
-/* Apply DM Sans font to all button text */
-.elementor-button,
-.elementor-button-text {
-    font-family: 'DM Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    font-weight: 400;
-}
-
-/* Clickable image hover/focus styles: show pointer and subtle lift for linked images */
-.elementor-widget-image .elementor-widget-container a img,
-.elementor-widget-image .elementor-widget-container a > img {
-    cursor: pointer;
-    transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease;
-    will-change: transform, box-shadow;
-    display: block;
-}
-.elementor-widget-image .elementor-widget-container a:hover img,
-.elementor-widget-image .elementor-widget-container a:focus img,
-.elementor-widget-image .elementor-widget-container a:focus-visible img {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
-}
-.elementor-widget-image .elementor-widget-container a:focus {
-    outline: 3px solid rgba(54,118,112,0.16);
-    outline-offset: 6px;
-    border-radius: 8px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .elementor-widget-image .elementor-widget-container a img,
-    .elementor-widget-image .elementor-widget-container a > img {
-        transition: none !important;
-        transform: none !important;
-        box-shadow: none !important;
-    }
 }
