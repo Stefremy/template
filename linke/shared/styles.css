@@ -679,3 +679,47 @@ a.elementor-button[href*="area-cliente"]:hover {
 .elementor-element-6139156 .elementor-button:hover .e-font-icon-svg path {
     fill: #367670 !important;
 }
+
+
+/* Solutions page: background for the "Como trabalhamos" section */
+/* Targets only the Soluções page (elementor-page-13) and the container with id c06b24c */
+.elementor-page-13 .elementor-element.elementor-element-c06b24c {
+    background-image: url("/PUBLIC/estradaporto.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Add subtle blur + tint overlay for readability */
+.elementor-page-13 .elementor-element.elementor-element-c06b24c{
+    position: relative; /* establish stacking context for pseudo */
+    overflow: hidden;
+}
+.elementor-page-13 .elementor-element.elementor-element-c06b24c::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.18); /* subtle dark tint */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 0;
+    pointer-events: none;
+}
+/* Keep section children above the overlay */
+.elementor-page-13 .elementor-element.elementor-element-c06b24c > *{
+    position: relative;
+    z-index: 1;
+}
+
+/* Increase font-size for the specific paragraph in the Como trabalhamos section by 2px */
+.elementor-page-13 .elementor-element.elementor-element-279d2b2 .elementor-widget-container p {
+    font-size: calc(100% + 2px) !important;
+}
+
+/* Increase font-size for the other Como trabalhamos paragraphs (02, 03, 04) by 2px */
+.elementor-page-13 .elementor-element.elementor-element-2883218 .elementor-widget-container p,
+.elementor-page-13 .elementor-element.elementor-element-9938c73 .elementor-widget-container p,
+.elementor-page-13 .elementor-element.elementor-element-66563cc .elementor-widget-container p {
+    font-size: calc(100% + 2px) !important;
+}
+
