@@ -285,6 +285,30 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 				</div>
 								</div>
 				</div>
+				<script>
+				// Delegated capture handler: prevent same-page Soluções links from reloading
+				(function(){
+					try{
+						var path = window.location.pathname || window.location.href;
+						if(!/solucoes\.html$/.test(path)) return;
+						document.addEventListener('click', function(ev){
+							var el = ev.target;
+							while(el && el !== document){
+								if(el.tagName && el.tagName.toLowerCase() === 'a'){
+									var href = el.getAttribute('href') || '';
+									if(href.indexOf('solucoes.html') !== -1){
+										ev.preventDefault();
+										ev.stopImmediatePropagation && ev.stopImmediatePropagation();
+										window.scrollTo({top:0, behavior:'smooth'});
+										return;
+									}
+								}
+								el = el.parentNode;
+							}
+						}, true);
+					}catch(e){console && console.warn && console.warn(e)}
+				})();
+				</script>
 				</div>
 				<style>
 					/* Footer social icons: force greyscale and enable hover-follow effect (scoped) */
@@ -829,7 +853,7 @@ Brief, públicos, KPIs e restrições. Fechamos o plano de ação: logística, T
 				<div class="elementor-element elementor-element-d6a7d0f elementor-align-justify elementor-widget elementor-widget-button" data-id="d6a7d0f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="index.html">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
@@ -882,7 +906,7 @@ Somos uma equipa movida por curiosidade, precisão e respeito pela jornada do cl
 				<div class="elementor-element elementor-element-3616a34 elementor-align-left elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="3616a34" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="sobre-nos.html">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="contato.html">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class=" arrow_right-up"></i>			</span>
