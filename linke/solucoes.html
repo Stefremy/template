@@ -307,6 +307,19 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 </ul>			</nav>
 						</div>
 				</div>
+				<div class="elementor-element elementor-element-e95f074 elementor-align-left elementor-mobile-align-right elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="e95f074" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/area-cliente.html">
+					<span class="elementor-button-content-wrapper">
+					<span class="elementor-button-icon">
+					<i aria-hidden="true" class=" arrow_right-up"></i>			</span>
+					<span class="elementor-button-text">Área de Cliente</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
 				<script>
 				// Delegated capture handler: prevent same-page Soluções links from reloading
 				(function(){
@@ -445,12 +458,70 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					<style>
 
 /*main menu area css start*/
-nav.elementor-nav-menu--main ul li a:hover,
-nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
-	background: #C4FE61 !important;
-	color: #367670 !important;
-	border-radius: 100px;
+nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
+    border-radius: 100px;
+    color: white;
 }
+
+                                /* Pill behind the Home nav item */
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu {
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                /* make the li a positioning context for the pill */
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li {
+                                    position: relative;
+                                    display: inline-block;
+                                }
+
+                                /* the pill itself sits behind the link */
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 50%;
+                                                    transform: translate(-50%, -50%) scale(1);
+                                                    width: calc(100% - 10px); /* even smaller pill width */
+                                                    height: 36px; /* keep same height */
+                                                    background: #C4FE61;
+                                                    border-radius: 999px;
+                                                    z-index: 0;
+                                                    transition: all 180ms ease;
+                                                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                                                    opacity: 0;
+                                        }
+                                        /* Static pill for active page (Home) */
+                                        nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home.current-menu-item::before,
+                                        nav.elementor-nav-menu--main ul.elementor-nav-menu > li.current-menu-item::before {
+                                            opacity: 1;
+                                            transform: translate(-50%, -50%) scale(1.02);
+                                            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                        }
+                                    /* Animate pill on hover for other items */
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li:hover::before,
+                                    nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a.elementor-item.elementor-item-active::before {
+                                        opacity: 1;
+                                        transform: translate(-50%, -50%) scale(1.02);
+                                        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                    }
+
+                                /* ensure the anchor sits above the pill */
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li > a {
+                                 position: relative;
+                                 z-index: 1;
+                                 padding: 6px 14px; /* tighter padding */
+                                 display: inline-block;
+                                }
+
+                                /* on hover/active keep the same pill look but slightly stronger */
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home:hover::before,
+                                nav.elementor-nav-menu--main ul.elementor-nav-menu > li.menu-item-home > a.elementor-item.elementor-item-active::before {
+                                    transform: translate(-50%, -50%) scale(1.02);
+                                    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+                                }
+
 .elementor-menu-toggle {
     padding: 8px;
 }
