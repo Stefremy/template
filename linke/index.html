@@ -940,6 +940,7 @@
                     overflow-y: auto !important;
                     background: linear-gradient(135deg, rgba(10, 10, 30, 0.98) 0%, rgba(20, 20, 50, 0.98) 100%) !important;
                     border-top: 2px solid rgba(255, 255, 255, 0.2) !important;
+                    border-radius: 0 0 12px 12px !important;
                     z-index: 9999 !important;
                     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
                     animation: slideDown 300ms ease-out forwards !important;
@@ -1018,10 +1019,40 @@
                 .elementor-element-f33cef5 .elementor-menu-toggle {
                     cursor: pointer;
                     transition: opacity 200ms ease;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    width: 50px !important;
+                    height: 50px !important;
+                    background: transparent !important;
+                    border: none !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
                 }
 
                 .elementor-element-f33cef5 .elementor-menu-toggle:active {
                     opacity: 0.7;
+                }
+
+                .elementor-element-f33cef5 .elementor-menu-toggle__icon--open,
+                .elementor-element-f33cef5 .elementor-menu-toggle__icon--close {
+                    width: 30px !important;
+                    height: 30px !important;
+                    fill: #FFFFFF !important;
+                    stroke: #FFFFFF !important;
+                    display: none !important;
+                }
+
+                .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--open {
+                    display: block !important;
+                }
+
+                .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--open {
+                    display: none !important;
+                }
+
+                .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--close {
+                    display: block !important;
                 }
             </style>
             <script>
