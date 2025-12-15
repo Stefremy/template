@@ -33,6 +33,7 @@ a.elementor-button[href*="contato"]:hover {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Contato &#8211; LINKE</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
 <meta name='robots' content='noindex, nofollow' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
     <link rel="alternate" type="application/rss+xml" title="Linke - Conexões que transformam &raquo; Feed" href="feed/" />
@@ -476,52 +477,48 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div id="contact-form" class="elementor-element elementor-element-d911560 reachout-form elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="d911560" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
 				<div class="elementor-widget-container">
-							<form class="elementor-form" method="post" name="Contact Form">
-			<input type="hidden" name="post_id" value="17"/>
-			<input type="hidden" name="form_id" value="d911560"/>
-			<input type="hidden" name="referer_title" value="Contact" />
-
-							<input type="hidden" name="queried_id" value="17"/>
+							<form class="elementor-form" method="post" name="Contact Form" id="contact-form-emailjs">
 			
 			<div class="elementor-form-fields-wrapper elementor-labels-above">
 								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
 												<label for="form-field-name" class="elementor-field-label">
 								O seu nome							</label>
-														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="O seu nome">
+														<input size="1" type="text" name="name" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="O seu nome" required>
 											</div>
 								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
 												<label for="form-field-email" class="elementor-field-label">
 								O seu e-mail							</label>
-														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="O seu e-mail" required="required">
+														<input size="1" type="email" name="email" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="O seu e-mail" required="required">
 											</div>
 								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_b2d92c2 elementor-col-100">
 												<label for="form-field-field_b2d92c2" class="elementor-field-label">
 								O seu telefone							</label>
-														<input size="1" type="text" name="form_fields[field_b2d92c2]" id="form-field-field_b2d92c2" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Número de telefone">
+														<input size="1" type="text" name="phone" id="form-field-field_b2d92c2" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Número de telefone">
 											</div>
 								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_d59bcca elementor-col-100">
 												<label for="form-field-field_d59bcca" class="elementor-field-label">
 								A sua empresa							</label>
-														<input size="1" type="text" name="form_fields[field_d59bcca]" id="form-field-field_d59bcca" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Nome da empresa">
+														<input size="1" type="text" name="company" id="form-field-field_d59bcca" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Nome da empresa">
 											</div>
 								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
 												<label for="form-field-message" class="elementor-field-label">
 								A sua mensagem							</label>
-						<textarea class="elementor-field-textual elementor-field  elementor-size-md" name="form_fields[message]" id="form-field-message" rows="4" placeholder="A sua mensagem aqui..."></textarea>				</div>
+						<textarea class="elementor-field-textual elementor-field  elementor-size-md" name="message" id="form-field-message" rows="4" placeholder="A sua mensagem aqui..."></textarea>				</div>
 								<div class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-field_dcd0c3c elementor-col-100">
 												<label for="form-field-field_dcd0c3c" class="elementor-field-label">
 								Preço médio por envio							</label>
-						<div class="elementor-field-subgroup  "><span class="elementor-field-option"><input type="radio" value="Menos de 3 €" id="form-field-field_dcd0c3c-0" name="form_fields[field_dcd0c3c]"> <label for="form-field-field_dcd0c3c-0">Menos de 3 €</label></span><span class="elementor-field-option"><input type="radio" value="De 3 a 4 €" id="form-field-field_dcd0c3c-1" name="form_fields[field_dcd0c3c]"> <label for="form-field-field_dcd0c3c-1">De 3 a 4 €</label></span><span class="elementor-field-option"><input type="radio" value="Acima de 4 €" id="form-field-field_dcd0c3c-2" name="form_fields[field_dcd0c3c]"> <label for="form-field-field_dcd0c3c-2">Acima de 4 €</label></span></div>				</div>
+						<div class="elementor-field-subgroup  "><span class="elementor-field-option"><input type="radio" value="Menos de 3 €" id="form-field-field_dcd0c3c-0" name="price_range"> <label for="form-field-field_dcd0c3c-0">Menos de 3 €</label></span><span class="elementor-field-option"><input type="radio" value="De 3 a 4 €" id="form-field-field_dcd0c3c-1" name="price_range"> <label for="form-field-field_dcd0c3c-1">De 3 a 4 €</label></span><span class="elementor-field-option"><input type="radio" value="Acima de 4 €" id="form-field-field_dcd0c3c-2" name="price_range"> <label for="form-field-field_dcd0c3c-2">Acima de 4 €</label></span></div>				</div>
 								<div class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-field_25c0ce2 elementor-col-100">
 												<label for="form-field-field_25c0ce2" class="elementor-field-label">
 								Que solução precisa?							</label>
-						<div class="elementor-field-subgroup  "><span class="elementor-field-option"><input type="checkbox" value="Soluções de transportadora" id="form-field-field_25c0ce2-0" name="form_fields[field_25c0ce2][]"> <label for="form-field-field_25c0ce2-0">Soluções de transportadora</label></span><span class="elementor-field-option"><input type="checkbox" value="Marketing Digital" id="form-field-field_25c0ce2-1" name="form_fields[field_25c0ce2][]"> <label for="form-field-field_25c0ce2-1">Marketing Digital</label></span><span class="elementor-field-option"><input type="checkbox" value="Websites" id="form-field-field_25c0ce2-2" name="form_fields[field_25c0ce2][]"> <label for="form-field-field_25c0ce2-2">Websites</label></span><span class="elementor-field-option"><input type="checkbox" value="Consultoria estratégica" id="form-field-field_25c0ce2-3" name="form_fields[field_25c0ce2][]"> <label for="form-field-field_25c0ce2-3">Consultoria estratégica</label></span><span class="elementor-field-option"><input type="checkbox" value="Apoio ao cliente" id="form-field-field_25c0ce2-4" name="form_fields[field_25c0ce2][]"> <label for="form-field-field_25c0ce2-4">Apoio ao cliente</label></span></div>				</div>
+						<div class="elementor-field-subgroup  "><span class="elementor-field-option"><input type="checkbox" value="Soluções de transportadora" id="form-field-field_25c0ce2-0" name="solutions"> <label for="form-field-field_25c0ce2-0">Soluções de transportadora</label></span><span class="elementor-field-option"><input type="checkbox" value="Marketing Digital" id="form-field-field_25c0ce2-1" name="solutions"> <label for="form-field-field_25c0ce2-1">Marketing Digital</label></span><span class="elementor-field-option"><input type="checkbox" value="Websites" id="form-field-field_25c0ce2-2" name="solutions"> <label for="form-field-field_25c0ce2-2">Websites</label></span><span class="elementor-field-option"><input type="checkbox" value="Consultoria estratégica" id="form-field-field_25c0ce2-3" name="solutions"> <label for="form-field-field_25c0ce2-3">Consultoria estratégica</label></span><span class="elementor-field-option"><input type="checkbox" value="Apoio ao cliente" id="form-field-field_25c0ce2-4" name="solutions"> <label for="form-field-field_25c0ce2-4">Apoio ao cliente</label></span></div>				</div>
 								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-					<button class="elementor-button elementor-size-sm" type="submit">
+					<button class="elementor-button elementor-size-sm" type="submit" id="submit-btn">
 						<span class="elementor-button-content-wrapper">
 																						<span class="elementor-button-text">Enviar</span>
 													</span>
 					</button>
+					<span id="form-status-msg" style="display:none; margin-top:10px; font-weight:bold;"></span>
 				</div>
 			</div>
 		</form>
@@ -1184,6 +1181,67 @@ var ElementorProFrontendConfig = {"ajaxurl":"wp-admin\/admin-ajax.php","nonce":"
 		}) }, { threshold: 0.12 });
 		obs.observe(target);
 	})();
+	</script>
+
+	<script>
+		// EmailJS Configuration
+		emailjs.init("8S75LL_rqyZw63Z1p"); // EmailJS public key
+
+		// Handle contact form submission
+		document.getElementById('contact-form-emailjs').addEventListener('submit', function(e) {
+			e.preventDefault();
+
+			// Get form values
+			const name = document.getElementById('form-field-name').value;
+			const email = document.getElementById('form-field-email').value;
+			const phone = document.getElementById('form-field-field_b2d92c2').value;
+			const company = document.getElementById('form-field-field_d59bcca').value;
+			const message = document.getElementById('form-field-message').value;
+			const priceRange = document.querySelector('input[name="price_range"]:checked')?.value || '';
+			
+			// Get selected solutions
+			const solutionsCheckboxes = document.querySelectorAll('input[name="solutions"]:checked');
+			const solutions = Array.from(solutionsCheckboxes).map(cb => cb.value).join(', ');
+
+			// Create template parameters
+			const templateParams = {
+				to_email: 'geral@linke.pt',
+				from_name: name,
+				from_email: email,
+				phone: phone,
+				company: company,
+				message: message,
+				price_range: priceRange,
+				solutions: solutions || 'Não especificado'
+			};
+
+			// Show loading state
+			const submitBtn = document.getElementById('submit-btn');
+			const statusMsg = document.getElementById('form-status-msg');
+			submitBtn.disabled = true;
+			submitBtn.textContent = 'Enviando...';
+			statusMsg.style.display = 'none';
+
+			// Send email using EmailJS
+			emailjs.send('service_linke', 'template_linke', templateParams)
+				.then(function(response) {
+					// Success
+					submitBtn.disabled = false;
+					submitBtn.textContent = 'Enviar';
+					statusMsg.style.display = 'block';
+					statusMsg.textContent = '✓ Mensagem enviada com sucesso! Obrigado por contactar-nos.';
+					statusMsg.style.color = '#4CAF50';
+					document.getElementById('contact-form-emailjs').reset();
+				}, function(error) {
+					// Error
+					submitBtn.disabled = false;
+					submitBtn.textContent = 'Enviar';
+					statusMsg.style.display = 'block';
+					statusMsg.textContent = '✗ Erro ao enviar mensagem. Tente novamente.';
+					statusMsg.style.color = '#f44336';
+					console.error('EmailJS error:', error);
+				});
+		});
 	</script>
 
 	</body>
