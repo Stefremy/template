@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "linke",
+  "framework": "static",
+  "installCommand": "npm install"
+}
