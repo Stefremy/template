@@ -1,0 +1,192 @@
+/* Shared burger menu styling - works with element IDs: f33cef5 (index), 5dde0be (other pages) */
+
+@media (max-width: 1024px) {
+    /* Generic burger menu styling */
+    .elementor-element-f33cef5,
+    .elementor-element-5dde0be {
+        position: relative;
+    }
+
+    /* Position burger button fixed in top right corner on mobile */
+    .elementor-element-5dde0be .elementor-menu-toggle {
+        position: fixed !important;
+        top: 14px !important;
+        right: 32px !important; /* Adjusted to move more to the left */
+        z-index: 10000 !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown {
+        display: none !important;
+        position: fixed !important;
+        top: 75px !important;
+        left: 0 !important;
+        width: 100% !important;
+        max-height: calc(100vh - 56px) !important;
+        overflow-y: auto !important;
+        background: linear-gradient(135deg, rgba(10, 10, 30, 0.98) 0%, rgba(20, 20, 50, 0.98) 100%) !important;
+        border-top: 2px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 0 0 12px 12px !important;
+        z-index: 9999 !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+        animation: slideDown 300ms ease-out forwards !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown[aria-hidden="false"],
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown[aria-hidden="false"] {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .elementor-nav-menu,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .elementor-nav-menu {
+        list-style: none !important;
+        padding: 8px 0 !important;
+        margin: 0 !important;
+        flex-direction: column !important;
+        display: flex !important;
+        width: 100% !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item {
+        display: block !important;
+        margin: 0 !important;
+        width: 100% !important;
+        list-style: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item a,
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .elementor-item,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item a,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .elementor-item {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 20px !important;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        transition: background-color 200ms ease !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        background-color: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item a:hover,
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .elementor-item:hover,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item a:hover,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .elementor-item:hover {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        color: #FFFFFF !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom a,
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-item,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom a,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-item {
+        color: #FFFFFF !important;
+        font-weight: 600 !important;
+        padding: 12px 20px !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom a:hover,
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-item:hover,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom a:hover,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-item:hover {
+        background-color: rgba(255, 255, 255, 0.18) !important;
+    }
+
+    /* Área de Cliente styling - custom menu item with separator */
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom {
+        display: block !important;
+        margin: 0 !important;
+        width: 100% !important;
+        list-style: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        margin-top: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-button-icon,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom .elementor-button-icon {
+        margin-right: 8px !important;
+        display: inline-block !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom i,
+    .elementor-element-5dde0be .elementor-nav-menu--dropdown .menu-item.menu-item-type-custom i {
+        color: #FFFFFF !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle,
+    .elementor-element-5dde0be .elementor-menu-toggle {
+        cursor: pointer;
+        transition: opacity 200ms ease;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 50px !important;
+        height: 50px !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle:active,
+    .elementor-element-5dde0be .elementor-menu-toggle:active {
+        opacity: 0.7;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle__icon--open,
+    .elementor-element-f33cef5 .elementor-menu-toggle__icon--close,
+    .elementor-element-5dde0be .elementor-menu-toggle__icon--open,
+    .elementor-element-5dde0be .elementor-menu-toggle__icon--close {
+        width: 30px !important;
+        height: 30px !important;
+        fill: #FFFFFF !important;
+        stroke: #FFFFFF !important;
+        display: none !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--open,
+    .elementor-element-5dde0be .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--open {
+        display: block !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--open,
+    .elementor-element-5dde0be .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--open {
+        display: none !important;
+    }
+
+    .elementor-element-f33cef5 .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--close,
+    .elementor-element-5dde0be .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--close {
+        display: block !important;
+    }
+}
