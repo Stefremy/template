@@ -1,4 +1,4 @@
-# EmailJS Setup Instructions
+ - m# EmailJS Setup Instructions
 
 The contact form in `linke/contato.html` is now configured to send emails to **geral@linke.pt** using EmailJS.
 
