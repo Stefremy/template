@@ -33,7 +33,6 @@ a.elementor-button[href*="contato"]:hover {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Contato &#8211; LINKE</title>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
 <meta name='robots' content='noindex, nofollow' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
     <link rel="alternate" type="application/rss+xml" title="Linke - Conexões que transformam &raquo; Feed" href="feed/" />
@@ -477,7 +476,7 @@ nav.elementor-nav-menu--main ul li a:hover, nav.elementor-nav-menu--main ul li a
 				</div>
 				<div id="contact-form" class="elementor-element elementor-element-d911560 reachout-form elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="d911560" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
 				<div class="elementor-widget-container">
-							<form class="elementor-form" method="post" name="Contact Form" id="contact-form-emailjs">
+							<form class="elementor-form" method="POST" name="Contact Form" id="contact-form-emailjs" action="https://formspree.io/f/xblnegab">
 			
 			<div class="elementor-form-fields-wrapper elementor-labels-above">
 								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
@@ -1184,63 +1183,44 @@ var ElementorProFrontendConfig = {"ajaxurl":"wp-admin\/admin-ajax.php","nonce":"
 	</script>
 
 	<script>
-		// EmailJS Configuration
-		emailjs.init("L0ZtRPsRQy_PmIC4v"); // EmailJS public key
-
-		// Handle contact form submission
+		// Handle Formspree submission with AJAX
 		document.getElementById('contact-form-emailjs').addEventListener('submit', function(e) {
 			e.preventDefault();
-
-			// Get form values
-			const name = document.getElementById('form-field-name').value;
-			const email = document.getElementById('form-field-email').value;
-			const phone = document.getElementById('form-field-field_b2d92c2').value;
-			const company = document.getElementById('form-field-field_d59bcca').value;
-			const message = document.getElementById('form-field-message').value;
-			const priceRange = document.querySelector('input[name="price_range"]:checked')?.value || '';
 			
-			// Get selected solutions
-			const solutionsCheckboxes = document.querySelectorAll('input[name="solutions"]:checked');
-			const solutions = Array.from(solutionsCheckboxes).map(cb => cb.value).join(', ');
-
-			// Create template parameters
-			const templateParams = {
-				to_email: 'geral@linke.pt',
-				from_name: name,
-				from_email: email,
-				phone: phone,
-				company: company,
-				message: message,
-				price_range: priceRange,
-				solutions: solutions || 'Não especificado'
-			};
-
-			// Show loading state
+			const form = this;
 			const submitBtn = document.getElementById('submit-btn');
-			const statusMsg = document.getElementById('form-status-msg');
+			const formData = new FormData(form);
+			
 			submitBtn.disabled = true;
 			submitBtn.textContent = 'Enviando...';
-			statusMsg.style.display = 'none';
-
-			// Send email using EmailJS
-			emailjs.send('service_0i4s2mz', 'template_9vvuz8d', templateParams)
-				.then(function(response) {
+			
+			// Send to Formspree via AJAX
+			fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					'Accept': 'application/json'
+				}
+			})
+			.then(response => {
+				if (response.ok) {
 					// Success
-					submitBtn.disabled = false;
-					submitBtn.textContent = 'Enviar';
-					statusMsg.style.display = 'block';
-					statusMsg.textContent = '✓ Mensagem enviada com sucesso! Obrigado por contactar-nos.';
-					statusMsg.style.color = '#4CAF50';
-					document.getElementById('contact-form-emailjs').reset();
-				}, function(error) {
+					submitBtn.textContent = 'Enviado';
+					submitBtn.style.backgroundColor = '#4CAF50';
+					form.reset();
+				} else {
 					// Error
 					submitBtn.disabled = false;
 					submitBtn.textContent = 'Enviar';
-					statusMsg.style.display = 'block';
-					statusMsg.textContent = '✗ Erro ao enviar mensagem. Tente novamente.';
-					statusMsg.style.color = '#f44336';
-					console.error('EmailJS error:', error);
-				});
+					alert('Erro ao enviar formulário');
+				}
+			})
+			.catch(error => {
+				console.error('Error:', error);
+				submitBtn.disabled = false;
+				submitBtn.textContent = 'Enviar';
+				alert('Erro ao enviar formulário');
+			});
 		});
 	</script>
 
