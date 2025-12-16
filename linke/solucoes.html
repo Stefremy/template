@@ -108,7 +108,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='widget-spacer-css' href='wp-content/plugins/elementor/assets/css/widget-spacer.min.css' media='all' />
 
 <!-- Local shared styles to unify nav/CTA/project visuals -->
-<link rel="stylesheet" href="shared/styles.css" />
+<link rel="stylesheet" href="shared/styles.css?v=20251216-11" />
 <script src="shared/animate-text-new.js" defer></script>
 <script src="shared/lazy-bg.js" defer></script>
 <style>
@@ -229,7 +229,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 				}
 			</style>
 			<style>
-				/* Mobile logo: show above Pós-venda heading on solucoes */
+				/* Mobile header: keep burger visible; logo is injected inside Vanta hero (see bottom script) */
 				@media (max-width: 1024px) {
 					.elementor-location-header .elementor-element-ab04b18 {
 						display: flex !important;
@@ -260,10 +260,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						visibility: visible !important;
 						z-index: 9999 !important;
 						position: relative !important;
-					}
-					/* Hide dropdown menu on mobile */
-					.elementor-nav-menu--dropdown {
-						display: none !important;
 					}
 				}
 			</style>
@@ -1288,9 +1284,7 @@ o seu projeto ao pr<span style="font-weight: 900;">ó</span>ximo n<span style="f
 				</div>
 				<div class="elementor-element elementor-element-b954db7 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="b954db7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Vamos elevar o seu projeto—entre em contacto e descubra como podemos fazê-lo acontecer.
-
-</h2>				</div>
+									</div>
 				</div>
 				<div class="elementor-element elementor-element-c6be0c0 elementor-widget elementor-widget-text-editor" data-id="c6be0c0" data-element_type="widget" data-widget_type="text-editor.default" style="padding-bottom:0; margin-bottom:0;">
 				<div class="elementor-widget-container" style="padding-bottom:0; margin-bottom:0;">
@@ -1671,6 +1665,102 @@ var ElementorProFrontendConfig = {"ajaxurl":"wp-admin\/admin-ajax.php","nonce":"
 			});
 		}
 	});
+	</script>
+
+	<script>
+	// Soluções: inject LINKE logo inside Vanta hero above the heading on mobile
+	(function(){
+		function syncHeroLogo(){
+			try {
+				const hero = document.querySelector('.elementor-element-efaa85c');
+				if (!hero) return;
+				const existing = hero.querySelector('.linke-hero-logo');
+				const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 1024px)').matches);
+
+				// If not mobile, ensure injected logo is removed (prevents desktop duplicates after resize)
+				if (!isMobile) {
+					if (existing) existing.remove();
+					return;
+				}
+
+				const headingWidget = hero.querySelector('.elementor-element-81ed7f4');
+				if (!headingWidget) return;
+				if (existing) return;
+
+				const srcLink = document.querySelector('.elementor-location-header .elementor-element-e3cd8e5 a');
+				const srcImg = document.querySelector('.elementor-location-header .elementor-element-e3cd8e5 img');
+				if (!srcLink || !srcImg) return;
+
+				const wrap = document.createElement('div');
+				wrap.className = 'linke-hero-logo';
+
+				const a = srcLink.cloneNode(false);
+				const img = srcImg.cloneNode(true);
+				img.removeAttribute('fetchpriority');
+				img.setAttribute('loading', 'eager');
+				img.setAttribute('decoding', 'async');
+				a.appendChild(img);
+				wrap.appendChild(a);
+
+				hero.insertBefore(wrap, headingWidget);
+			} catch (e) {
+				// no-op
+			}
+		}
+
+		function onResize(){
+			if (onResize._t) cancelAnimationFrame(onResize._t);
+			onResize._t = requestAnimationFrame(syncHeroLogo);
+		}
+
+		if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncHeroLogo);
+		else syncHeroLogo();
+		window.addEventListener('resize', onResize);
+	})();
+	</script>
+
+	<script>
+	// Soluções: inject clickable "ÁREA / DE / CLIENTE" label next to burger (mobile landscape)
+	(function(){
+		const mq = '(max-width: 1024px) and (max-height: 600px) and (orientation: landscape)';
+		function syncBurgerAreaClienteLabel(){
+			try {
+				const isLandscape = !!(window.matchMedia && window.matchMedia(mq).matches);
+				const toggle = document.querySelector('.elementor-location-header .elementor-element-5dde0be .elementor-menu-toggle');
+				if (!toggle) return;
+				const existing = toggle.querySelector('.linke-area-cliente-label');
+
+				if (!isLandscape) {
+					if (existing) existing.remove();
+					return;
+				}
+
+				if (existing) return;
+
+				const a = document.createElement('a');
+				a.className = 'linke-area-cliente-label';
+				const existingHref = document.querySelector('a[href$="area-cliente.html"]')?.getAttribute('href');
+				a.href = existingHref || '/area-cliente.html';
+				a.innerHTML = 'ÁREA<br>DE<br>CLIENTE';
+				a.setAttribute('aria-label', 'Área de Cliente');
+				a.addEventListener('click', function(e){
+					e.stopPropagation();
+				}, { passive: true });
+				toggle.appendChild(a);
+			} catch (e) {
+				// no-op
+			}
+		}
+
+		function onResize(){
+			if (onResize._t) cancelAnimationFrame(onResize._t);
+			onResize._t = requestAnimationFrame(syncBurgerAreaClienteLabel);
+		}
+
+		if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncBurgerAreaClienteLabel);
+		else syncBurgerAreaClienteLabel();
+		window.addEventListener('resize', onResize);
+	})();
 	</script>
 
 	<script>

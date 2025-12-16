@@ -399,6 +399,142 @@ a.elementor-button[href*="area-cliente"]:hover {
     fill: #367670 !important;
 }
 
+/* Mobile landscape: make header "Área de Cliente" more visible (bold + drop shadow) */
+@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+    /* Soluções: hide the header pill CTA in landscape (match Home landscape behavior) */
+    body.page-id-13 .elementor-location-header .elementor-element-e95f074,
+    body.page-id-13 .elementor-location-header a.elementor-button[href$="area-cliente.html"] {
+        display: none !important;
+    }
+
+    /* Soluções: show a 3-line label to the left of the burger button (clickable link) */
+    body.page-id-13 .elementor-location-header .elementor-element-ab04b18 .elementor-element-5dde0be .elementor-menu-toggle {
+        overflow: visible !important;
+    }
+    /* Disable old pseudo-element label (we inject a real <a> so it can be clicked) */
+    body.page-id-13 .elementor-location-header .elementor-element-ab04b18 .elementor-element-5dde0be .elementor-menu-toggle::before {
+        content: none !important;
+        display: none !important;
+    }
+    body.page-id-13 .elementor-location-header .elementor-element-ab04b18 .elementor-element-5dde0be .elementor-menu-toggle .linke-area-cliente-label {
+        display: block;
+        position: absolute;
+        right: 100%;
+        margin-right: 34px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 700 !important;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.45) !important;
+        color: #fff !important;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 12px;
+        line-height: 1.05;
+        text-align: center;
+        text-decoration: none !important;
+        pointer-events: auto;
+    }
+
+    /* On mobile, the header button is hidden and the CTA shows inside the burger dropdown */
+    body.home a.elementor-button[href$="area-cliente.html"] .elementor-button-text,
+    body.home nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"],
+    body.home nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"] span,
+    body.home nav.elementor-nav-menu--main a.elementor-item[href$="area-cliente.html"],
+
+    /* Soluções (page-id-13) */
+    body.page-id-13 a.elementor-button[href$="area-cliente.html"] .elementor-button-text,
+    body.page-id-13 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"],
+    body.page-id-13 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"] span,
+    body.page-id-13 nav.elementor-nav-menu--main a.elementor-item[href$="area-cliente.html"],
+
+    /* Sobre Nós (page-id-15) */
+    body.page-id-15 a.elementor-button[href$="area-cliente.html"] .elementor-button-text,
+    body.page-id-15 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"],
+    body.page-id-15 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"] span,
+    body.page-id-15 nav.elementor-nav-menu--main a.elementor-item[href$="area-cliente.html"],
+
+    /* Contato (page-id-17) */
+    body.page-id-17 a.elementor-button[href$="area-cliente.html"] .elementor-button-text,
+    body.page-id-17 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"],
+    body.page-id-17 nav.elementor-nav-menu--dropdown a.elementor-item[href$="area-cliente.html"] span,
+    body.page-id-17 nav.elementor-nav-menu--main a.elementor-item[href$="area-cliente.html"] {
+        font-weight: 700 !important;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.45) !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Center footer tagline in mobile landscape to improve layout */
+    body.home .elementor-location-footer .footer-tagline,
+    body.page-id-13 .elementor-location-footer .footer-tagline,
+    body.page-id-13 .footer-tagline,
+    body.page-id-15 .elementor-location-footer .footer-tagline,
+    body.page-id-17 .elementor-location-footer .footer-tagline {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Contato: add breathing room above footer logo in landscape */
+    body.page-id-17 .elementor-location-footer .elementor-element.elementor-element-7bc5d58 {
+        padding-top: 110px !important;
+    }
+
+
+/* Contato: reduce footer spacing in mobile portrait */
+@media (max-width: 767px) and (orientation: portrait) {
+    body.page-id-17 .elementor-location-footer .elementor-element.elementor-element-7bc5d58 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+    /* Sobre Nós: move only the hero text down a bit (keep background fixed) */
+    body.page-id-15 .elementor-element.elementor-element-c155e1e .elementor-element.elementor-element-74940f2 {
+        margin-top: 36px !important;
+        margin-bottom: 6px !important;
+    }
+    body.page-id-15 .elementor-element.elementor-element-c155e1e .elementor-element.elementor-element-cdf7fcf {
+        margin-top: 0px !important;
+    }
+
+    /* Contato: move only the hero text down a bit (keep background fixed) */
+    body.page-id-17 .elementor-element.elementor-element-5c2eb76 .elementor-element.elementor-element-d762edf {
+        margin-top: 52px !important;
+        margin-bottom: 6px !important;
+    }
+    body.page-id-17 .elementor-element.elementor-element-5c2eb76 .elementor-element.elementor-element-513931b {
+        margin-top: 0px !important;
+    }
+}
+
+/* Hide injected hero logo by default (enabled on Soluções mobile only below) */
+body.page-id-13 .linke-hero-logo {
+    display: none;
+}
+
+/* Soluções: show LINKE logo inside Vanta hero on mobile (above heading) */
+@media (max-width: 1024px) {
+    body.page-id-13 .elementor-location-header .elementor-element-e3cd8e5 {
+        display: none !important;
+    }
+    body.page-id-13 .linke-hero-logo {
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin: 12px 0 10px;
+        padding-left: 20px;
+    }
+    body.page-id-13 .linke-hero-logo a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    body.page-id-13 .linke-hero-logo img {
+        width: 160px;
+        height: auto;
+        display: block;
+    }
+}
+
 /* Blur the contact hero background (elementor-17 .elementor-element-96668b8) without affecting text */
 .elementor-17 .elementor-element.elementor-element-96668b8 {
     position: relative;
