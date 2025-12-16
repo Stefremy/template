@@ -95,26 +95,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="stylesheet" href="shared/burger-menu.css" />
 <script src="shared/animate-text.js" defer></script>
 <script src="shared/animate-text-new.js" defer></script>
+<script src="shared/lazy-bg.js" defer></script>
+<style>
+    /* Support lazy background images (shared/lazy-bg.js) */
+    .lazy-bg { background-image: none !important; }
+</style>
 <script src="shared/burger-menu.js" defer></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-		<style>	
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-					background-image: none !important;
-				}
-				@media screen and (max-height: 1024px) {
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-				@media screen and (max-height: 640px) {
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-			</style>
+
 			</head>
 <body data-rsssl=1 class="wp-singular page-template page-template-elementor_header_footer page page-id-17 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-17">
 
@@ -654,7 +642,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<img src="./PUBLIC/customer-support.png" alt="Customer Support" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
+			<img decoding="async" loading="lazy" src="./PUBLIC/customer-support.png" alt="Customer Support" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -678,7 +666,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<img src="./PUBLIC/clipboard.png" alt="Clipboard" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
+			<img decoding="async" loading="lazy" src="./PUBLIC/clipboard.png" alt="Clipboard" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -704,7 +692,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<img src="./PUBLIC/saas.png" alt="SaaS" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
+			<img decoding="async" loading="lazy" src="./PUBLIC/saas.png" alt="SaaS" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -728,7 +716,7 @@ body {
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<img src="./PUBLIC/project-management.png" alt="Project Management" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
+			<img decoding="async" loading="lazy" src="./PUBLIC/project-management.png" alt="Project Management" style="width: 48px; height: 48px; object-fit: contain; display: block;">			</div>
 		</div>
 						</div>
 				</div>
@@ -824,7 +812,7 @@ body {
 		<div class="elementor-element elementor-element-925ae0f e-con-full e-flex e-con e-child" data-id="925ae0f" data-element_type="container">
 				<div class="elementor-element elementor-element-3bb9854 elementor-widget elementor-widget-image" data-id="3bb9854" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="792" height="88" src="PUBLIC/linkelogo.png" class="attachment-large size-large wp-image-1780 footer-logo" alt="" srcset="PUBLIC/linkelogo.png 792w" sizes="(max-width: 792px) 100vw, 792px" />
+															<img decoding="async" loading="lazy" width="792" height="88" src="PUBLIC/linkelogo.png" class="attachment-large size-large wp-image-1780 footer-logo" alt="" srcset="PUBLIC/linkelogo.png 792w" sizes="(max-width: 792px) 100vw, 792px" />
 														<p class="footer-tagline" style="color:#FFFFFF;margin-top:12px;font-size:18px;max-width:420px;line-height:1.3;">
 																Transformamos conexões em <br>oportunidades para o seu e-commerce.
 															</p>													</div>
@@ -837,7 +825,7 @@ body {
 									<a href="tel:+351928315080">
 
 										<span class="elementor-icon-list-icon footer-phone-icon">
-											<img src="PUBLIC/socialmedia/smartphone copy.png" alt="Telefone" style="width: 32px; height: 32px; display:block; object-fit:contain;">
+											<img decoding="async" loading="lazy" src="PUBLIC/socialmedia/smartphone copy.png" alt="Telefone" style="width: 32px; height: 32px; display:block; object-fit:contain;">
 										</span>
 										</a>
 									</li>
@@ -851,7 +839,7 @@ body {
 											<a href="mailto:geral@linke.pt">
 
 											<span class="elementor-icon-list-icon footer-email-icon">
-												<img src="PUBLIC/socialmedia/email copy.png" alt="Email" style="width: 32px; height: 32px; display:block; object-fit:contain;">
+												<img decoding="async" loading="lazy" src="PUBLIC/socialmedia/email copy.png" alt="Email" style="width: 32px; height: 32px; display:block; object-fit:contain;">
 											</span>
 											</a>
 									</li>
@@ -961,22 +949,22 @@ body {
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-new1" href="https://www.facebook.com/profile.php?id=61573707631745" target="_blank">
 						<span class="elementor-screen-only">Facebook</span>
-						<img src="PUBLIC/socialmedia/facebook.png" alt="Facebook" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
+						<img decoding="async" loading="lazy" src="PUBLIC/socialmedia/facebook.png" alt="Facebook" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-new2" href="https://www.instagram.com/golinkept/" target="_blank">
 						<span class="elementor-screen-only">Instagram</span>
-						<img src="PUBLIC/socialmedia/instagram.png" alt="Instagram" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
+						<img decoding="async" loading="lazy" src="PUBLIC/socialmedia/instagram.png" alt="Instagram" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-new3" href="https://wa.me/351928315080" target="_blank">
 						<span class="elementor-screen-only">WhatsApp</span>
-						<img src="PUBLIC/socialmedia/whatsapp.png" alt="WhatsApp" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
+						<img decoding="async" loading="lazy" src="PUBLIC/socialmedia/whatsapp.png" alt="WhatsApp" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;">					</a>
 				</span>
 						<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkein elementor-repeater-item-new4" href="https://www.linkedin.com/in/golinkept/" target="_blank" rel="noopener noreferrer">
 						<span class="elementor-screen-only">LinkedIn</span>
-						<img src="PUBLIC/linkeinicon.png" alt="LinkedIn" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;display:block;">					</a>
+						<img decoding="async" loading="lazy" src="PUBLIC/linkeinicon.png" alt="LinkedIn" aria-hidden="true" style="width: 32px; height: 32px; object-fit: contain;display:block;">					</a>
 				</span>
 					</div>
 						</div>
