@@ -480,14 +480,6 @@ a.elementor-button[href*="area-cliente"]:hover {
         padding-top: 110px !important;
     }
 
-
-/* Contato: reduce footer spacing in mobile portrait */
-@media (max-width: 767px) and (orientation: portrait) {
-    body.page-id-17 .elementor-location-footer .elementor-element.elementor-element-7bc5d58 {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-    }
-}
     /* Sobre Nós: move only the hero text down a bit (keep background fixed) */
     body.page-id-15 .elementor-element.elementor-element-c155e1e .elementor-element.elementor-element-74940f2 {
         margin-top: 36px !important;
@@ -504,6 +496,20 @@ a.elementor-button[href*="area-cliente"]:hover {
     }
     body.page-id-17 .elementor-element.elementor-element-5c2eb76 .elementor-element.elementor-element-513931b {
         margin-top: 0px !important;
+    }
+}
+
+/* Contato: reduce footer spacing in mobile portrait */
+@media (max-width: 767px) and (orientation: portrait) {
+    body.page-id-17 .elementor-location-footer .elementor-element.elementor-element-7bc5d58 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    /* Index: tweak linkobanner background position behind "WEBPAGES PERSONALIZADAS" */
+    .elementor-2009 .elementor-element.elementor-element-18729f0:not(.elementor-motion-effects-element-type-background),
+    .elementor-2009 .elementor-element.elementor-element-18729f0 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-position: 40% 33% !important;
     }
 }
 
