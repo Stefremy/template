@@ -10,7 +10,7 @@
     /* Position burger button fixed in top right corner on mobile */
     .elementor-element-5dde0be .elementor-menu-toggle {
         position: fixed !important;
-        top: 14px !important;
+        top: 0px !important;
         right: 32px !important; /* Adjusted to move more to the left */
         z-index: 10000 !important;
         width: 50px !important;
