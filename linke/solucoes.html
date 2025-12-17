@@ -232,6 +232,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 			<style>
 				/* Mobile header: keep burger visible; logo is injected inside Vanta hero (see bottom script) */
 				@media (max-width: 1024px) {
+					/* Override Elementor's hidden classes to show header on mobile */
+					.elementor-location-header .elementor-element-ab04b18.elementor-hidden-tablet,
+					.elementor-location-header .elementor-element-ab04b18.elementor-hidden-mobile {
+						display: flex !important;
+						visibility: visible !important;
+					}
 					.elementor-location-header .elementor-element-ab04b18 {
 						display: flex !important;
 						visibility: visible !important;
@@ -240,7 +246,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						left: auto !important;
 						z-index: 9999 !important;
 						margin-bottom: -80px !important;
-						margin-top: 20px !important;
+						margin-top: 10px !important;
 						padding: 0 !important;
 						justify-content: flex-start !important;
 						align-items: center !important;
@@ -250,7 +256,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 						visibility: visible !important;
 						z-index: 9999 !important;
 						position: relative !important;
-						margin-left: 38px !important;
+						margin-left: 20px !important;
+						margin-top: -20px !important;
 						width: 30% !important;
 						max-width: 30% !important;
 					}
@@ -463,13 +470,11 @@ display: none !important;
 			</head>
 <body data-rsssl=1 class="wp-singular page-template page-template-elementor_header_footer page page-id-13 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-13">
 
-<a class="skip-link screen-reader-text" href="#content">Saltar para o conteúdo</a>
-
-		<div data-elementor-type="header" data-elementor-id="23" class="elementor elementor-23 elementor-location-header" data-elementor-post-type="elementor_library">
+<div data-elementor-type="header" data-elementor-id="23" class="elementor elementor-23 elementor-location-header" data-elementor-post-type="elementor_library">
 			<div class="elementor-element elementor-element-ab04b18 e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="ab04b18" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-e3cd8e5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e3cd8e5" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-																<a href="https://www.linke.pt">
+																<a href="index.html">
 							<img fetchpriority="high" width="792" height="88" src="PUBLIC/linkelogo.png" class="attachment-large size-large wp-image-1780" alt="" srcset="PUBLIC/linkelogo.png 792w, PUBLIC/linkelogo.png 300w, PUBLIC/linkelogo.png 768w" sizes="(max-width: 792px) 100vw, 792px" />								</a>
 															</div>
 				</div>
