@@ -171,6 +171,23 @@ nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
     border-radius: 100px;
 }
 
+/* Hero CTA button hover */
+.hero-cta-btn:hover {
+    background: #d8ff7d !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(196,254,97,0.35) !important;
+}
+.hero-cta-btn:active {
+    transform: translateY(0);
+}
+
+/* Project KPIs styling */
+.project-kpis li {
+    background: rgba(0,0,0,0.2);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
 /* Simple entrance animation used by `shared/animate-text-new.js` */
 .js-animate {
     opacity: 0;

@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (!burgerButton || !dropdownMenu) return;
         
+        // Accessibility: Add aria-label if not present
+        if (!burgerButton.hasAttribute('aria-label')) {
+            burgerButton.setAttribute('aria-label', 'Abrir menu de navegação');
+        }
+        
+        // Ensure initial aria state
+        if (!burgerButton.hasAttribute('aria-expanded')) {
+            burgerButton.setAttribute('aria-expanded', 'false');
+        }
+        if (!dropdownMenu.hasAttribute('aria-hidden')) {
+            dropdownMenu.setAttribute('aria-hidden', 'true');
+        }
+        
         // Toggle menu on burger click
         burgerButton.addEventListener('click', function(e) {
             e.preventDefault();
@@ -21,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const isExpanded = burgerButton.getAttribute('aria-expanded') === 'true';
             burgerButton.setAttribute('aria-expanded', !isExpanded);
+            burgerButton.setAttribute('aria-label', isExpanded ? 'Abrir menu de navegação' : 'Fechar menu de navegação');
             dropdownMenu.setAttribute('aria-hidden', isExpanded);
         });
         
@@ -28,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuLinks.forEach(link => {
             link.addEventListener('click', function() {
                 burgerButton.setAttribute('aria-expanded', 'false');
+                burgerButton.setAttribute('aria-label', 'Abrir menu de navegação');
                 dropdownMenu.setAttribute('aria-hidden', 'true');
             });
         });
@@ -36,7 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('click', function(e) {
             if (!mobileMenuWidget.contains(e.target)) {
                 burgerButton.setAttribute('aria-expanded', 'false');
+                burgerButton.setAttribute('aria-label', 'Abrir menu de navegação');
                 dropdownMenu.setAttribute('aria-hidden', 'true');
+            }
+        });
+        
+        // Keyboard accessibility: close on Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && burgerButton.getAttribute('aria-expanded') === 'true') {
+                burgerButton.setAttribute('aria-expanded', 'false');
+                burgerButton.setAttribute('aria-label', 'Abrir menu de navegação');
+                dropdownMenu.setAttribute('aria-hidden', 'true');
+                burgerButton.focus();
             }
         });
     });
