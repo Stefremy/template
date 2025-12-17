@@ -171,7 +171,7 @@ nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
     border-radius: 100px;
 }
 
-/* Simple entrance animation used by `shared/animate-text.js` */
+/* Simple entrance animation used by `shared/animate-text-new.js` */
 .js-animate {
     opacity: 0;
     transform: translateY(14px);
