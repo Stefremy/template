@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Keep internal portal pages out of search results
+Disallow: /area-cliente.html
+Disallow: /tracking.html
+
+Sitemap: https://linke.pt/sitemap.xml

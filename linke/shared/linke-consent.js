@@ -6,19 +6,11 @@
         // Get current page filename without extension
         const currentPath = window.location.pathname.toLowerCase();
         const fileName = currentPath.split('/').pop().split('.')[0] || 'index';
-        
-        console.log('Cookie banner debug:', {
-            pathname: window.location.pathname,
-            fileName: fileName,
-            allowed: ALLOWED_PAGES,
-            shouldShow: ALLOWED_PAGES.includes(fileName)
-        });
-        
+
         return ALLOWED_PAGES.includes(fileName);
     }
     
     function createBanner() {
-        console.log('Creating cookie banner...');
         const banner = document.createElement('div');
         banner.id = 'linke-cookie-consent';
         banner.setAttribute('role', 'complementary');
@@ -38,7 +30,6 @@
         `;
         
         document.body.appendChild(banner);
-        console.log('Banner added to DOM');
         
         // Force reflow to trigger CSS transition
         void banner.offsetWidth;
@@ -46,7 +37,6 @@
         // Add visible class to trigger animation
         setTimeout(() => {
             banner.classList.add('lc-visible');
-            console.log('Banner visibility triggered');
         }, 10);
         
         const acceptBtn = banner.querySelector('.lc-accept');
@@ -57,6 +47,7 @@
                 e.preventDefault();
                 e.stopPropagation();
                 localStorage.setItem(STORAGE_KEY, 'accepted');
+                window.dispatchEvent(new Event('linke:cookie-consent-accepted'));
                 banner.classList.remove('lc-visible');
                 setTimeout(() => banner.remove(), 300);
             });
@@ -72,25 +63,18 @@
     }
     
     function init() {
-        console.log('Cookie consent script initialized');
-        
         // Only show on allowed pages
         if (!shouldShow()) {
-            console.log('Page not in allowed list, banner not shown');
             return;
         }
         
         try {
             const status = localStorage.getItem(STORAGE_KEY);
-            console.log('LocalStorage status:', status);
             
             if (!status || status !== 'accepted') {
                 createBanner();
-            } else {
-                console.log('User already accepted cookies');
             }
         } catch (e) {
-            console.log('LocalStorage error:', e);
             // localStorage not available, show banner anyway
             createBanner();
         }
