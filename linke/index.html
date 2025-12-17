@@ -742,6 +742,14 @@
             </style>
             <link rel="stylesheet" href="shared/styles.css?v=20251216-7" />
             <script src="shared/animate-text-new.js" defer></script>
+            <script src="shared/linke-consent.js" defer></script>
+            <script>
+                // Test helper: clear cookie consent on page load to see banner
+                if (window.location.hash === '#test-cookies') {
+                    localStorage.removeItem('linke_cookie_consent_v1');
+                    console.log('Cleared cookie consent - banner should appear');
+                }
+            </script>
             </head>
     <body data-rsssl=1 class="home wp-singular page-template-default page page-id-2009 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2009">
         <!-- SVG filter for subtle water/magnify distortion used by .hero-glass ::before -->
