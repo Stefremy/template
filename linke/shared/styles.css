@@ -1038,3 +1038,18 @@ a.elementor-button[href*="area-cliente"]:hover {
     font-size: calc(100% + 2px) !important;
 }
 
+
+/* Make navbar/menu items bold across the site (Início, Soluções, Sobre Nós, Contato) */
+.elementor-location-header .elementor-nav-menu .elementor-item {
+    font-weight: 700 !important;
+}
+nav.elementor-nav-menu--main .elementor-item {
+    font-weight: 700 !important;
+}
+.elementor-nav-menu--main .elementor-item {
+    font-weight: 700 !important;
+}
+.elementor-location-header a.elementor-item {
+    font-weight: 700 !important;
+}
+
