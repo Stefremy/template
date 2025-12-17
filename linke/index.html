@@ -1519,7 +1519,7 @@ A nossa abordagem assenta em inovação, ligação e eficiência, criando uma po
                         </div>
                     </div>
                     <!-- Choose Your Path CTA Strip -->
-                    <div class="choose-path-strip" style="background: linear-gradient(135deg, #073330 0%, #0a4a45 100%); padding: 48px 24px; margin: 0;">
+                    <div class="choose-path-strip" style="background: linear-gradient(135deg, #073330 0%, #0a4a45 100%); padding: 48px 24px; margin: 0; position: relative; z-index: 100;">
                         <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
                             <p style="color: #C4FE61; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px;">Escolha o seu caminho</p>
                             <h2 style="color: #fff; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin-bottom: 32px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">O que pretende para o seu negócio?</h2>
@@ -1732,7 +1732,7 @@ A nossa abordagem assenta em inovação, ligação e eficiência, criando uma po
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-3670820 e-flex e-con-boxed e-con e-parent" data-id="3670820" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-element elementor-element-3670820 e-flex e-con-boxed e-con e-parent" data-id="3670820" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="--padding-top: 20px !important; padding-top: 20px !important;">
                         <div class="e-con-inner">
                             <!-- Client Logo Bar (Social Proof) -->
                             <div class="client-logo-bar" style="display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 24px; padding: 16px 0; opacity: 0.7; width: 100%;">
@@ -1742,7 +1742,26 @@ A nossa abordagem assenta em inovação, ligação e eficiência, criando uma po
                                 <span style="color: #fff; font-weight: 600; font-size: 14px; opacity: 0.85;">Aurora</span>
                                 <span style="color: rgba(255,255,255,0.6); font-size: 13px;">+ PME's em todo o país</span>
                             </div>
-                            <style>.client-logo-bar a:hover { opacity: 1 !important; color: #C4FE61 !important; }</style>
+                            <style>
+                                .client-logo-bar a:hover { opacity: 1 !important; color: #C4FE61 !important; }
+                                /* Override Elementor padding on projects section for all devices */
+                                .elementor-element-3670820,
+                                .elementor-element.elementor-element-3670820,
+                                .elementor-2009 .elementor-element.elementor-element-3670820 {
+                                    --padding-top: 20px !important;
+                                    --margin-top: -10px !important;
+                                    padding-top: 20px !important;
+                                    margin-top: -10px !important;
+                                }
+                                @media (max-width: 767px) {
+                                    .elementor-element-3670820,
+                                    .elementor-element.elementor-element-3670820,
+                                    .elementor-2009 .elementor-element.elementor-element-3670820 {
+                                        --padding-top: 16px !important;
+                                        padding-top: 16px !important;
+                                    }
+                                }
+                            </style>
                             <div class="elementor-element elementor-element-78e16a7 e-con-full e-flex e-con e-child" data-id="78e16a7" data-element_type="container">
                                 <div class="elementor-element elementor-element-142050b elementor-widget elementor-widget-heading" data-id="142050b" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
