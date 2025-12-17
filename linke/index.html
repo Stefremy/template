@@ -1337,6 +1337,21 @@
                                                 <span>Fale com um especialista</span>
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                                             </a>
+                                            <style>
+                                                .hero-cta-btn { transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+                                                .hero-cta-btn:hover,
+                                                .hero-cta-btn:focus {
+                                                    transform: translateY(-3px) scale(1.02);
+                                                    box-shadow: 0 10px 30px rgba(3,118,112,0.12);
+                                                    background: #BFF45A;
+                                                    color: #073330;
+                                                }
+                                                .hero-cta-btn:hover svg,
+                                                .hero-cta-btn:focus svg {
+                                                    transform: translateX(4px);
+                                                    transition: transform 220ms ease;
+                                                }
+                                            </style>
                                         </div>
                                     </div>
                                 </div>
@@ -1548,6 +1563,15 @@ A nossa abordagem assenta em inovação, ligação e eficiência, criando uma po
                         </style>
                     </div>
                     <div class="elementor-element elementor-element-20d6e585 e-con-full e-flex e-con e-parent" data-id="20d6e585" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <style>
+                            /* Mobile: push Gestão de Logística heading down */
+                            @media (max-width: 1024px) {
+                                .elementor-element-836bdd7 {
+                                    margin-top: 32px !important;
+                                    padding-top: 16px !important;
+                                }
+                            }
+                        </style>
                         <div class="elementor-element elementor-element-39eec8bf e-con-full e-flex e-con e-child" data-id="39eec8bf" data-element_type="container">
                             <div class="elementor-element elementor-element-836bdd7 elementor-widget-tablet__width-initial elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="836bdd7" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
@@ -1759,6 +1783,16 @@ A nossa abordagem assenta em inovação, ligação e eficiência, criando uma po
                                     .elementor-2009 .elementor-element.elementor-element-3670820 {
                                         --padding-top: 16px !important;
                                         padding-top: 16px !important;
+                                    }
+                                }
+                                /* Mobile portrait: move Os nossos Projectos heading up */
+                                @media (max-width: 480px) {
+                                    .elementor-element-142050b,
+                                    .elementor-element-8afd026 {
+                                        margin-top: -20px !important;
+                                    }
+                                    .client-logo-bar {
+                                        margin-bottom: 8px !important;
                                     }
                                 }
                             </style>
@@ -2375,6 +2409,31 @@ Est<span style="font-weight: 900;">á</span> na altura de levar<br> o seu projet
                         </div>
                     </div>
                     
+                    <!-- Mobile-only Social Icons Row -->
+                    <div class="footer-social-mobile" style="display: none; width: 100%; padding: 24px 0 16px; text-align: center;">
+                        <p style="color: rgba(255,255,255,0.6); font-size: 12px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">Siga-nos</p>
+                        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
+                                <img src="PUBLIC/socialmedia/facebook.png" alt="Facebook" style="width: 28px; height: 28px; object-fit: contain; filter: grayscale(100%);">
+                            </a>
+                            <a href="https://www.instagram.com/golinkept/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
+                                <img src="PUBLIC/socialmedia/instagram.png" alt="Instagram" style="width: 28px; height: 28px; object-fit: contain; filter: grayscale(100%);">
+                            </a>
+                            <a href="https://wa.me/351928315080" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
+                                <img src="PUBLIC/socialmedia/whatsapp.png" alt="WhatsApp" style="width: 28px; height: 28px; object-fit: contain; filter: grayscale(100%);">
+                            </a>
+                            <a href="https://www.linkedin.com/in/golinkept/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#fff;overflow:hidden;padding:6px;box-sizing:border-box;">
+                                <img src="PUBLIC/linkeinicon.png" alt="LinkedIn" style="width: 28px; height: 28px; object-fit: contain; filter: grayscale(100%);">
+                            </a>
+                        </div>
+                    </div>
+                    <style>
+                        @media (max-width: 1024px) {
+                            .footer-social-mobile {
+                                display: block !important;
+                            }
+                        }
+                    </style>
                 </div>
               	<div class="elementor-element elementor-element-6876010 e-con-full e-flex e-con e-child" data-id="6876010" data-element_type="container">
 				<div class="elementor-element elementor-element-6081610 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="6081610" data-element_type="widget" data-widget_type="divider.default">
