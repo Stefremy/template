@@ -181,6 +181,16 @@ nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
     transform: translateY(0);
 }
 
+/* Icon fallback: ElegantIcons font files are not shipped in this repo */
+.arrow_right-up:before {
+    content: "↗";
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+}
+
 /* Project KPIs styling */
 .project-kpis li {
     background: rgba(0,0,0,0.2);
