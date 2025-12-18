@@ -191,6 +191,14 @@ nav.elementor-nav-menu--main ul li a.elementor-item.elementor-item-active {
     display: inline-block;
 }
 
+/* Hide icon markup placed via <i> or icon spans so CTAs show no arrows */
+.elementor-button .elementor-button-icon,
+.elementor-button .elementor-button-icon i,
+.elementor-icon-list-icon,
+.elementor-icon-list-icon i {
+    display: none !important;
+}
+
 /* Project KPIs styling */
 .project-kpis li {
     background: rgba(0,0,0,0.2);
