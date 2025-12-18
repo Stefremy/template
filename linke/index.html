@@ -6,21 +6,32 @@
         <link rel="profile" href="https://gmpg.org/xfn/11">
         <link rel="icon" type="image/png" href="/PUBLIC/favicon.png">
         <title>LINKE — Operações e Tecnologia para Ecommerce</title>
-        <meta name="description" content="Soluções completas para ecommerce, unindo tecnologia, operações e atendimento para fazer marcas crescerem em escala.">
+        <meta name="description" content="Soluções completas para ecommerce para PMEs em Portugal — tecnologia, marketing, operações e atendimento integrados para crescer em escala.">
         <meta name="robots" content="index, follow">
         <link rel="canonical" href="https://linke.pt/">
+
+        <meta name="theme-color" content="#073330">
+
+        <link rel="preload" as="image" href="/PUBLIC/initial%20framenb.png" fetchpriority="high">
+
+        <link rel="preconnect" href="https://s.w.org" crossorigin>
+        <link rel="dns-prefetch" href="//s.w.org">
+        <link rel="preconnect" href="https://cdn.botpress.cloud" crossorigin>
+        <link rel="dns-prefetch" href="//cdn.botpress.cloud">
+        <link rel="preconnect" href="https://files.bpcontent.cloud" crossorigin>
+        <link rel="dns-prefetch" href="//files.bpcontent.cloud">
 
         <meta property="og:locale" content="pt_PT">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="LINKE">
         <meta property="og:title" content="LINKE — Operações e Tecnologia para Ecommerce">
-        <meta property="og:description" content="Soluções completas para ecommerce, unindo tecnologia, operações e atendimento para fazer marcas crescerem em escala.">
+        <meta property="og:description" content="Soluções completas para ecommerce para PMEs em Portugal — tecnologia, operações e atendimento integrados para crescer em escala.">
         <meta property="og:url" content="https://linke.pt/">
         <meta property="og:image" content="https://linke.pt/PUBLIC/linkobanner.png">
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="LINKE — Operações e Tecnologia para Ecommerce">
-        <meta name="twitter:description" content="Soluções completas para ecommerce, unindo tecnologia, operações e atendimento para fazer marcas crescerem em escala.">
+        <meta name="twitter:description" content="Soluções completas para ecommerce para PMEs em Portugal — tecnologia, operações e atendimento integrados para crescer em escala.">
         <meta name="twitter:image" content="https://linke.pt/PUBLIC/linkobanner.png">
 
         <script type="application/ld+json">
@@ -29,14 +40,57 @@
                 "@graph": [
                     {
                         "@type": "Organization",
+                        "@id": "https://linke.pt/#organization",
                         "name": "LINKE",
+                        "description": "Operações, tecnologia e crescimento de ecommerce para PMEs em Portugal.",
                         "url": "https://linke.pt/",
-                        "logo": "https://linke.pt/PUBLIC/linkelogo.png"
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://linke.pt/PUBLIC/linkelogo.png"
+                        },
+                        "audience": {
+                            "@type": "BusinessAudience",
+                            "name": "PMEs"
+                        },
+                        "areaServed": {
+                            "@type": "Country",
+                            "name": "Portugal"
+                        },
+                        "contactPoint": [
+                            {
+                                "@type": "ContactPoint",
+                                "contactType": "sales",
+                                "url": "https://linke.pt/contato.html",
+                                "availableLanguage": ["pt-PT", "pt", "en"]
+                            }
+                        ]
                     },
                     {
                         "@type": "WebSite",
+                        "@id": "https://linke.pt/#website",
                         "name": "LINKE",
-                        "url": "https://linke.pt/"
+                        "url": "https://linke.pt/",
+                        "inLanguage": "pt-PT",
+                        "publisher": {
+                            "@id": "https://linke.pt/#organization"
+                        }
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://linke.pt/#webpage",
+                        "name": "LINKE — Operações e Tecnologia para Ecommerce",
+                        "url": "https://linke.pt/",
+                        "inLanguage": "pt-PT",
+                        "isPartOf": {
+                            "@id": "https://linke.pt/#website"
+                        },
+                        "about": {
+                            "@id": "https://linke.pt/#organization"
+                        },
+                        "audience": {
+                            "@type": "BusinessAudience",
+                            "name": "PMEs"
+                        }
                     }
                 ]
             }
@@ -668,9 +722,9 @@
         <link rel='stylesheet' id='e-apple-webkit-css' href='wp-content/uploads/elementor/css/custom-apple-webkit.min.css' media='all'/>
         <link rel='stylesheet' id='widget-heading-css' href='wp-content/plugins/elementor/assets/css/widget-heading.min.css' media='all'/>
         <link rel='stylesheet' id='widget-divider-css' href='wp-content/plugins/elementor/assets/css/widget-divider.min.css' media='all'/>
-        <link rel='stylesheet' id='e-animation-grow-css' href='wp-content/plugins/elementor/assets/lib/animation/styles/e-animation-grow.min.css' media='all'/>
+        <link rel='stylesheet' id='e-animation-grow-css' href='wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css' media='all'/>
     <link rel='stylesheet' id='e-popup-css' href='wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css' media='all'/>
-    <link rel='stylesheet' id='e-animation-fadeInUp-css' href='wp-content/plugins/elementor/assets/lib/animation/styles/fadeInUp.min.css' media='all'/>
+    <link rel='stylesheet' id='e-animation-fadeInUp-css' href='wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css' media='all'/>
     <style>
         /* Prevent eager downloads for heavy background images; loaded via shared/lazy-bg.js */
         .lazy-bg {
@@ -2664,13 +2718,6 @@ Est<span style="font-weight: 900;">á</span> na altura de levar<br> o seu projet
             <script src="wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js" id="smartmenus-js"></script>
             <script src="wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" id="e-sticky-js"></script>
             <script src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
-            <script src="wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
-            <script src="wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
-        <script id="wp-i18n-js-after">
-            wp.i18n.setLocaleData({
-                'text direction\u0004ltr': ['ltr']
-            });
-        </script>
         <script id="elementor-pro-frontend-js-before">
                     var ElementorProFrontendConfig = {
                         "ajaxurl": "wp-admin/admin-ajax.php",

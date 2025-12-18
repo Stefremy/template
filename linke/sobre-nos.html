@@ -26,34 +26,80 @@ a.elementor-button[href*="contato"]:hover {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 	<title>Sobre a LINKE | Ecommerce & Omnichannel</title>
-    <meta name="description" content="Conheça a LINKE e nossa equipe especializada em logística, operações e estratégia para ecommerce e omnichannel.">
+	<meta name="description" content="Conheça a LINKE em Portugal: equipa especializada em logística, operações e estratégia para ecommerce, focada em PMEs.">
 	<meta name="robots" content="index, follow">
 	<link rel="canonical" href="https://linke.pt/sobre-nos.html">
+
+	<meta name="theme-color" content="#073330">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+	<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 
 	<meta property="og:locale" content="pt_PT">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="LINKE">
 	<meta property="og:title" content="Sobre a LINKE | Ecommerce & Omnichannel">
-	<meta property="og:description" content="Conheça a LINKE e nossa equipe especializada em logística, operações e estratégia para ecommerce e omnichannel.">
+	<meta property="og:description" content="Conheça a LINKE em Portugal: equipa especializada em logística, operações e estratégia para ecommerce, focada em PMEs.">
 	<meta property="og:url" content="https://linke.pt/sobre-nos.html">
 	<meta property="og:image" content="https://linke.pt/PUBLIC/linkobanner.png">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Sobre a LINKE | Ecommerce & Omnichannel">
-	<meta name="twitter:description" content="Conheça a LINKE e nossa equipe especializada em logística, operações e estratégia para ecommerce e omnichannel.">
+	<meta name="twitter:description" content="Conheça a LINKE em Portugal: equipa especializada em logística, operações e estratégia para ecommerce, focada em PMEs.">
 	<meta name="twitter:image" content="https://linke.pt/PUBLIC/linkobanner.png">
 
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "AboutPage",
-			"name": "Sobre a LINKE",
-			"url": "https://linke.pt/sobre-nos.html",
-			"isPartOf": {
-				"@type": "WebSite",
-				"name": "LINKE",
-				"url": "https://linke.pt/"
-			}
+			"@graph": [
+				{
+					"@type": "Organization",
+					"@id": "https://linke.pt/#organization",
+					"name": "LINKE",
+					"description": "Operações, tecnologia e crescimento de ecommerce para PMEs em Portugal.",
+					"url": "https://linke.pt/",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://linke.pt/PUBLIC/linkelogo.png"
+					},
+					"audience": {
+						"@type": "BusinessAudience",
+						"name": "PMEs"
+					},
+					"areaServed": {
+						"@type": "Country",
+						"name": "Portugal"
+					}
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://linke.pt/#website",
+					"name": "LINKE",
+					"url": "https://linke.pt/",
+					"inLanguage": "pt-PT",
+					"publisher": {
+						"@id": "https://linke.pt/#organization"
+					}
+				},
+				{
+					"@type": "AboutPage",
+					"@id": "https://linke.pt/sobre-nos.html#webpage",
+					"name": "Sobre a LINKE",
+					"url": "https://linke.pt/sobre-nos.html",
+					"inLanguage": "pt-PT",
+					"isPartOf": {
+						"@id": "https://linke.pt/#website"
+					},
+					"about": {
+						"@id": "https://linke.pt/#organization"
+					},
+					"audience": {
+						"@type": "BusinessAudience",
+						"name": "PMEs"
+					}
+				}
+			]
 		}
 	</script>
     <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -83,7 +129,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel='stylesheet' id='hello-elementor-css' href='./wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all' />
-<link rel="stylesheet" href="./wp-content/uploads/elementor/css/tailwind-output.css" />
+
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./wp-content/themes/hello-elementor/assets/css/theme.css' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./wp-content/themes/hello-elementor/assets/css/header-footer.css' media='all' />
 <link rel='stylesheet' id='elementor-frontend-css' href='./wp-content/uploads/elementor/css/custom-frontend.min.css' media='all' />
@@ -102,12 +148,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='elementor-post-15-css' href='./wp-content/uploads/elementor/css/post-15.css' media='all' />
 <link rel='stylesheet' id='elementor-post-23-css' href='./wp-content/uploads/elementor/css/post-23.css' media='all' />
 <link rel='stylesheet' id='elementor-post-577-css' href='./wp-content/uploads/elementor/css/post-577.css' media='all' />
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js' defer></script>
+<script src='https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js' defer></script>
 <link rel='stylesheet' id='elementor-post-3273-css' href='./wp-content/uploads/elementor/css/post-3273.css' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-playfairdisplay-css' href='./wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='./wp-content/uploads/elementor/google-fonts/css/dmsans.css' media='all' />
-<link rel='stylesheet' id='elementor-gf-local-cabin-css' href='./wp-content/uploads/elementor/google-fonts/css/cabin.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-elegant-icon-css' href='./wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegant.css' media='all' />
 <link rel='stylesheet' id='elementor-icons-skb_cife-themify-icon-css' href='./wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themify.css' media='all' />
 <link rel="stylesheet" href="shared/styles.css?v=20251216-17" />
@@ -1100,11 +1145,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js" id="smartmenus-js"></script>
 <script src="wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" id="e-sticky-js"></script>
 <script src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
-<script src="wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
-<script src="wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
+
 <script id="elementor-pro-frontend-js-before">
 var ElementorProFrontendConfig = {"ajaxurl":"wp-admin\/admin-ajax.php","nonce":"a043439049","urls":{"assets":"wp-content\/plugins\/elementor-pro\/assets\/","rest":"wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>

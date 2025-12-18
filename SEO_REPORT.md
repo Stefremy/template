@@ -1,6 +1,6 @@
 # SEO report (current state)
 
-Generated on: 2025-12-17
+Generated on: 2025-12-18
 
 This document lists the key SEO fields currently present in each page (Title, meta description, robots, canonical). It’s meant for quick review before publishing.
 
@@ -8,10 +8,10 @@ This document lists the key SEO fields currently present in each page (Title, me
 
 | Page | Title | Meta description | Robots | Canonical |
 |---|---|---|---|---|
-| / (homepage) | LINKE — Operações e Tecnologia para Ecommerce | Soluções completas para ecommerce, unindo tecnologia, operações e atendimento para fazer marcas crescerem em escala. | index, follow | https://linke.pt/ |
-| /solucoes.html | Soluções para Ecommerce \| LINKE | Soluções de ecommerce, fulfillment, customer experience e tecnologia da LINKE para operações omnichannel de marcas e marketplaces. | index, follow | https://linke.pt/solucoes.html |
-| /sobre-nos.html | Sobre a LINKE \| Ecommerce & Omnichannel | Conheça a LINKE e nossa equipe especializada em logística, operações e estratégia para ecommerce e omnichannel. | index, follow | https://linke.pt/sobre-nos.html |
-| /contato.html | Contato \| LINKE | Fale com a equipe LINKE para implementar, otimizar ou escalar o seu ecommerce e operações omnichannel. | index, follow | https://linke.pt/contato.html |
+| / (homepage) | LINKE — Operações e Tecnologia para Ecommerce | Soluções completas para ecommerce para PMEs em Portugal — tecnologia, marketing, operações e atendimento integrados para crescer em escala. | index, follow | https://linke.pt/ |
+| /solucoes.html | Soluções para Ecommerce \| LINKE | Soluções de ecommerce para PMEs em Portugal: websites que convertem, marketing, operações/fulfillment, pós-venda e tecnologia para marcas e marketplaces omnichannel. | index, follow | https://linke.pt/solucoes.html |
+| /sobre-nos.html | Sobre a LINKE \| Ecommerce & Omnichannel | Conheça a LINKE em Portugal: equipa especializada em logística, operações e estratégia para ecommerce, focada em PMEs. | index, follow | https://linke.pt/sobre-nos.html |
+| /contato.html | Contato \| LINKE | Fale com a equipa LINKE em Portugal para implementar, otimizar ou escalar o seu ecommerce — com foco em PMEs. | index, follow | https://linke.pt/contato.html |
 
 ## Legal/info pages (indexable)
 
